@@ -13,6 +13,7 @@
 @define @field hhfield;
 @define @field int;
 @define @field lh;
+@define @field me;
 @define @field lhfield;
 @define @field rh;
 {`qqqq' is already defined, in ./common.defines, because of gftodvi.}

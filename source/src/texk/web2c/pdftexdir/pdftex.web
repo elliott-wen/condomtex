@@ -3080,6 +3080,7 @@ terminated by |null|.
 
 @d link(#) == mem[#].hh.rh {the |link| field of a memory word}
 @d info(#) == mem[#].hh.lh {the |info| field of a memory word}
+@d meta(#) == mem[#].hh.me {the |meta| field of a memory word}
 
 @<Glob...@>=
 @!avail : pointer; {head of the list of available one-word nodes}
@@ -7446,7 +7447,7 @@ if (p<hi_mem_min) or (p>mem_end) then
 @.CLOBBERED@>
   end;
 if info(p)>=cs_token_flag then print_cs(info(p)-cs_token_flag)
-else  begin m:=info(p) div @'400; c:=info(p) mod @'400;
+else  begin m:=info(p) div @'400; c:=info(p) mod @'400; 
   if info(p)<0 then print_esc("BAD.")
 @.BAD@>
   else @<Display the token $(|m|,|c|)$@>;
@@ -7549,6 +7550,7 @@ low-level languages that do not support recursion.
 @!cur_chr: halfword; {operand of current command}
 @!cur_cs: pointer; {control sequence found here, zero if none found}
 @!cur_tok: halfword; {packed representative of |cur_cmd| and |cur_chr|}
+@!cur_chrsig: halfword;
 
 @ The |print_cmd_chr| routine prints a symbolic interpretation of a
 command code and its modifier. This is used in certain `\.{You can\'t}'

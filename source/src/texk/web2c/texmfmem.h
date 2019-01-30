@@ -70,9 +70,9 @@ typedef union
   struct
   {
 #ifdef WORDS_BIGENDIAN
-    halfword RH, LH;
+    halfword RH, LH, ME;
 #else
-    halfword LH, RH;
+    halfword ME, LH, RH;
 #endif
   } v;
 
@@ -169,7 +169,7 @@ typedef union
 #define	b1 u.B1
 #define	b2 u.B2
 #define	b3 u.B3
-
+#define me v.ME
 #define rh v.RH
 #define lhfield	v.LH
 
@@ -250,6 +250,7 @@ typedef union
 #define b3 u.B3
 
 #define rh v.RH
+#define me v.ME
 #define lhfield v.LH
 
 #define cint ii.CINT0

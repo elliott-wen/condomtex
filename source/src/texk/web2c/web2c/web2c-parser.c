@@ -2936,6 +2936,8 @@ yyreduce:
 					my_output (".v.LH");
 				   else if (strcmp(last_id, "rh")==0)
 					my_output (".v.RH");
+        else if (strcmp(last_id, "me")==0)
+          my_output (".v.ME");
 				   else {
 				     sprintf(safe_string, ".%s", last_id);
 				     my_output (safe_string);

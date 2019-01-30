@@ -55,6 +55,11 @@ typedef SCHAR_TYPE schar;
    
    If you define your own INTEGER_TYPE, you have to define your own
    INTEGER_MAX and INTEGER_MIN, too. */
+
+#define INTEGER_TYPE int
+#define INTEGER_MAX INT_MAX
+#define INTEGER_MIN INT_MIN
+
 #ifndef INTEGER_TYPE
 
 #if SIZEOF_LONG > 4 && !defined (NO_DUMP_SHARE)

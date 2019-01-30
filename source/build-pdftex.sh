@@ -23,10 +23,12 @@ CFG_OPTS="\
     --disable-all-pkgs \
     --enable-pdftex \
     --disable-synctex \
-    $able_poppler \
-    --enable-native-texlive-build \
+    --disable-pdftex-synctex \
+    --disable-poppler \
+    --disable-dump-share \
     --enable-cxx-runtime-hack \
 "
+
 
 # build with debugging only (no optimization).
 DEBUG_OPTS="\

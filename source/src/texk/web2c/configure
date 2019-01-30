@@ -21324,7 +21324,7 @@ else
   { $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: Enforcing \`--enable-pdftex-synctex=yes' (native TeX Live build)" >&5
 $as_echo "$as_me: WARNING: Enforcing \`--enable-pdftex-synctex=yes' (native TeX Live build)" >&2;}
 fi
-         enable_pdftex_synctex=yes ;;
+         enable_pdftex_synctex=no ;;
 esac
  if test "x$enable_pdftex_synctex" = xyes; then
   PDFTEX_SYNCTEX_TRUE=
