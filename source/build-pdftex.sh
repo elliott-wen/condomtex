@@ -26,7 +26,6 @@ CFG_OPTS="\
     --disable-pdftex-synctex \
     --disable-poppler \
     --disable-dump-share \
-    --enable-cxx-runtime-hack \
 "
 
 

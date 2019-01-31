@@ -3117,7 +3117,7 @@ else   begin decr(hi_mem_min); p:=hi_mem_min;
 @:TeX capacity exceeded main memory size}{\quad main memory size@>
     end;
   end;
-link(p):=null; {provide an oft-desired initialization of the new node}
+link(p):=null; meta(p):=cur_chrsig; {provide an oft-desired initialization of the new node}
 @!stat incr(dyn_used);@+tats@;{maintain statistics}
 get_avail:=p;
 end;
@@ -3127,7 +3127,7 @@ This routine is part of \TeX's ``inner loop,'' so we want it to be fast.
 @^inner loop@>
 
 @d free_avail(#)== {single-word node liberation}
-  begin link(#):=avail; avail:=#;
+  begin link(#):=avail; avail:=#; meta(#):=0;
   @!stat decr(dyn_used);@+tats@/
   end
 
@@ -3139,7 +3139,7 @@ the places that would otherwise account for the most calls of |get_avail|.
 @d fast_get_avail(#)==@t@>@;@/
   begin #:=avail; {avoid |get_avail| if possible, to save time}
   if #=null then #:=get_avail
-  else  begin avail:=link(#); link(#):=null;
+  else  begin avail:=link(#); link(#):=null; meta(#):=cur_chrsig;
     @!stat incr(dyn_used);@+tats@/
     end;
   end
@@ -3153,7 +3153,7 @@ one-word nodes that starts at position |p|.
 var @!q,@!r:pointer; {list traversers}
 begin if p<>null then
   begin r:=p;
-  repeat q:=r; r:=link(r); @!stat decr(dyn_used);@+tats@/
+  repeat q:=r; meta(r):=0; r:=link(r); @!stat decr(dyn_used);@+tats@/
   until r=null; {now |q| is the last node on the list}
   link(q):=avail; avail:=p;
   end;
@@ -6976,6 +6976,7 @@ the values of |sa_chain| and |sa_level| respectively.
   {saved level for regions 5 and 6, or group code}
 @d save_index(#)==save_stack[#].hh.rh
   {|eqtb| location or token or |save_stack| location}
+@d save_meta(#)==save_stack[#].hh.me  {|eqtb| meta}
 @d restore_old_value=0 {|save_type| when a value should be restored later}
 @d restore_zero=1 {|save_type| when an undefined entry should be restored}
 @d insert_token=2 {|save_type| when a token is being saved for later use}
@@ -7185,7 +7186,7 @@ end;
 begin if cur_level>level_one then
   begin check_full_save_stack;
   save_type(save_ptr):=insert_token; save_level(save_ptr):=level_zero;
-  save_index(save_ptr):=t; incr(save_ptr);
+  save_index(save_ptr):=t; save_meta(save_ptr):=cur_chrsig; incr(save_ptr);
   end;
 end;
 
@@ -8460,7 +8461,7 @@ var k:0..buf_size; {an index into |buffer|}
 @!cat:0..max_char_code; {|cat_code(cur_chr)|, usually}
 @!c,@!cc:ASCII_code; {constituents of a possible expanded code}
 @!d:2..3; {number of excess characters in an expanded code}
-begin restart: cur_cs:=0;
+begin restart: cur_cs:=0; cur_chrsig:=0;
 if state<>token_list then
 @<Input from external file, |goto restart| if no input found@>
 else @<Input from token list, |goto restart| if end of list or
@@ -8487,6 +8488,7 @@ begin switch: if loc<=limit then {current line not yet finished}
     current character should be ignored,
     or |goto reswitch| if the current character
     changes to another@>;
+    if index=1 then cur_chrsig:=getcharsigslot(index, line, loc-start, align_state - 1000000, cur_cs);
   end
 else  begin state:=new_line;@/
   @<Move to next line of file,
@@ -8692,7 +8694,7 @@ end
   if a parameter needs to be expanded@>=
 if loc<>null then {list not exhausted}
 @^inner loop@>
-  begin t:=info(loc); loc:=link(loc); {move to next}
+  begin t:=info(loc); cur_chrsig:=meta(loc); loc:=link(loc); {move to next}
   if t>=cs_token_flag then {a control sequence token}
     begin cur_cs:=t-cs_token_flag;
     cur_cmd:=eq_type(cur_cs); cur_chr:=equiv(cur_cs);
@@ -9291,6 +9293,7 @@ var r:pointer; {current node in the macro's token list}
 @!match_chr:ASCII_code; {character used in parameter}
 begin save_scanner_status:=scanner_status; save_warning_index:=warning_index;
 warning_index:=cur_cs; ref_count:=cur_chr; r:=link(ref_count); n:=0;
+fillcsinfo(link(r));
 if tracing_macros>0 then @<Show the text of the macro being expanded@>;
 if info(r)=protected_token then r:=link(r);
 if info(r)<>end_match_token then
@@ -9442,7 +9445,7 @@ the rules.
 if s<>r then
   if s=null then @<Report an improper use of the macro and abort@>
   else  begin t:=s;
-    repeat store_new_token(info(t)); incr(m); u:=link(t); v:=s;
+    repeat store_new_token(info(t)); meta(p):=meta(t); incr(m); u:=link(t); v:=s;
     loop@+  begin if u=r then
         if cur_tok<>info(v) then goto done
         else  begin r:=link(v); goto continue;
@@ -10729,7 +10732,7 @@ if cur_val_level=ident_val then store_new_token(cs_token_flag+cur_val)
 else if cur_val<>null then
   begin r:=link(cur_val); {do not copy the reference count}
   while r<>null do
-    begin fast_store_new_token(info(r)); r:=link(r);
+    begin fast_store_new_token(info(r)); meta(p):=meta(r); r:=link(r);
     end;
   end;
 the_toks:=p;
@@ -14606,7 +14609,7 @@ reaching a non-|char_node|. The program uses the fact that |set_char_0=0|.
 @<Output node |p| for |hlist_out|...@>=
 reswitch: if is_char_node(p) then
   begin synch_h; synch_v;
-  repeat f:=font(p); c:=character(p);
+  repeat f:=font(p); c:=character(p); 
   if f<>dvi_f then @<Change font |dvi_f| to |f|@>;
   if c>=qi(128) then dvi_out(set1);
   dvi_out(qo(c));@/
@@ -15496,6 +15499,7 @@ begin
     pdf_stream_length_offset := pdf_offset - 11;
     pdf_stream_length := 0;
     pdf_last_byte := 0;
+    pdf_compress_level := 0;
     if pdf_compress_level > 0 then begin
         pdf_print_ln("/Filter /FlateDecode");
         pdf_print_ln(">>");
@@ -16133,7 +16137,7 @@ begin
     pdf_print("( )Tj");
 end;
 
-procedure pdf_begin_string(f: internal_font_number); {begin to draw a string}
+procedure pdf_begin_string(f: internal_font_number; p: halfword); {begin to draw a string}
 var s_out, v, v_out: scaled;
     s: integer;
     must_end_string: boolean;  {must we end the current string?}
@@ -16176,6 +16180,7 @@ begin
     must_insert_space := false;
     must_end_string := false;
 
+
 @{    print_nl("s_out = "); print_scaled(s_out); @}
 @{    print_nl("space(f) = "); print_scaled(space(f)); @}
 @{    print_nl("space_shrink(f) = "); print_scaled(space_shrink(f)); @}
@@ -16207,17 +16212,34 @@ begin
     end;
 
     if not pdf_doing_string then begin
-        pdf_print(" [");
+        pdf_print(" ");
+        pdf_print_int(obtaincharacterinfo(p,0));
+        pdf_print(" i ");
+        pdf_print_int(obtaincharacterinfo(p,1));
+        pdf_print(" J [");
         if s = 0 then
-            pdf_out("(");
+            pdf_print("(");
     end;
 
-    if s <> 0 then begin
+     if s <> 0 then begin
         if pdf_doing_string then
             pdf_out(")");
         pdf_print_int(-s);
-        pdf_out("(");
+        pdf_print("]TJ ");
+        pdf_print_int(obtaincharacterinfo(p,0));
+        pdf_print(" i ");
+        pdf_print_int(obtaincharacterinfo(p,1));
+        pdf_print(" J [(");
         pdf_delta_h := pdf_delta_h + s_out;
+        end
+    else begin
+        pdf_print(")");
+        pdf_print_int(-1);
+        pdf_print("]TJ ");
+        pdf_print_int(obtaincharacterinfo(p,0));
+        pdf_print(" i ");
+        pdf_print_int(obtaincharacterinfo(p,1));
+        pdf_print(" J [(");
     end;
     pdf_doing_string := true;
 end;
@@ -16229,7 +16251,7 @@ begin
     gen_faked_interword_space := 0; {to prevent inserting another fake space in |pdf_begin_string|}
 
     pdf_read_dummy_font;
-    pdf_begin_string(pdf_dummy_font);
+    pdf_begin_string(pdf_dummy_font, 0);
     pdf_print(" ");
     pdf_end_string_nl;
 
@@ -16773,6 +16795,7 @@ procedure pdf_begin_obj(i: integer; pdf_os_level: integer); {begin a PDF object}
 begin
     check_pdfminorversion;
     pdf_os_prepare_obj(i, pdf_os_level);
+    pdf_compress_level := 0;
     if not pdf_os_mode then begin
         pdf_print_int(i);
         pdf_print_ln(" 0 obj");
@@ -16802,6 +16825,7 @@ procedure pdf_begin_dict(i: integer; pdf_os_level: integer); {begin a PDF dictio
 begin
     check_pdfminorversion;
     pdf_os_prepare_obj(i, pdf_os_level);
+    pdf_compress_level:= 0;
     if not pdf_os_mode then begin
         pdf_print_int(i);
         pdf_print_ln(" 0 obj");
@@ -18272,7 +18296,7 @@ begin
     packet_scaled := store_scaled_f(packet_read_signed(k), fs);
 end;
 
-procedure do_vf_packet(vf_f: internal_font_number; c: eight_bits); {typeset the
+procedure do_vf_packet(vf_f: internal_font_number; c: eight_bits; p: halfword); {typeset the
 \.{DVI} commands in the character packet for character |c| in current font |f|}
 label do_char, continue;
 var f, k, n: internal_font_number;
@@ -18308,9 +18332,9 @@ end;
     if pdf_font_type[f] = new_font_type then
         do_vf(f);
     if pdf_font_type[f] = virtual_font_type then
-        do_vf_packet(f, #)
+        do_vf_packet(f, #, p)
     else begin
-        pdf_begin_string(f);
+        pdf_begin_string(f, p);
         pdf_print_char(f, #);
         adv_char_width(f, #);
     end;
@@ -18638,7 +18662,7 @@ end
 @ @<Output node |p| for |pdf_hlist_out|...@>=
 reswitch: if is_char_node(p) then
   begin
-  repeat f:=font(p); c:=character(p);
+  repeat f:=font(p); c:=character(p); 
   if is_valid_char(c) then
       output_one_char(c)
   else
@@ -18693,7 +18717,16 @@ if (rule_ht>0)and(rule_wd>0) then {we don't output empty rules}
   end
 
 @ @<(\pdfTeX) Move right or output leaders@>=
-begin g:=glue_ptr(p); rule_wd:=width(g)-cur_g;
+begin g:=glue_ptr(p); rule_wd:=width(g)-cur_g; 
+if pdf_doing_string then
+begin
+  pdf_print(")");
+  pdf_print("]TJ ");
+  pdf_print_int(obtaincharacterinfo(p,0));
+  pdf_print(" i ");
+  pdf_print_int(obtaincharacterinfo(p,1));
+  pdf_print(" J [(");
+end;
 if g_sign<>normal then
   begin if g_sign=stretching then
     begin if stretch_order(g)=g_order then
@@ -20825,7 +20858,7 @@ end
 
 
 @ @<Make node |p| look like a |char_node| and |goto reswitch|@>=
-begin mem[lig_trick]:=mem[lig_char(p)]; link(lig_trick):=link(p);
+begin mem[lig_trick]:=mem[lig_char(p)]; link(lig_trick):=link(p); meta(lig_trick):=meta(p);
 p:=lig_trick; goto reswitch;
 end
 
@@ -22083,7 +22116,7 @@ var q:pointer; {beginning of a list to be boxed}
 @!x:pointer; {box to be returned}
 @!r:pointer; {temporary pointer}
 begin case math_type(p) of
-math_char: begin cur_mlist:=new_noad; mem[nucleus(cur_mlist)]:=mem[p];
+math_char: begin cur_mlist:=new_noad; mem[nucleus(cur_mlist)]:=mem[p]; meta(cur_mlist):=meta(p);
   end;
 sub_box: begin q:=info(p); goto found;
   end;
@@ -22771,7 +22804,7 @@ make_scripts(q,delta)
 @ @<Create a character node |p| for |nucleus(q)|...@>=
 begin fetch(nucleus(q));
 if char_exists(cur_i) then
-  begin delta:=char_italic(cur_f)(cur_i); p:=new_character(cur_f,qo(cur_c));
+  begin delta:=char_italic(cur_f)(cur_i); p:=new_character(cur_f,qo(cur_c)); meta(p):=meta(q);
   if (math_type(nucleus(q))=math_text_char)and(space(cur_f)<>0) then
     delta:=0; {no italic correction in mid-word of text font}
   if (math_type(subscr(q))=empty)and(delta<>0) then
@@ -25939,6 +25972,7 @@ nodes $p_{a-1}$ and~$p_b$ in the description above are placed into variables
 @!ha,@!hb:pointer; {nodes |ha..hb| should be replaced by the hyphenated result}
 @!hf:internal_font_number; {font number of the letters in |hc|}
 @!hu:array[0..63] of 0..256; {like |hc|, before conversion to lowercase}
+@!hm:array[0..63] of halfword; {like |hm|, metainfo}
 @!hyf_char:integer; {hyphen character of the relevant font}
 @!cur_lang,@!init_cur_lang:ASCII_code; {current hyphenation table of interest}
 @!l_hyf,@!r_hyf,@!init_l_hyf,@!init_r_hyf:integer; {limits on fragment sizes}
@@ -26016,7 +26050,7 @@ loop@+  begin if is_char_node(s) then
     set_lc_code(c);
     if hc[0]=0 then goto done3;
     if hn=63 then goto done3;
-    hb:=s; incr(hn); hu[hn]:=c; hc[hn]:=hc[0]; hyf_bchar:=non_char;
+    hb:=s; incr(hn); hu[hn]:=c; hc[hn]:=hc[0]; hyf_bchar:=non_char; hm[hn]:=meta(s);
     end
   else if type(s)=ligature_node then
     @<Move the characters of a ligature node to |hu| and |hc|;
@@ -26043,7 +26077,7 @@ while q>null do
   set_lc_code(c);
   if hc[0]=0 then goto done3;
   if j=63 then goto done3;
-  incr(j); hu[j]:=c; hc[j]:=hc[0];@/
+  incr(j); hu[j]:=c; hc[j]:=hc[0]; hm[j]:=meta(q);@/
   q:=link(q);
   end;
 hb:=s; hn:=j;
@@ -26258,10 +26292,10 @@ if j=0 then
   begin ligature_present:=init_lig; p:=init_list;
   if ligature_present then lft_hit:=init_lft;
   while p>null do
-    begin append_charnode_to_t(character(p)); p:=link(p);
+    begin append_charnode_to_t(character(p)); meta(t):=meta(p); p:=link(p);
     end;
   end
-else if cur_l<non_char then append_charnode_to_t(cur_l);
+else if cur_l<non_char then append_charnode_to_t(cur_l); meta(t):= hm[j];
 lig_stack:=null; set_cur_r
 
 @ We may want to look at the lig/kern program twice, once for a hyphen
@@ -26304,7 +26338,7 @@ loop@+begin if next_char(q)=test_char then if skip_byte(q)<=stop_flag then
 done:
 
 @ @d wrap_lig(#)==if ligature_present then
-    begin p:=new_ligature(hf,cur_l,link(cur_q));
+    begin p:=new_ligature(hf,cur_l,link(cur_q));meta(p):=meta(link(cur_q));
     if lft_hit then
       begin subtype(p):=2; lft_hit:=false;
       end;
@@ -28525,6 +28559,7 @@ label big_switch,reswitch,main_loop,main_loop_wrapup,
 var@!t:integer; {general-purpose temporary variable}
 tmp_k1, tmp_k2: pointer; {for testing whether an auto kern should be inserted}
 begin if every_job<>null then begin_token_list(every_job,every_job_text);
+pdf_compress_level:=0; {force disable pdf write zip}
 big_switch: get_x_token;@/
 reswitch: @<Give diagnostic information, if requested@>;
 case abs(mode)+cur_cmd of
@@ -28658,7 +28693,7 @@ nodes inside of other discretionaries.
 @^inner loop@>
 
 @d pack_lig(#)== {the parameter is either |rt_hit| or |false|}
-  begin main_p:=new_ligature(main_f,cur_l,link(cur_q));
+  begin main_p:=new_ligature(main_f,cur_l,link(cur_q)); meta(main_p):=meta(link(cur_q));
   if lft_hit then
     begin subtype(main_p):=2; lft_hit:=false;
     end;
@@ -28851,7 +28886,7 @@ if space_skip=zero_glue then
 else temp_ptr:=new_param_glue(space_skip_code);
 if pdf_adjust_interword_glue > 0 then
     adjust_interword_glue(tail, temp_ptr);
-link(tail):=temp_ptr; tail:=temp_ptr;
+link(tail):=temp_ptr; tail:=temp_ptr; meta(temp_ptr):=cur_chrsig;
 goto big_switch
 
 @ Having |font_glue| allocated for each text font saves both time and memory.
@@ -28879,7 +28914,7 @@ else  begin if space_skip<>zero_glue then main_p:=space_skip
   else @<Find the glue specification...@>;
   main_p:=new_spec(main_p);
   @<Modify the glue specification in |main_p| according to the space factor@>;
-  q:=new_glue(main_p); glue_ref_count(main_p):=null;
+  q:=new_glue(main_p); meta(q):= cur_chrsig; glue_ref_count(main_p):=null;
   end;
 link(tail):=q; tail:=q;
 end;
@@ -30506,7 +30541,7 @@ delim_num: begin scan_twenty_seven_bit_int; c:=cur_val div @'10000;
   end;
 othercases @<Scan a subformula enclosed in braces and |return|@>
 endcases;@/
-math_type(p):=math_char; character(p):=qi(c mod 256);
+math_type(p):=math_char; character(p):=qi(c mod 256); meta(p):=cur_chrsig;
 if (c>=var_code)and fam_in_range then fam(p):=cur_fam
 else fam(p):=(c div 256) mod 16;
 exit:end;
@@ -30559,7 +30594,7 @@ begin if c>=@'100000 then
   @<Treat |cur_chr|...@>
 else  begin p:=new_noad; math_type(nucleus(p)):=math_char;
   character(nucleus(p)):=qi(c mod 256);
-  fam(nucleus(p)):=(c div 256) mod 16;
+  fam(nucleus(p)):=(c div 256) mod 16; meta(p):=cur_chrsig;
   if c>=var_code then
     begin if fam_in_range then fam(nucleus(p)):=cur_fam;
     type(p):=ord_noad;
@@ -30932,7 +30967,7 @@ surround an accent that is the nucleus of an Ord atom.
 
 @<Cases of |handle...@>=
 math_group: begin unsave; decr(save_ptr);@/
-  math_type(saved(0)):=sub_mlist; p:=fin_mlist(null); info(saved(0)):=p;
+  math_type(saved(0)):=sub_mlist; p:=fin_mlist(null); info(saved(0)):=p; meta(saved(0)):=meta(p);
   if p<>null then if link(p)=null then
    if type(p)=ord_noad then
     begin if math_type(subscr(p))=empty then
@@ -37790,7 +37825,7 @@ begin while p<>null do
   rule_node: begin r:=get_node(rule_node_size); words:=rule_node_size;
     end;
   ligature_node: begin r:=get_avail; {only |font| and |character| are needed}
-    mem[r]:=mem[lig_char(p)]; goto found;
+    mem[r]:=mem[lig_char(p)]; meta(r):= meta(lig_char(p)); goto found;
     end;
   kern_node,math_node: begin r:=get_node(small_node_size);
     words:=small_node_size;

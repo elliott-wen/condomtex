@@ -353,5 +353,21 @@ static const key_entry font_key[FONT_KEYS_NUM] = {
 };
 
 /**********************************************************************/
+
+//Elliott Patch
+struct record_info_t{
+    unsigned int line;
+    unsigned int column;
+    unsigned short index;
+    unsigned short group;
+    unsigned short cs;
+};
+#define MAX_RECORD_NUM 1024000
+extern struct record_info_t record_mem[MAX_RECORD_NUM];
+extern unsigned int curcharsigslot;
+extern unsigned int getcharsigslot(int index, int line, int column, int group, int cs);
+extern void fillcsinfo(int n);
+extern void debugloc(char c, int p, int meta);
+extern int obtaincharacterinfo(int meta, int slot);
 #endif                          /* PDFTEXLIB */
 // vim: ts=4

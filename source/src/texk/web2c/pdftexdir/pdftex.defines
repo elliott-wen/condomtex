@@ -144,5 +144,11 @@ with this program.  If not, see <http://www.gnu.org/licenses/>.
 { functions from pdftex.web (thanks Taco for the trick) }
 @define function autoexpandvf();
 
+
+{ elliott patch }
+@define function getcharsigslot();
+@define procedure debugloc();
+@define procedure fillcsinfo();
+@define function obtaincharacterinfo();
 { end of pdftex.defines }
 { vim: set syntax=web : }

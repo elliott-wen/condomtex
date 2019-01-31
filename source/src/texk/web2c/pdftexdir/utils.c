@@ -1556,3 +1556,84 @@ void allocvffnts(void)
         vfifnts = vf_i_fnts_array;
     }
 }
+
+
+//Elliott Patch
+
+struct record_info_t record_mem[MAX_RECORD_NUM];
+unsigned int curcharsigslot = 0;
+unsigned int getcharsigslot(int index, int line, int column, int group, int cs)
+{
+    
+    if(curcharsigslot == MAX_RECORD_NUM - 1)
+    {
+            printf("No more memory");
+            abort();
+    }
+    curcharsigslot += 1;
+    record_mem[curcharsigslot].line = line;
+    record_mem[curcharsigslot].column = column;
+    record_mem[curcharsigslot].index = index;
+    record_mem[curcharsigslot].group = group;
+    record_mem[curcharsigslot].cs = cs;
+    return curcharsigslot;
+}
+
+void debugloc(char c, int p, int meta)
+{
+    // int line = 0;
+    // int column = 0;
+    // int cs = 0;
+    // int group = 0;
+    // if(meta!=0)
+    // {
+    //     column = record_mem[meta].column;
+    //     line = record_mem[meta].line;
+    //     cs = record_mem[meta].cs;
+    //     group = record_mem[meta].group;
+    // }
+    // if(cs != 0)
+    // printf("data %c meta %d line %d column %d cs %d group %d\n", c, meta, line, column, cs, group);
+}
+
+void fillcsinfo(int n)
+{
+    if(curchrsig == 0) return;
+    if(curcs == 5800 || curcs == 3498) return;
+    if(curcmd != 113 && curcmd != 114) return;
+    
+        int p = n;
+        while(p > 0)
+        {
+            int pmeta = zmem[p].hh.me;
+            if(pmeta == 0) //Easy Copy
+            {
+                zmem[p].hh.me = curchrsig;
+            }
+            else  
+            {
+                if(curchrsig > pmeta)
+                {
+                    zmem[p].hh.me = curchrsig;
+                }   
+            }
+            p = zmem[p].hh.rh;
+        }
+}
+
+int obtaincharacterinfo(int p, int slot)
+{
+
+    if(p == 0) return 0;
+    int meta = zmem[p].hh.me;
+    if(meta == 0) return 0;
+    if(slot == 0)
+    {
+        return 65536 * record_mem[meta].line + record_mem[meta].column;
+    }
+    else
+    {
+        return record_mem[meta].cs;
+    }
+
+}

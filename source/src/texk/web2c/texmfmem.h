@@ -72,7 +72,7 @@ typedef union
 #ifdef WORDS_BIGENDIAN
     halfword RH, LH, ME;
 #else
-    halfword ME, LH, RH;
+    halfword LH, RH, ME;
 #endif
   } v;
 
