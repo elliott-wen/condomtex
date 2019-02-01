@@ -259,32 +259,7 @@ mk_shellcmdlist (char *v)
 static void
 init_shell_escape (void)
 {
-  if (shellenabledp < 0) {  /* --no-shell-escape on cmd line */
-    shellenabledp = 0;
-
-  } else {
-    if (shellenabledp == 0) {  /* no shell options on cmd line, check cnf */
-      char *v1 = kpse_var_value ("shell_escape");
-      if (v1) {
-        if (*v1 == 't' || *v1 == 'y' || *v1 == '1') {
-          shellenabledp = 1;
-        } else if (*v1 == 'p') {
-          shellenabledp = 1;
-          restrictedshell = 1;
-        }
-        free (v1);
-      }
-    }
-
-    /* If shell escapes are restricted, get allowed cmds from cnf.  */   
-    if (shellenabledp && restrictedshell == 1) {
-      char *v2 = kpse_var_value ("shell_escape_commands");
-      if (v2) {
-        mk_shellcmdlist (v2);
-        free (v2);
-      }
-    }
-  }
+  shellenabledp = 0;
 }
 
 #ifdef WIN32
@@ -319,212 +294,213 @@ char_needs_quote (int c)
 static int
 shell_cmd_is_allowed (const char *cmd, char **safecmd, char **cmdname)
 {
-  char **p;
-  char *buf;
-  char *c, *d;
-  const char *s;
-  int  pre, spaces;
-  int  allow = 0;
+  return 0;
+//   char **p;
+//   char *buf;
+//   char *c, *d;
+//   const char *s;
+//   int  pre, spaces;
+//   int  allow = 0;
 
-  /* pre == 1 means that the previous character is a white space
-     pre == 0 means that the previous character is not a white space */
-  buf = xmalloc (strlen (cmd) + 1);
-  strcpy (buf, cmd);
-  c = buf;
-  while (Isspace (*c))
-    c++;
-  d = c;
-  while (!Isspace(*d) && *d)
-    d++;
-  *d = '\0';
+//   /* pre == 1 means that the previous character is a white space
+//      pre == 0 means that the previous character is not a white space */
+//   buf = xmalloc (strlen (cmd) + 1);
+//   strcpy (buf, cmd);
+//   c = buf;
+//   while (Isspace (*c))
+//     c++;
+//   d = c;
+//   while (!Isspace(*d) && *d)
+//     d++;
+//   *d = '\0';
 
-  /* *cmdname is the first word of the command line.  For example,
-     *cmdname == "kpsewhich" for
-     \write18{kpsewhich --progname=dvipdfm --format="other text files" config}
-  */
-  *cmdname = xstrdup (c);
-  free (buf);
+//   /* *cmdname is the first word of the command line.  For example,
+//      *cmdname == "kpsewhich" for
+//      \write18{kpsewhich --progname=dvipdfm --format="other text files" config}
+//   */
+//   *cmdname = xstrdup (c);
+//   free (buf);
 
-  /* Is *cmdname listed in a texmf.cnf vriable as
-     shell_escape_commands = foo,bar,... ? */
-  p = cmdlist;
-  if (p) {
-    while (*p) {
-      if (strcmp (*p, *cmdname) == 0) {
-      /* *cmdname is found in the list, so restricted shell escape
-          is allowed */
-        allow = 2;
-        break;
-      }
-      p++;
-    }
-  }
-  if (allow == 2) {
-    spaces = 0;
-    for (s = cmd; *s; s++) {
-      if (Isspace (*s))
-        spaces++;
-    }
+//   /* Is *cmdname listed in a texmf.cnf vriable as
+//      shell_escape_commands = foo,bar,... ? */
+//   p = cmdlist;
+//   if (p) {
+//     while (*p) {
+//       if (strcmp (*p, *cmdname) == 0) {
+//       /* *cmdname is found in the list, so restricted shell escape
+//           is allowed */
+//         allow = 2;
+//         break;
+//       }
+//       p++;
+//     }
+//   }
+//   if (allow == 2) {
+//     spaces = 0;
+//     for (s = cmd; *s; s++) {
+//       if (Isspace (*s))
+//         spaces++;
+//     }
 
-    /* allocate enough memory (too much?) */
-#ifdef WIN32
-    *safecmd = xmalloc (2 * strlen (cmd) + 3 + 2 * spaces);
-#else
-    *safecmd = xmalloc (strlen (cmd) + 3 + 2 * spaces);
-#endif
+//     /* allocate enough memory (too much?) */
+// #ifdef WIN32
+//     *safecmd = xmalloc (2 * strlen (cmd) + 3 + 2 * spaces);
+// #else
+//     *safecmd = xmalloc (strlen (cmd) + 3 + 2 * spaces);
+// #endif
 
-    /* make a safe command line *safecmd */
-    s = cmd;
-    while (Isspace (*s))
-      s++;
-    d = *safecmd;
-    while (!Isspace (*s) && *s)
-      *d++ = *s++;
+//     /* make a safe command line *safecmd */
+//     s = cmd;
+//     while (Isspace (*s))
+//       s++;
+//     d = *safecmd;
+//     while (!Isspace (*s) && *s)
+//       *d++ = *s++;
 
-    pre = 1;
-    while (*s) {
-      /* Quotation given by a user.  " should always be used; we
-         transform it below.  If ' is used, simply immediately
-         return a quotation error.  */
-      if (*s == '\'') {
-        return -1;
-      }
+//     pre = 1;
+//     while (*s) {
+//       /* Quotation given by a user.  " should always be used; we
+//          transform it below.  If ' is used, simply immediately
+//          return a quotation error.  */
+//       if (*s == '\'') {
+//         return -1;
+//       }
          
-      if (*s == '"') {
-        /* All arguments are quoted as 'foo' (Unix) or "foo" (Windows)
-           before calling system(). Therefore closing QUOTE is necessary
-           if the previous character is not a white space.
-           example:
-           --format="other text files" becomes
-           '--format=''other text files' (Unix)
-           "--format"="other text files" (Windows) */
+//       if (*s == '"') {
+//         /* All arguments are quoted as 'foo' (Unix) or "foo" (Windows)
+//            before calling system(). Therefore closing QUOTE is necessary
+//            if the previous character is not a white space.
+//            example:
+//            --format="other text files" becomes
+//            '--format=''other text files' (Unix)
+//            "--format"="other text files" (Windows) */
 
-        if (pre == 0) {
-#ifdef WIN32
-          if (*(s-1) == '=') {
-            *(d-1) = QUOTE;
-            *d++ = '=';
-          } else {
-            *d++ = QUOTE;
-          }
-#else
-          *d++ = QUOTE;
-#endif
-        }
-        pre = 0;
-        /* output the quotation mark for the quoted argument */
-        *d++ = QUOTE;
-        s++;
+//         if (pre == 0) {
+// #ifdef WIN32
+//           if (*(s-1) == '=') {
+//             *(d-1) = QUOTE;
+//             *d++ = '=';
+//           } else {
+//             *d++ = QUOTE;
+//           }
+// #else
+//           *d++ = QUOTE;
+// #endif
+//         }
+//         pre = 0;
+//         /* output the quotation mark for the quoted argument */
+//         *d++ = QUOTE;
+//         s++;
 
-        while (*s != '"') {
-          /* Illegal use of ', or closing quotation mark is missing */
-          if (*s == '\'' || *s == '\0')
-            return -1;
-#if 0
-/*
-  The following in WIN32 may not be necessary, because
-  all arguments are quoted.
-*/
-#ifdef WIN32
-          if (char_needs_quote (*s))
-            *d++ = '^';
-#endif
-#endif
-          *d++ = *s++;
-        }
+//         while (*s != '"') {
+//            Illegal use of ', or closing quotation mark is missing 
+//           if (*s == '\'' || *s == '\0')
+//             return -1;
+// #if 0
+// /*
+//   The following in WIN32 may not be necessary, because
+//   all arguments are quoted.
+// */
+// #ifdef WIN32
+//           if (char_needs_quote (*s))
+//             *d++ = '^';
+// #endif
+// #endif
+//           *d++ = *s++;
+//         }
 
-        /* Closing quotation mark will be output afterwards, so
-           we do nothing here */
-        s++;
+//         /* Closing quotation mark will be output afterwards, so
+//            we do nothing here */
+//         s++;
 
-        /* The character after the closing quotation mark
-           should be a white space or NULL */
-        if (!Isspace (*s) && *s)
-          return -1;
+//         /* The character after the closing quotation mark
+//            should be a white space or NULL */
+//         if (!Isspace (*s) && *s)
+//           return -1;
 
-      /* Beginning of a usual argument */
-      } else if (pre == 1 && !Isspace (*s)) {
-        pre = 0;
-        *d++ = QUOTE;
-#if 0
-/*
-  The following in WIN32 may not be necessary, because
-  all arguments are quoted.
-*/
-#ifdef WIN32
-        if (char_needs_quote (*s))
-          *d++ = '^';
-#endif
-#endif
-        *d++ = *s++;
-        /* Ending of a usual argument */
+//       /* Beginning of a usual argument */
+//       } else if (pre == 1 && !Isspace (*s)) {
+//         pre = 0;
+//         *d++ = QUOTE;
+// #if 0
+// /*
+//   The following in WIN32 may not be necessary, because
+//   all arguments are quoted.
+// */
+// #ifdef WIN32
+//         if (char_needs_quote (*s))
+//           *d++ = '^';
+// #endif
+// #endif
+//         *d++ = *s++;
+//         /* Ending of a usual argument */
 
-      } else if (pre == 0 && Isspace (*s)) {
-        pre = 1;
-        /* Closing quotation mark */
-        *d++ = QUOTE;
-        *d++ = *s++;
-      } else {
-        /* Copy a character from cmd to *safecmd. */
-#if 0
-/*
-  The following in WIN32 may not be necessary, because
-  all arguments are quoted.
-*/
-#ifdef WIN32
-        if (char_needs_quote (*s))
-          *d++ = '^';
-#endif
-#endif
-        *d++ = *s++;
-      }
-    }
-    /* End of the command line */
-    if (pre == 0) {
-      *d++ = QUOTE;
-    }
-    *d = '\0';
-#ifdef WIN32
-    {
-      char *p, *q, *r;
-      p = *safecmd;
-      if (strlen (p) > 2 && p[1] == ':' && !IS_DIR_SEP (p[2])) {
-          q = xmalloc (strlen (p) + 2);
-          q[0] = p[0];
-          q[1] = p[1];
-          q[2] = '/';
-          q[3] = '\0';
-          strcat (q, (p + 2));
-          free (*safecmd);
-          *safecmd = q;
-      } else if (!IS_DIR_SEP (p[0]) && !(p[1] == ':' && IS_DIR_SEP (p[2]))) { 
-        p = kpse_var_value ("SELFAUTOLOC");
-        if (p) {
-          r = *safecmd;
-          while (*r && !Isspace(*r))
-            r++;
-          if (*r == '\0')
-            q = concatn ("\"", p, "/", *safecmd, "\"", NULL);
-          else {
-            *r = '\0';
-            r++;
-            while (*r && Isspace(*r))
-              r++;
-            if (*r)
-              q = concatn ("\"", p, "/", *safecmd, "\" ", r, NULL);
-            else
-              q = concatn ("\"", p, "/", *safecmd, "\"", NULL);
-          }
-          free (p);
-          free (*safecmd);
-          *safecmd = q;
-        }
-      }
-    }
-#endif
-  }
+//       } else if (pre == 0 && Isspace (*s)) {
+//         pre = 1;
+//         /* Closing quotation mark */
+//         *d++ = QUOTE;
+//         *d++ = *s++;
+//       } else {
+//         /* Copy a character from cmd to *safecmd. */
+// #if 0
+// /*
+//   The following in WIN32 may not be necessary, because
+//   all arguments are quoted.
+// */
+// #ifdef WIN32
+//         if (char_needs_quote (*s))
+//           *d++ = '^';
+// #endif
+// #endif
+//         *d++ = *s++;
+//       }
+//     }
+//     /* End of the command line */
+//     if (pre == 0) {
+//       *d++ = QUOTE;
+//     }
+//     *d = '\0';
+// #ifdef WIN32
+//     {
+//       char *p, *q, *r;
+//       p = *safecmd;
+//       if (strlen (p) > 2 && p[1] == ':' && !IS_DIR_SEP (p[2])) {
+//           q = xmalloc (strlen (p) + 2);
+//           q[0] = p[0];
+//           q[1] = p[1];
+//           q[2] = '/';
+//           q[3] = '\0';
+//           strcat (q, (p + 2));
+//           free (*safecmd);
+//           *safecmd = q;
+//       } else if (!IS_DIR_SEP (p[0]) && !(p[1] == ':' && IS_DIR_SEP (p[2]))) { 
+//         p = kpse_var_value ("SELFAUTOLOC");
+//         if (p) {
+//           r = *safecmd;
+//           while (*r && !Isspace(*r))
+//             r++;
+//           if (*r == '\0')
+//             q = concatn ("\"", p, "/", *safecmd, "\"", NULL);
+//           else {
+//             *r = '\0';
+//             r++;
+//             while (*r && Isspace(*r))
+//               r++;
+//             if (*r)
+//               q = concatn ("\"", p, "/", *safecmd, "\" ", r, NULL);
+//             else
+//               q = concatn ("\"", p, "/", *safecmd, "\"", NULL);
+//           }
+//           free (p);
+//           free (*safecmd);
+//           *safecmd = q;
+//         }
+//       }
+//     }
+// #endif
+//   }
 
-  return allow;
+  //return allow;
 }
 
 /* We should only be called with shellenabledp == 1.
@@ -548,36 +524,36 @@ shell_cmd_is_allowed (const char *cmd, char **safecmd, char **cmdname)
 int
 runsystem (const char *cmd)
 {
-  int allow = 0;
-  char *safecmd = NULL;
-  char *cmdname = NULL;
-  int status = 0;
+  // int allow = 0;
+  // char *safecmd = NULL;
+  // char *cmdname = NULL;
+  // int status = 0;
 
-  if (shellenabledp <= 0) {
-    return 0;
-  }
+  // if (shellenabledp <= 0) {
+  //   return 0;
+  // }
   
-  /* If restrictedshell == 0, any command is allowed. */
-  if (restrictedshell == 0)
-    allow = 1;
-  else
-    allow = shell_cmd_is_allowed (cmd, &safecmd, &cmdname);
+  // /* If restrictedshell == 0, any command is allowed. */
+  // if (restrictedshell == 0)
+  //   allow = 1;
+  // else
+  //   allow = shell_cmd_is_allowed (cmd, &safecmd, &cmdname);
 
-  if (allow == 1)
-    status = system (cmd);
-  else if (allow == 2)
-    status =  system (safecmd);
+  // if (allow == 1)
+  //   status = system (cmd);
+  // else if (allow == 2)
+  //   status =  system (safecmd);
 
-  /* Not really meaningful, but we have to manage the return value of system. */
-  if (status != 0)
-    fprintf(stderr,"system returned with code %d\n", status); 
+  // /* Not really meaningful, but we have to manage the return value of system. */
+  // if (status != 0)
+  //   fprintf(stderr,"system returned with code %d\n", status); 
 
-  if (safecmd)
-    free (safecmd);
-  if (cmdname)
-    free (cmdname);
+  // if (safecmd)
+  //   free (safecmd);
+  // if (cmdname)
+  //   free (cmdname);
 
-  return allow;
+  return 0;
 }
 #endif /* TeX */
 
@@ -591,38 +567,38 @@ static FILE *
 runpopen (char *cmd, const char *mode)
 {
   FILE *f = NULL;
-  char *safecmd = NULL;
-  char *cmdname = NULL;
-  int allow;
+//   char *safecmd = NULL;
+//   char *cmdname = NULL;
+//   int allow;
 
-#ifdef WIN32
-  char *pp;
+// #ifdef WIN32
+//   char *pp;
 
-  for (pp = cmd; *pp; pp++) {
-    if (*pp == '\'') *pp = '"';
-  }
-#endif
+//   for (pp = cmd; *pp; pp++) {
+//     if (*pp == '\'') *pp = '"';
+//   }
+// #endif
 
-  /* If restrictedshell == 0, any command is allowed. */
-  if (restrictedshell == 0)
-    allow = 1;
-  else
-    allow = shell_cmd_is_allowed (cmd, &safecmd, &cmdname);
+//   /* If restrictedshell == 0, any command is allowed. */
+//   if (restrictedshell == 0)
+//     allow = 1;
+//   else
+//     allow = shell_cmd_is_allowed (cmd, &safecmd, &cmdname);
 
-  if (allow == 1)
-    f = popen (cmd, mode);
-  else if (allow == 2)
-    f = popen (safecmd, mode);
-  else if (allow == -1)
-    fprintf (stderr, "\nrunpopen quotation error in command line: %s\n",
-             cmd);
-  else
-    fprintf (stderr, "\nrunpopen command not allowed: %s\n", cmdname);
+//   if (allow == 1)
+//     f = popen (cmd, mode);
+//   else if (allow == 2)
+//     f = popen (safecmd, mode);
+//   else if (allow == -1)
+//     fprintf (stderr, "\nrunpopen quotation error in command line: %s\n",
+//              cmd);
+//   else
+//     fprintf (stderr, "\nrunpopen command not allowed: %s\n", cmdname);
 
-  if (safecmd)
-    free (safecmd);
-  if (cmdname)
-    free (cmdname);
+//   if (safecmd)
+//     free (safecmd);
+//   if (cmdname)
+//     free (cmdname);
   return f;
 }
 #endif /* ENABLE_PIPES */
