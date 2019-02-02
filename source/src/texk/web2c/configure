@@ -18550,7 +18550,7 @@ rm -f core conftest.err conftest.$ac_objext \
   done
   LIBS=$kpse_save_LIBS
   if $cpp_link_hack; then
-    kpse_cv_cxx_hack=ok
+    kpse_cv_cxx_hack="not supported"
     kpse_cv_cxx_flags="$flags_try0 $flags"
   else
     kpse_cv_cxx_hack="not supported"
