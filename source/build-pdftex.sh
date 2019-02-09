@@ -31,8 +31,8 @@ CFG_OPTS="\
 
 # build with debugging only (no optimization).
 DEBUG_OPTS="\
-    CFLAGS=-g \
-    CXXFLAGS=-g \
+    CFLAGS=-O3 \
+    CXXFLAGS=-O3 \
 "
 
 # disable system libraries for everything, so that configure does not
