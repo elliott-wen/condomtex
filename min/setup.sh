@@ -13,4 +13,14 @@ cp ../source/build-pdftex/texk/web2c/pdftexcoerce.h .
 cp ../source/build-pdftex/texk/web2c/pdftexini.c .
 cp ../source/build-pdftex/texk/web2c/pdftex-pool.c .
 cp ../source/build-pdftex/texk/web2c/pdftex0.c .
-echo "Prepare Done!"
+echo "Prepare Done! Prepare Compile"
+echo "Compile Pdftex0"
+gcc -g -O2 -O -c pdftex0.c  -I.
+echo "Compile Pdftexini"
+gcc -g -O2 -O -c pdftexini.c  -I.
+echo "Compile PdftexPool"
+gcc -g -O2 -O -c pdftex-pool.c  -I.
+echo "Compile Extra"
+gcc -g -O2 -O -c pdftex-extra.c -I.
+echo "Compile Done"
+g++ pdftex0.o pdftex-extra.o pdftexini.o pdftex-pool.o  libpdftex.a libpng.a libxpdf.a libz.a libmd5.a

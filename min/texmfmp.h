@@ -11,12 +11,12 @@
 typedef int integer;
 typedef int boolean;
 typedef long longinteger;
-typedef char* constcstring;
-typedef char* const_string;
+typedef const unsigned char* constcstring;
+typedef unsigned char* cstring;
 typedef int cinttype;
 typedef signed char schar;
-typedef char* cstring;
-typedef char* string;
+typedef unsigned char* string;
+typedef const unsigned char* const_string;
 typedef  FILE* text;
 typedef double real;
 typedef double glueratio;
@@ -224,11 +224,11 @@ typedef enum
 #define incr(x) ++(x)
 #define decr(x) --(x)
 #define odd(x)		((x) & 1)
+#define uexit exit
 
 #define putbyte(x,f) \
  do { if (putc ((char) (x) & 255, f) == EOF) \
         fprintf (stderr, "putbyte(%ld) failed", (long) x); } while (0)
-#define uexit(code) uexit(code)
 #define addressof(x) (&(x))
 #define nil NULL
 #define chr(x)		(x)
@@ -259,18 +259,20 @@ extern void getfilemoddate(integer s);
 extern void getfilesize(integer s);
 extern void getfiledump(integer s, int offset, int length);
 extern void uexit(int code);
-extern int runsystem(char *);
+extern int runsystem(const char *);
 extern string translate_filename;
 extern string version_string;
 extern int tfmtemp, texinputtype, kpse_make_tex_discard_errors;
 extern char *makecstring(integer s);
 extern void kpse_init_prog (const_string prefix,  unsigned dpi,  const_string mode,
                 const_string fallback);
-extern void kpse_set_program_enabled (int fmt,
-                                         boolean value, int level);
+extern void kpse_set_program_enabled (kpse_file_format_type fmt,
+                                         boolean value, kpse_src_type level);
+extern string kpse_find_file(const_string name, kpse_file_format_type format,  boolean must_exist);
 extern void readtcxfile (void);
 extern void initstarttime(void);
 extern int loadpoolstrings (integer);
 extern void setupboundvariable (integer *, const_string, integer);
 extern void get_date_and_time (integer *, integer *, integer *, integer *);
+extern string xstrdup (const_string s);
 #endif
