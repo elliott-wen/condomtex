@@ -1,0 +1,11 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/dev) (preloaded format=pdftex 2019.2.10)  10 FEB 2019 16:25
+entering extended mode
+ %&-line parsing enabled.
+**asdasd
+
+! Emergency stop.
+<*> asdasd
+          
+*** (job aborted, file error in nonstop mode)
+
+!  ==> Fatal error occurred, no output PDF file produced!

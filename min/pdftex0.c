@@ -38278,6 +38278,7 @@ handlerightbrace ( void )
       mem [savestack [saveptr + 0 ].cint ].hh .v.RH = 3 ;
       p = finmlist ( -268435455L ) ;
       mem [savestack [saveptr + 0 ].cint ].hh .v.LH = p ;
+      if ( p != -268435455L ) 
       mem [savestack [saveptr + 0 ].cint ].hh .v.ME = mem [p ].hh .v.ME 
       ;
       if ( p != -268435455L ) {

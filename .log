@@ -1,0 +1,14 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930) (INITEX)  11 FEB 2019 10:07
+entering extended mode
+***latex.tex
+(/home/elliott/.miktex/texmfs/install/tex/latex/tools/.tex
+! Interruption.
+l.2 
+    %% This is file `.tex',
+? 
+! Emergency stop.
+l.2 
+    %% This is file `.tex',
+End of file on the terminal!
+
+No pages of output.

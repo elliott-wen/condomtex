@@ -20,11 +20,7 @@ with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include <w2c/config.h>		/* for large file support */
 #include <sys/types.h>
 #include <regex.h>
-#include <kpathsea/config.h>
-#include <kpathsea/c-proto.h>
-#include <kpathsea/c-stat.h>
-#include <kpathsea/c-fopen.h>
-#include <kpathsea/version.h>
+
 #include <string.h>
 #include <time.h>
 #include <float.h>              /* for DBL_EPSILON */
@@ -209,7 +205,7 @@ static void safe_print(const char *str)
 
 void removepdffile(void)
 {
-    if (!kpathsea_debug && outputfilename && !fixedpdfdraftmode) {
+    if ( outputfilename && !fixedpdfdraftmode) {
         xfclose(pdffile, makecstring(outputfilename));
         remove(makecstring(outputfilename));
     }
@@ -229,7 +225,6 @@ void pdftex_fail(const char *fmt, ...)
     va_start(args, fmt);
     println();
     safe_print("!pdfTeX error: ");
-    safe_print(kpse_invocation_name);
     if (cur_file_name) {
         safe_print(" (file ");
         safe_print(cur_file_name);
@@ -243,13 +238,11 @@ void pdftex_fail(const char *fmt, ...)
     removepdffile();
     safe_print(" ==> Fatal error occurred, no output PDF file produced!");
     println();
-    if (kpathsea_debug) {
+    
         safe_print("kpathsea_debug enabled, calling abort()...");
         println();
         abort();
-    } else {
-        exit(EXIT_FAILURE);
-    }
+    
 }
 
 /* The output format of this fuction must be the same as pdf_warn in
@@ -261,7 +254,7 @@ void pdftex_warn(const char *fmt, ...)
     va_start(args, fmt);
     println();
     println();
-    tex_printf("pdfTeX warning: %s", kpse_invocation_name);
+    tex_printf("pdfTeX warning: ");
     if (cur_file_name)
         tex_printf(" (file %s)", cur_file_name);
     tex_printf(": ");
@@ -293,14 +286,14 @@ void setjobid(int year, int month, int day, int time)
         strlen(name_string) +
         strlen(format_string) +
         strlen(ptexbanner) +
-        strlen(versionstring) + strlen(kpathsea_version_string);
+        strlen(versionstring);
     s = xtalloc(slen, char);
     /* The Web2c version string starts with a space.  */
     i = snprintf(s, slen,
-                 "%.4d/%.2d/%.2d %.2d:%.2d %s %s %s%s %s",
+                 "%.4d/%.2d/%.2d %.2d:%.2d %s %s %s%s",
                  year, month, day, time / 60, time % 60,
                  name_string, format_string, ptexbanner,
-                 versionstring, kpathsea_version_string);
+                 versionstring);
     check_nprintf(i, slen);
     job_id_string = xstrdup(s);
     xfree(s);
@@ -320,11 +313,11 @@ void makepdftexbanner(void)
 
     slen = SMALL_BUF_SIZE +
         strlen(ptexbanner) +
-        strlen(versionstring) + strlen(kpathsea_version_string);
+        strlen(versionstring);
     s = xtalloc(slen, char);
     /* The Web2c version string starts with a space.  */
     i = snprintf(s, slen,
-                 "%s%s %s", ptexbanner, versionstring, kpathsea_version_string);
+                 "%s%s ", ptexbanner, versionstring);
     check_nprintf(i, slen);
     pdftexbanner = maketexstring(s);
     xfree(s);

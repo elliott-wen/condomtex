@@ -57,6 +57,7 @@ typedef double glueratio;
 #define kpseinnameok	kpse_in_name_ok
 #define kpseoutnameok	kpse_out_name_ok
 #define kpseinitprog	kpse_init_prog
+#define kpse_find_tex(name)  kpse_find_file (name, kpse_tex_format, true)
 #define kpsesetprogramenabled	kpse_set_program_enabled
 #define kpsetexformat kpse_tex_format
 #define kpsemaketexdiscarderrors kpse_make_tex_discard_errors
@@ -203,7 +204,6 @@ typedef enum
   } while (0)
 //Misc
 #define translatefilename translate_filename
-#define versionstring version_string
 #define promptfilenamehelpmsg "(Press Enter to retry, or Control-D to exit"
 #define stringcast(x) ((string) (x))
 #define maxint 0x7FFFFFFF
@@ -237,7 +237,7 @@ typedef enum
 //Function Define
 //File Function
 extern boolean input_line (FILE *);
-extern void recorder_change_filename (char *s);
+extern void recorder_change_filename (string new_name);
 extern boolean open_output (FILE **, const_string fopen_mode);
 extern boolean open_input (FILE **, int, const_string fopen_mode);
 extern void close_file (FILE *);
@@ -247,7 +247,7 @@ extern  boolean kpse_out_name_ok (const_string fname);
 extern boolean eof (FILE *);
 extern void do_dump (char *, int, int, FILE *);
 extern void do_undump (char *, int, int, FILE *);
-
+extern int xfclose ( FILE * stream, const_string filename );
 
 //Memory Function
 extern void* xrealloc(void*, size_t newsize);
@@ -260,19 +260,25 @@ extern void getfilesize(integer s);
 extern void getfiledump(integer s, int offset, int length);
 extern void uexit(int code);
 extern int runsystem(const char *);
-extern string translate_filename;
-extern string version_string;
-extern int tfmtemp, texinputtype, kpse_make_tex_discard_errors;
+
+
 extern char *makecstring(integer s);
 extern void kpse_init_prog (const_string prefix,  unsigned dpi,  const_string mode,
                 const_string fallback);
 extern void kpse_set_program_enabled (kpse_file_format_type fmt,
                                          boolean value, kpse_src_type level);
 extern string kpse_find_file(const_string name, kpse_file_format_type format,  boolean must_exist);
+extern string kpse_find_glyph(const_string passed_fontname,  unsigned int dpi,  kpse_file_format_type format, void *notused);
 extern void readtcxfile (void);
 extern void initstarttime(void);
 extern int loadpoolstrings (integer);
 extern void setupboundvariable (integer *, const_string, integer);
 extern void get_date_and_time (integer *, integer *, integer *, integer *);
 extern string xstrdup (const_string s);
+extern const char* ptexbanner;
+extern char start_time_str[];
+extern string translate_filename;
+extern string versionstring;
+extern int tfmtemp, texinputtype, kpse_make_tex_discard_errors;
+
 #endif

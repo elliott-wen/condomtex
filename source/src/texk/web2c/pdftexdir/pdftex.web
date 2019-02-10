@@ -30967,7 +30967,7 @@ surround an accent that is the nucleus of an Ord atom.
 
 @<Cases of |handle...@>=
 math_group: begin unsave; decr(save_ptr);@/
-  math_type(saved(0)):=sub_mlist; p:=fin_mlist(null); info(saved(0)):=p; meta(saved(0)):=meta(p);
+  math_type(saved(0)):=sub_mlist; p:=fin_mlist(null); info(saved(0)):=p; if p<>null then meta(saved(0)):=meta(p);
   if p<>null then if link(p)=null then
    if type(p)=ord_noad then
     begin if math_type(subscr(p))=empty then
