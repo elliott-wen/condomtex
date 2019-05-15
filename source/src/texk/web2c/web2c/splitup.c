@@ -63,14 +63,14 @@ read_line (void)
 {
   if (fgets (buffer, sizeof (buffer), stdin) == NULL)
     return false;
-  if (strncmp (buffer, "#ifdef", 6) == 0
-      || strncmp (buffer, "#ifndef", 7) == 0)
+  if (strstr (buffer, "#ifdef") != 0
+      || strstr (buffer, "#ifndef") != 0)
     {
       ++ifdef_nesting;
-      if (strncmp (&buffer[7], "INI", 3) == 0)
+      if (strstr (buffer, "INI") != 0)
 	has_ini = true;
     }
-  else if (strncmp (buffer, "#endif", 6) == 0)
+  else if (strstr (buffer, "#endif") != 0)
     --ifdef_nesting;
   return true;
 }

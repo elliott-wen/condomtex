@@ -280,5 +280,5 @@ extern char start_time_str[];
 extern string translate_filename;
 extern string versionstring;
 extern int tfmtemp, texinputtype, kpse_make_tex_discard_errors;
-
+extern string fullnameoffile, output_directory;
 #endif

@@ -189,8 +189,8 @@ should be sufficient for most applications of \.{TANGLE}.
 @!max_texts=2000; {number of replacement texts, must be less than 10240}
 @!hash_size=353; {should be prime}
 @!longest_name=400; {module names shouldn't be longer than this}
-@!line_length=72; {lines of \PASCAL\ output have at most this many characters}
-@!out_buf_size=144; {length of output buffer, should be twice |line_length|}
+@!line_length=1440; {lines of \PASCAL\ output have at most this many characters}
+@!out_buf_size=2880; {length of output buffer, should be twice |line_length|}
 @!stack_size=50; {number of simultaneous levels of macro expansion}
 @!max_id_length=12; {long identifiers are chopped to this length, which must
   not exceed |line_length|}
@@ -898,7 +898,9 @@ begin if p>=name_ptr then print('IMPOSSIBLE')
 else  begin w:=p mod ww;
   for k:=byte_start[p] to byte_start[p+ww]-1 do print(xchr[byte_mem[w,k]]);
   end;
+  new_line;
 end;
+
 
 @* Searching for identifiers.
 The hash table described above is updated by the |id_lookup| procedure,
@@ -1569,7 +1571,7 @@ end;
 or the \PASCAL\ text may have been associated with a different name by mistake.
 
 @<Expand module |a-...@>=
-begin a:=a-@'24000;
+begin a:=a-@'24000; print_id(a);
 if equiv[a]<>0 then push_level(a)
 else if a<>0 then
   begin print_nl('! Not present: <'); print_id(a); print('>'); error;
@@ -1809,7 +1811,8 @@ var k:0..out_buf_size; {index into |out_buf|}
 @!b:0..out_buf_size; {value of |break_ptr| upon entry}
 begin b:=break_ptr;
 if (semi_ptr<>0)and(out_ptr-semi_ptr<=line_length) then break_ptr:=semi_ptr;
-for k:=1 to break_ptr do write(Pascal_file,xchr[out_buf[k-1]]);
+for k:=1 to break_ptr do begin write(Pascal_file,xchr[out_buf[k-1]]);
+if (out_buf[k-1]=";")and(out_buf[k-2]<>'''') then write_ln(Pascal_file); end;
 write_ln(Pascal_file); incr(line);
 if line mod 100 = 0 then
   begin print('.');

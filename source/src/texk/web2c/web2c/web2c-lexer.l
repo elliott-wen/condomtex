@@ -45,6 +45,8 @@ SIGNED		({SIGN}?{NUMBER})
 WHITE		[ \n\t]+
 REAL		({NUMBER}"."{NUMBER}("e"{SIGNED})?)|({NUMBER}"e"{SIGNED})
 COMMENT		(("{"[^}]*"}")|("(*"([^*]|"*"[^)])*"*)"))
+COMMENT2		("@"{ALPHANUM}*"@")
+
 W		({WHITE}|"packed ")+
 WW		({WHITE}|{COMMENT}|"packed ")*
 HHB0		("hh"{WW}"."{WW}"b0")
@@ -111,6 +113,8 @@ HHB1		("hh"{WW}"."{WW}"b1")
 		 conditional[0] = '\0';
 		 fputs(" */\n", out);
 		}
+
+{COMMENT2} {fprintf(out, "/* %s */", yytext); }
 
 
 "procedure "[a-z_]+";"[ \n\t]*"forward;"	;

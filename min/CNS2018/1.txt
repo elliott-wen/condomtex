@@ -1,0 +1,946 @@
+
+xwininfo: Window id: 0x14f (the root window) (has no name)
+
+  Root window id: 0x14f (the root window) (has no name)
+  Parent window id: 0x0 (none)
+     299 children:
+     0x380001f (has no name): ()  60x26+348+151  +348+151
+     0x600038 "Fcitx Menu Window": ("fcitx" "fcitx")  200x40+0+0  +0+0
+     0x600037 "Fcitx Menu Window": ("fcitx" "fcitx")  200x40+0+0  +0+0
+     0x600036 "Fcitx Menu Window": ("fcitx" "fcitx")  200x40+0+0  +0+0
+     0x600035 "Fcitx Menu Window": ("fcitx" "fcitx")  200x40+0+0  +0+0
+     0x600034 "Fcitx Main Window": ("fcitx" "fcitx")  200x40+500+40  +500+40
+     0x600033 "Fcitx Input Window": ("fcitx" "fcitx")  200x100+0+0  +0+0
+     0x1e02c2f "wrapper-1.0": ()  10x10+-100+-100  +-100+-100
+     0x30695af "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+644+802  +644+802
+        1 child:
+        0x30695b0 (has no name): ()  1x1+-1+-1  +643+801
+     0x3069347 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+699+640  +699+640
+        1 child:
+        0x3069348 (has no name): ()  1x1+-1+-1  +698+639
+     0x180000f "fcitx-qimpanel": ("fcitx-qimpanel" "fcitx-qimpanel")  514x62+153+72  +153+72
+        1 child:
+        0x1800022 (has no name): ()  1x1+-1+-1  +152+71
+     0x3062593 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+741+575  +741+575
+        1 child:
+        0x3062594 (has no name): ()  1x1+-1+-1  +740+574
+     0x306209a "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+617+532  +617+532
+        1 child:
+        0x306209b (has no name): ()  1x1+-1+-1  +616+531
+     0x3061b9c "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+1617+750  +1617+750
+        1 child:
+        0x3061b9d (has no name): ()  1x1+-1+-1  +1616+749
+     0x2c2c924 "Sublime Text": ("sublime_text" "Sublime_text")  221x227+175+550  +175+550
+        1 child:
+        0x2c2c925 (has no name): ()  1x1+-1+-1  +174+549
+     0xe0cee5 "Thunar": ("Thunar" "Thunar")  315x219+1505+329  +1505+329
+        1 child:
+        0xe0cee6 (has no name): ()  1x1+-1+-1  +1504+328
+     0xe0cb31 "Thunar": ("Thunar" "Thunar")  228x235+1283+308  +1283+308
+        1 child:
+        0xe0cb32 (has no name): ()  1x1+-1+-1  +1282+307
+     0x30600bc "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+1385+649  +1385+649
+        1 child:
+        0x30600bd (has no name): ()  1x1+-1+-1  +1384+648
+     0xe0286c "Thunar": ("Thunar" "Thunar")  166x33+1815+1054  +1815+1054
+        1 child:
+        0xe0286d (has no name): ()  1x1+-1+-1  +1814+1053
+     0x1000088 "xfce4-panel": ("xfce4-panel" "Xfce4-panel")  194x437+0+616  +0+616
+        1 child:
+        0x1000089 (has no name): ()  1x1+-1+-1  +-1+615
+     0x3050f84 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+794+742  +794+742
+        1 child:
+        0x3050f85 (has no name): ()  1x1+-1+-1  +793+741
+     0x3050db7 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x309+86+139  +86+139
+        1 child:
+        0x3050db8 (has no name): ()  1x1+-1+-1  +85+138
+     0x3050ccb "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x309+593+144  +593+144
+        1 child:
+        0x3050ccc (has no name): ()  1x1+-1+-1  +592+143
+     0x305079f "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+737+442  +737+442
+        1 child:
+        0x30507a0 (has no name): ()  1x1+-1+-1  +736+441
+     0x24001a8 "screensaver": ("xscreensaver" "XScreenSaver")  1920x1080+0+0  +0+0
+     0x24001a6 "screensaver": ("xscreensaver" "XScreenSaver")  1920x1080+1920+0  +1920+0
+     0x304bedf "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+1575+601  +1575+601
+        1 child:
+        0x304bee0 (has no name): ()  1x1+-1+-1  +1574+600
+     0x304be36 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+1541+721  +1541+721
+        1 child:
+        0x304be37 (has no name): ()  1x1+-1+-1  +1540+720
+     0x304923e "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+867+646  +867+646
+        1 child:
+        0x304923f (has no name): ()  1x1+-1+-1  +866+645
+     0x3049182 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  158x69+965+848  +965+848
+        1 child:
+        0x3049183 (has no name): ()  1x1+-1+-1  +964+847
+     0x3049154 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+796+614  +796+614
+        1 child:
+        0x3049155 (has no name): ()  1x1+-1+-1  +795+613
+     0x304907c "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+75+709  +75+709
+        1 child:
+        0x304907d (has no name): ()  1x1+-1+-1  +74+708
+     0x3048d9f "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+904+698  +904+698
+        1 child:
+        0x3048da0 (has no name): ()  1x1+-1+-1  +903+697
+     0x3048cc9 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+130+689  +130+689
+        1 child:
+        0x3048cca (has no name): ()  1x1+-1+-1  +129+688
+     0x3047f98 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+704+806  +704+806
+        1 child:
+        0x3047f99 (has no name): ()  1x1+-1+-1  +703+805
+     0x3047e2e "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  158x69+175+902  +175+902
+        1 child:
+        0x3047e2f (has no name): ()  1x1+-1+-1  +174+901
+     0x3047dfe "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+6+668  +6+668
+        1 child:
+        0x3047dff (has no name): ()  1x1+-1+-1  +5+667
+     0x30436ff "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+347+733  +347+733
+        1 child:
+        0x3043700 (has no name): ()  1x1+-1+-1  +346+732
+     0x30434f1 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  158x69+221+968  +221+968
+        1 child:
+        0x30434f2 (has no name): ()  1x1+-1+-1  +220+967
+     0x30434c1 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+52+734  +52+734
+        1 child:
+        0x30434c2 (has no name): ()  1x1+-1+-1  +51+733
+     0x2c2aec3 "Sublime Text": ("sublime_text" "Sublime_text")  201x119+838+73  +838+73
+        1 child:
+        0x2c2aec4 (has no name): ()  1x1+-1+-1  +837+72
+     0x2c058a3 "Sublime Text": ("sublime_text" "Sublime_text")  325x366+66+145  +66+145
+        1 child:
+        0x2c058a4 (has no name): ()  1x1+-1+-1  +65+144
+     0x30427c5 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+567+808  +567+808
+        1 child:
+        0x30427c6 (has no name): ()  1x1+-1+-1  +566+807
+     0x30426ca "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+77+692  +77+692
+        1 child:
+        0x30426cb (has no name): ()  1x1+-1+-1  +76+691
+     0x2c267e8 "Sublime Text": ("sublime_text" "Sublime_text")  325x471+103+145  +103+145
+        1 child:
+        0x2c267e9 (has no name): ()  1x1+-1+-1  +102+144
+     0xe18550 "Thunar": ("Thunar" "Thunar")  206x56+1028+433  +1028+433
+        1 child:
+        0xe18551 (has no name): ()  1x1+-1+-1  +1027+432
+     0xe14c7d "Thunar": ("Thunar" "Thunar")  215x235+819+412  +819+412
+        1 child:
+        0xe14c7e (has no name): ()  1x1+-1+-1  +818+411
+     0x304103b "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+596+389  +596+389
+        1 child:
+        0x304103c (has no name): ()  1x1+-1+-1  +595+388
+     0x3040dd8 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  158x69+1458+994  +1458+994
+        1 child:
+        0x3040dd9 (has no name): ()  1x1+-1+-1  +1457+993
+     0x3040dae "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+1289+760  +1289+760
+        1 child:
+        0x3040daf (has no name): ()  1x1+-1+-1  +1288+759
+     0x304052b "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+665+433  +665+433
+        1 child:
+        0x304052c (has no name): ()  1x1+-1+-1  +664+432
+     0x3040486 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+864+508  +864+508
+        1 child:
+        0x3040487 (has no name): ()  1x1+-1+-1  +863+507
+     0x30403d4 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+826+493  +826+493
+        1 child:
+        0x30403d5 (has no name): ()  1x1+-1+-1  +825+492
+     0x3040220 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x309+1514+701  +1514+701
+        1 child:
+        0x3040221 (has no name): ()  1x1+-1+-1  +1513+700
+     0x303ea4d "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+724+489  +724+489
+        1 child:
+        0x303ea4e (has no name): ()  1x1+-1+-1  +723+488
+     0x303e9c8 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+62+506  +62+506
+        1 child:
+        0x303e9c9 (has no name): ()  1x1+-1+-1  +61+505
+     0x303e8be "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+747+412  +747+412
+        1 child:
+        0x303e8bf (has no name): ()  1x1+-1+-1  +746+411
+     0x303e5d4 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+758+341  +758+341
+        1 child:
+        0x303e5d5 (has no name): ()  1x1+-1+-1  +757+340
+     0x303e284 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+555+516  +555+516
+        1 child:
+        0x303e285 (has no name): ()  1x1+-1+-1  +554+515
+     0x303e145 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+701+281  +701+281
+        1 child:
+        0x303e146 (has no name): ()  1x1+-1+-1  +700+280
+     0x303e0b7 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+668+252  +668+252
+        1 child:
+        0x303e0b8 (has no name): ()  1x1+-1+-1  +667+251
+     0x303dfe0 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+283+796  +283+796
+        1 child:
+        0x303dfe1 (has no name): ()  1x1+-1+-1  +282+795
+     0x303dbb9 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+284+788  +284+788
+        1 child:
+        0x303dbba (has no name): ()  1x1+-1+-1  +283+787
+     0x303c87b "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  158x69+1491+972  +1491+972
+        1 child:
+        0x303c87c (has no name): ()  1x1+-1+-1  +1490+971
+     0x303c84c "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x309+1643+690  +1643+690
+        1 child:
+        0x303c84d (has no name): ()  1x1+-1+-1  +1642+689
+     0x303b3b2 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+397+339  +397+339
+        1 child:
+        0x303b3b3 (has no name): ()  1x1+-1+-1  +396+338
+     0x303b28b "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+164+389  +164+389
+        1 child:
+        0x303b28c (has no name): ()  1x1+-1+-1  +163+388
+     0x303a5d8 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+495+749  +495+749
+        1 child:
+        0x303a5d9 (has no name): ()  1x1+-1+-1  +494+748
+     0x303a397 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  158x69+311+877  +311+877
+        1 child:
+        0x303a398 (has no name): ()  1x1+-1+-1  +310+876
+     0x303a36d "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+142+643  +142+643
+        1 child:
+        0x303a36e (has no name): ()  1x1+-1+-1  +141+642
+     0x3038ff6 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+808+353  +808+353
+        1 child:
+        0x3038ff7 (has no name): ()  1x1+-1+-1  +807+352
+     0x3038fa5 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+51+352  +51+352
+        1 child:
+        0x3038fa6 (has no name): ()  1x1+-1+-1  +50+351
+     0x3036944 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+716+653  +716+653
+        1 child:
+        0x3036945 (has no name): ()  1x1+-1+-1  +715+652
+     0x3036863 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+315+243  +315+243
+        1 child:
+        0x3036864 (has no name): ()  1x1+-1+-1  +314+242
+     0xe13670 "Thunar": ("Thunar" "Thunar")  1788x827+132+243  +132+243
+        1 child:
+        0xe13671 (has no name): ()  1x1+-1+-1  +131+242
+     0x30359f2 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+416+383  +416+383
+        1 child:
+        0x30359f3 (has no name): ()  1x1+-1+-1  +415+382
+     0x2c250a8 "Sublime Text": ("sublime_text" "Sublime_text")  221x198+286+466  +286+466
+        1 child:
+        0x2c250a9 (has no name): ()  1x1+-1+-1  +285+465
+     0x2c2373d "Sublime Text": ("sublime_text" "Sublime_text")  221x198+342+468  +342+468
+        1 child:
+        0x2c2373e (has no name): ()  1x1+-1+-1  +341+467
+     0x2c22a63 "Sublime Text": ("sublime_text" "Sublime_text")  221x198+276+790  +276+790
+        1 child:
+        0x2c22a64 (has no name): ()  1x1+-1+-1  +275+789
+     0x2c2186d "Sublime Text": ("sublime_text" "Sublime_text")  221x198+254+226  +254+226
+        1 child:
+        0x2c2186e (has no name): ()  1x1+-1+-1  +253+225
+     0x2c2078b "Sublime Text": ("sublime_text" "Sublime_text")  221x198+226+528  +226+528
+        1 child:
+        0x2c2078c (has no name): ()  1x1+-1+-1  +225+527
+     0x2c1c6c9 "Sublime Text": ("sublime_text" "Sublime_text")  565x408+321+110  +321+110
+        1 child:
+        0x2c1c6ca (has no name): ()  1x1+-1+-1  +320+109
+     0x30334be "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  158x69+982+856  +982+856
+        1 child:
+        0x30334bf (has no name): ()  1x1+-1+-1  +981+855
+     0x3033494 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+813+622  +813+622
+        1 child:
+        0x3033495 (has no name): ()  1x1+-1+-1  +812+621
+     0x3033471 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  158x69+926+783  +926+783
+        1 child:
+        0x3033472 (has no name): ()  1x1+-1+-1  +925+782
+     0x303343c "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  209x309+723+501  +723+501
+        1 child:
+        0x303343d (has no name): ()  1x1+-1+-1  +722+500
+     0xe0ce98 "Thunar": ("Thunar" "Thunar")  201x104+1433+247  +1433+247
+        1 child:
+        0xe0ce99 (has no name): ()  1x1+-1+-1  +1432+246
+     0xe0ca24 "Thunar": ("Thunar" "Thunar")  1x1+-100+-100  +-100+-100
+        1 child:
+        0xe0ca25 (has no name): ()  1x1+-1+-1  +-101+-101
+     0xe0ca0f "Thunar": ("Thunar" "Thunar")  1x1+-100+-100  +-100+-100
+        1 child:
+        0xe0ca10 (has no name): ()  1x1+-1+-1  +-101+-101
+     0x2c1b0de "Sublime Text": ("sublime_text" "Sublime_text")  201x119+293+72  +293+72
+        1 child:
+        0x2c1b0df (has no name): ()  1x1+-1+-1  +292+71
+     0x3031f11 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+836+796  +836+796
+        1 child:
+        0x3031f12 (has no name): ()  1x1+-1+-1  +835+795
+     0x3031dda "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+149+761  +149+761
+        1 child:
+        0x3031ddb (has no name): ()  1x1+-1+-1  +148+760
+     0x3031c31 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+740+609  +740+609
+        1 child:
+        0x3031c32 (has no name): ()  1x1+-1+-1  +739+608
+     0x3031b8e "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+289+402  +289+402
+        1 child:
+        0x3031b8f (has no name): ()  1x1+-1+-1  +288+401
+     0x30316fb "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+637+768  +637+768
+        1 child:
+        0x30316fc (has no name): ()  1x1+-1+-1  +636+767
+     0x303158c "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+95+770  +95+770
+        1 child:
+        0x303158d (has no name): ()  1x1+-1+-1  +94+769
+     0x3031323 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+872+584  +872+584
+        1 child:
+        0x3031324 (has no name): ()  1x1+-1+-1  +871+583
+     0x30310f6 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+1571+734  +1571+734
+        1 child:
+        0x30310f7 (has no name): ()  1x1+-1+-1  +1570+733
+     0x30249fb "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+689+577  +689+577
+        1 child:
+        0x30249fc (has no name): ()  1x1+-1+-1  +688+576
+     0x30242c0 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+546+510  +546+510
+        1 child:
+        0x30242c1 (has no name): ()  1x1+-1+-1  +545+509
+     0x3023907 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+526+453  +526+453
+        1 child:
+        0x3023908 (has no name): ()  1x1+-1+-1  +525+452
+     0x3023610 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  158x69+432+990  +432+990
+        1 child:
+        0x3023611 (has no name): ()  1x1+-1+-1  +431+989
+     0x30235e1 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  209x309+229+708  +229+708
+        1 child:
+        0x30235e2 (has no name): ()  1x1+-1+-1  +228+707
+     0x3023558 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  158x69+294+899  +294+899
+        1 child:
+        0x3023559 (has no name): ()  1x1+-1+-1  +293+898
+     0x302352e "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+125+665  +125+665
+        1 child:
+        0x302352f (has no name): ()  1x1+-1+-1  +124+664
+     0x30230d5 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+624+657  +624+657
+        1 child:
+        0x30230d6 (has no name): ()  1x1+-1+-1  +623+656
+     0x3021858 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+569+720  +569+720
+        1 child:
+        0x3021859 (has no name): ()  1x1+-1+-1  +568+719
+     0x301fd4d "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+567+633  +567+633
+        1 child:
+        0x301fd4e (has no name): ()  1x1+-1+-1  +566+632
+     0x301f964 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+426+794  +426+794
+        1 child:
+        0x301f965 (has no name): ()  1x1+-1+-1  +425+793
+     0x301f6c7 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  209x309+591+474  +591+474
+        1 child:
+        0x301f6c8 (has no name): ()  1x1+-1+-1  +590+473
+     0x301f4a1 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+501+635  +501+635
+        1 child:
+        0x301f4a2 (has no name): ()  1x1+-1+-1  +500+634
+     0x301f2b2 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+422+603  +422+603
+        1 child:
+        0x301f2b3 (has no name): ()  1x1+-1+-1  +421+602
+     0x301f021 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+546+673  +546+673
+        1 child:
+        0x301f022 (has no name): ()  1x1+-1+-1  +545+672
+     0x301ee42 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+632+577  +632+577
+        1 child:
+        0x301ee43 (has no name): ()  1x1+-1+-1  +631+576
+     0x301ec69 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  158x69+593+896  +593+896
+        1 child:
+        0x301ec6a (has no name): ()  1x1+-1+-1  +592+895
+     0x301ec3f "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+424+662  +424+662
+        1 child:
+        0x301ec40 (has no name): ()  1x1+-1+-1  +423+661
+     0x301e6fe "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+439+779  +439+779
+        1 child:
+        0x301e6ff (has no name): ()  1x1+-1+-1  +438+778
+     0x301e30e "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+591+703  +591+703
+        1 child:
+        0x301e30f (has no name): ()  1x1+-1+-1  +590+702
+     0x301bd71 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+473+733  +473+733
+        1 child:
+        0x301bd72 (has no name): ()  1x1+-1+-1  +472+732
+     0x301bc40 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+70+687  +70+687
+        1 child:
+        0x301bc41 (has no name): ()  1x1+-1+-1  +69+686
+     0x2c19ab9 "Sublime Text": ("sublime_text" "Sublime_text")  221x198+347+183  +347+183
+        1 child:
+        0x2c19aba (has no name): ()  1x1+-1+-1  +346+182
+     0x301a7d9 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+544+760  +544+760
+        1 child:
+        0x301a7da (has no name): ()  1x1+-1+-1  +543+759
+     0x301a655 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+701+649  +701+649
+        1 child:
+        0x301a656 (has no name): ()  1x1+-1+-1  +700+648
+     0x3019d4d "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+656+586  +656+586
+        1 child:
+        0x3019d4e (has no name): ()  1x1+-1+-1  +655+585
+     0x2c180da "Sublime Text": ("sublime_text" "Sublime_text")  221x198+314+318  +314+318
+        1 child:
+        0x2c180db (has no name): ()  1x1+-1+-1  +313+317
+     0x3018bd4 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+650+635  +650+635
+        1 child:
+        0x3018bd5 (has no name): ()  1x1+-1+-1  +649+634
+     0x3018b84 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+728+637  +728+637
+        1 child:
+        0x3018b85 (has no name): ()  1x1+-1+-1  +727+636
+     0x2c17e76 "Sublime Text": ("sublime_text" "Sublime_text")  221x198+1376+537  +1376+537
+        1 child:
+        0x2c17e77 (has no name): ()  1x1+-1+-1  +1375+536
+     0x3018a1d "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+563+678  +563+678
+        1 child:
+        0x3018a1e (has no name): ()  1x1+-1+-1  +562+677
+     0x2c17df1 "Sublime Text": ("sublime_text" "Sublime_text")  221x198+347+542  +347+542
+        1 child:
+        0x2c17df2 (has no name): ()  1x1+-1+-1  +346+541
+     0x3018815 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+264+500  +264+500
+        1 child:
+        0x3018816 (has no name): ()  1x1+-1+-1  +263+499
+     0x301767c "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+574+776  +574+776
+        1 child:
+        0x301767d (has no name): ()  1x1+-1+-1  +573+775
+     0x301753a "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+586+722  +586+722
+        1 child:
+        0x301753b (has no name): ()  1x1+-1+-1  +585+721
+     0x2c1766a "Sublime Text": ("sublime_text" "Sublime_text")  221x227+169+812  +169+812
+        1 child:
+        0x2c1766b (has no name): ()  1x1+-1+-1  +168+811
+     0x30172fe "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+471+699  +471+699
+        1 child:
+        0x30172ff (has no name): ()  1x1+-1+-1  +470+698
+     0x2c1694c "Sublime Text": ("sublime_text" "Sublime_text")  221x198+262+486  +262+486
+        1 child:
+        0x2c1694d (has no name): ()  1x1+-1+-1  +261+485
+     0x2c168c7 "Sublime Text": ("sublime_text" "Sublime_text")  221x198+248+557  +248+557
+        1 child:
+        0x2c168c8 (has no name): ()  1x1+-1+-1  +247+556
+     0x3016ed2 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+652+703  +652+703
+        1 child:
+        0x3016ed3 (has no name): ()  1x1+-1+-1  +651+702
+     0x2c1670a "Sublime Text": ("sublime_text" "Sublime_text")  221x198+246+622  +246+622
+        1 child:
+        0x2c1670b (has no name): ()  1x1+-1+-1  +245+621
+     0x2c15e7a "Sublime Text": ("sublime_text" "Sublime_text")  221x198+286+482  +286+482
+        1 child:
+        0x2c15e7b (has no name): ()  1x1+-1+-1  +285+481
+     0x2c15a16 "Sublime Text": ("sublime_text" "Sublime_text")  221x198+606+530  +606+530
+        1 child:
+        0x2c15a17 (has no name): ()  1x1+-1+-1  +605+529
+     0x3016d29 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+591+626  +591+626
+        1 child:
+        0x3016d2a (has no name): ()  1x1+-1+-1  +590+625
+     0x3016bdc "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+138+680  +138+680
+        1 child:
+        0x3016bdd (has no name): ()  1x1+-1+-1  +137+679
+     0x3016a49 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+363+684  +363+684
+        1 child:
+        0x3016a4a (has no name): ()  1x1+-1+-1  +362+683
+     0x2c145ef "Sublime Text": ("sublime_text" "Sublime_text")  221x198+300+674  +300+674
+        1 child:
+        0x2c145f0 (has no name): ()  1x1+-1+-1  +299+673
+     0x301665f "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+665+246  +665+246
+        1 child:
+        0x3016660 (has no name): ()  1x1+-1+-1  +664+245
+     0x3015e02 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+977+388  +977+388
+        1 child:
+        0x3015e03 (has no name): ()  1x1+-1+-1  +976+387
+     0x3015d57 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+868+287  +868+287
+        1 child:
+        0x3015d58 (has no name): ()  1x1+-1+-1  +867+286
+     0x3014ecc "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+80+427  +80+427
+        1 child:
+        0x3014ecd (has no name): ()  1x1+-1+-1  +79+426
+     0x3014a32 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+969+430  +969+430
+        1 child:
+        0x3014a33 (has no name): ()  1x1+-1+-1  +968+429
+     0x3014997 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+179+288  +179+288
+        1 child:
+        0x3014998 (has no name): ()  1x1+-1+-1  +178+287
+     0x3013b76 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+480+604  +480+604
+        1 child:
+        0x3013b77 (has no name): ()  1x1+-1+-1  +479+603
+     0x3013996 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+644+808  +644+808
+        1 child:
+        0x3013997 (has no name): ()  1x1+-1+-1  +643+807
+     0x3013846 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  158x69+319+929  +319+929
+        1 child:
+        0x3013847 (has no name): ()  1x1+-1+-1  +318+928
+     0x3013816 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+150+695  +150+695
+        1 child:
+        0x3013817 (has no name): ()  1x1+-1+-1  +149+694
+     0x30135e6 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+495+580  +495+580
+        1 child:
+        0x30135e7 (has no name): ()  1x1+-1+-1  +494+579
+     0x30133fd "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+519+791  +519+791
+        1 child:
+        0x30133fe (has no name): ()  1x1+-1+-1  +518+790
+     0x3013280 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+376+756  +376+756
+        1 child:
+        0x3013281 (has no name): ()  1x1+-1+-1  +375+755
+     0x3013128 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+397+752  +397+752
+        1 child:
+        0x3013129 (has no name): ()  1x1+-1+-1  +396+751
+     0x3012932 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+572+621  +572+621
+        1 child:
+        0x3012933 (has no name): ()  1x1+-1+-1  +571+620
+     0x2c12ffa "Sublime Text": ("sublime_text" "Sublime_text")  221x198+245+750  +245+750
+        1 child:
+        0x2c12ffb (has no name): ()  1x1+-1+-1  +244+749
+     0x3011ecd "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+634+411  +634+411
+        1 child:
+        0x3011ece (has no name): ()  1x1+-1+-1  +633+410
+     0x3011d47 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+1231+755  +1231+755
+        1 child:
+        0x3011d48 (has no name): ()  1x1+-1+-1  +1230+754
+     0x3011c37 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+1336+668  +1336+668
+        1 child:
+        0x3011c38 (has no name): ()  1x1+-1+-1  +1335+667
+     0x3011ad3 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  158x69+1078+892  +1078+892
+        1 child:
+        0x3011ad4 (has no name): ()  1x1+-1+-1  +1077+891
+     0x3011aa9 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+909+658  +909+658
+        1 child:
+        0x3011aaa (has no name): ()  1x1+-1+-1  +908+657
+     0x30118b0 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+880+732  +880+732
+        1 child:
+        0x30118b1 (has no name): ()  1x1+-1+-1  +879+731
+     0x301131f "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+718+371  +718+371
+        1 child:
+        0x3011320 (has no name): ()  1x1+-1+-1  +717+370
+     0x30111a4 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+883+759  +883+759
+        1 child:
+        0x30111a5 (has no name): ()  1x1+-1+-1  +882+758
+     0x30107e7 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+465+669  +465+669
+        1 child:
+        0x30107e8 (has no name): ()  1x1+-1+-1  +464+668
+     0x30105b4 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+464+598  +464+598
+        1 child:
+        0x30105b5 (has no name): ()  1x1+-1+-1  +463+597
+     0x2c10c69 "Sublime Text": ("sublime_text" "Sublime_text")  223x240+390+47  +390+47
+        1 child:
+        0x2c10c6a (has no name): ()  1x1+-1+-1  +389+46
+     0x300f6a1 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+552+701  +552+701
+        1 child:
+        0x300f6a2 (has no name): ()  1x1+-1+-1  +551+700
+     0x2c1095d "Sublime Text": ("sublime_text" "Sublime_text")  221x198+321+825  +321+825
+        1 child:
+        0x2c1095e (has no name): ()  1x1+-1+-1  +320+824
+     0x300f4ab "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+551+753  +551+753
+        1 child:
+        0x300f4ac (has no name): ()  1x1+-1+-1  +550+752
+     0x300f34d "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+584+780  +584+780
+        1 child:
+        0x300f34e (has no name): ()  1x1+-1+-1  +583+779
+     0x300f202 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+61+643  +61+643
+        1 child:
+        0x300f203 (has no name): ()  1x1+-1+-1  +60+642
+     0x300efd1 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+362+628  +362+628
+        1 child:
+        0x300efd2 (has no name): ()  1x1+-1+-1  +361+627
+     0x300ecf9 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+548+616  +548+616
+        1 child:
+        0x300ecfa (has no name): ()  1x1+-1+-1  +547+615
+     0x300ea08 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+617+795  +617+795
+        1 child:
+        0x300ea09 (has no name): ()  1x1+-1+-1  +616+794
+     0x300e89c "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+458+270  +458+270
+        1 child:
+        0x300e89d (has no name): ()  1x1+-1+-1  +457+269
+     0x300e797 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+384+472  +384+472
+        1 child:
+        0x300e798 (has no name): ()  1x1+-1+-1  +383+471
+     0x300e73a "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+410+337  +410+337
+        1 child:
+        0x300e73b (has no name): ()  1x1+-1+-1  +409+336
+     0x300e65d "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+296+448  +296+448
+        1 child:
+        0x300e65e (has no name): ()  1x1+-1+-1  +295+447
+     0x300e454 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+321+450  +321+450
+        1 child:
+        0x300e455 (has no name): ()  1x1+-1+-1  +320+449
+     0x300da9c "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+787+407  +787+407
+        1 child:
+        0x300da9d (has no name): ()  1x1+-1+-1  +786+406
+     0x300d766 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+664+768  +664+768
+        1 child:
+        0x300d767 (has no name): ()  1x1+-1+-1  +663+767
+     0x2c0de89 "Sublime Text": ("sublime_text" "Sublime_text")  221x227+308+378  +308+378
+        1 child:
+        0x2c0de8a (has no name): ()  1x1+-1+-1  +307+377
+     0x300d529 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+595+789  +595+789
+        1 child:
+        0x300d52a (has no name): ()  1x1+-1+-1  +594+788
+     0x300d3f0 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+751+372  +751+372
+        1 child:
+        0x300d3f1 (has no name): ()  1x1+-1+-1  +750+371
+     0x300d1ca "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+522+586  +522+586
+        1 child:
+        0x300d1cb (has no name): ()  1x1+-1+-1  +521+585
+     0x300d13d "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+116+770  +116+770
+        1 child:
+        0x300d13e (has no name): ()  1x1+-1+-1  +115+769
+     0x300cf20 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+586+658  +586+658
+        1 child:
+        0x300cf21 (has no name): ()  1x1+-1+-1  +585+657
+     0x300cc45 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+759+373  +759+373
+        1 child:
+        0x300cc46 (has no name): ()  1x1+-1+-1  +758+372
+     0x300c87a "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+970+325  +970+325
+        1 child:
+        0x300c87b (has no name): ()  1x1+-1+-1  +969+324
+     0x300c683 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+691+118  +691+118
+        1 child:
+        0x300c684 (has no name): ()  1x1+-1+-1  +690+117
+     0x300c3e8 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+1011+486  +1011+486
+        1 child:
+        0x300c3e9 (has no name): ()  1x1+-1+-1  +1010+485
+     0x2c0c6c1 "Sublime Text": ("sublime_text" "Sublime_text")  221x227+344+371  +344+371
+        1 child:
+        0x2c0c6c2 (has no name): ()  1x1+-1+-1  +343+370
+     0x2c0c036 "Sublime Text": ("sublime_text" "Sublime_text")  221x227+323+559  +323+559
+        1 child:
+        0x2c0c037 (has no name): ()  1x1+-1+-1  +322+558
+     0x2c0bf68 "Sublime Text": ("sublime_text" "Sublime_text")  221x227+291+556  +291+556
+        1 child:
+        0x2c0bf69 (has no name): ()  1x1+-1+-1  +290+555
+     0x2c0bedd "Sublime Text": ("sublime_text" "Sublime_text")  221x227+225+217  +225+217
+        1 child:
+        0x2c0bede (has no name): ()  1x1+-1+-1  +224+216
+     0x2c0be24 "Sublime Text": ("sublime_text" "Sublime_text")  221x227+302+405  +302+405
+        1 child:
+        0x2c0be25 (has no name): ()  1x1+-1+-1  +301+404
+     0x300af01 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+1552+723  +1552+723
+        1 child:
+        0x300af02 (has no name): ()  1x1+-1+-1  +1551+722
+     0x300adf4 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+1204+754  +1204+754
+        1 child:
+        0x300adf5 (has no name): ()  1x1+-1+-1  +1203+753
+     0x300a76b "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  158x69+1717+824  +1717+824
+        1 child:
+        0x300a76c (has no name): ()  1x1+-1+-1  +1716+823
+     0x300a741 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+1548+590  +1548+590
+        1 child:
+        0x300a742 (has no name): ()  1x1+-1+-1  +1547+589
+     0x3800024 "Chromium clipboard": ()  10x10+-100+-100  +-100+-100
+     0x300a1ee "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+1627+629  +1627+629
+        1 child:
+        0x300a1ef (has no name): ()  1x1+-1+-1  +1626+628
+     0x300a115 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  158x69+1526+863  +1526+863
+        1 child:
+        0x300a116 (has no name): ()  1x1+-1+-1  +1525+862
+     0x300a0eb "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+1678+629  +1678+629
+        1 child:
+        0x300a0ec (has no name): ()  1x1+-1+-1  +1677+628
+     0x30092bc "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+1550+629  +1550+629
+        1 child:
+        0x30092bd (has no name): ()  1x1+-1+-1  +1549+628
+     0x3008e9f "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+1486+568  +1486+568
+        1 child:
+        0x3008ea0 (has no name): ()  1x1+-1+-1  +1485+567
+     0x3008d12 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+1537+664  +1537+664
+        1 child:
+        0x3008d13 (has no name): ()  1x1+-1+-1  +1536+663
+     0x2c0699f "Sublime Text": ("sublime_text" "Sublime_text")  221x198+710+540  +710+540
+        1 child:
+        0x2c069a0 (has no name): ()  1x1+-1+-1  +709+539
+     0x30064a4 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+1675+757  +1675+757
+        1 child:
+        0x30064a5 (has no name): ()  1x1+-1+-1  +1674+756
+     0x30061cf "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+1295+736  +1295+736
+        1 child:
+        0x30061d0 (has no name): ()  1x1+-1+-1  +1294+735
+     0x3001a6f "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+880+764  +880+764
+        1 child:
+        0x3001a70 (has no name): ()  1x1+-1+-1  +879+763
+     0x3000de4 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+864+736  +864+736
+        1 child:
+        0x3000de5 (has no name): ()  1x1+-1+-1  +863+735
+     0x2c041c6 "Sublime Text": ("sublime_text" "Sublime_text")  221x227+316+462  +316+462
+        1 child:
+        0x2c041c7 (has no name): ()  1x1+-1+-1  +315+461
+     0x3000b36 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+823+288  +823+288
+        1 child:
+        0x3000b37 (has no name): ()  1x1+-1+-1  +822+287
+     0x3000abb "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+120+450  +120+450
+        1 child:
+        0x3000abc (has no name): ()  1x1+-1+-1  +119+449
+     0x3000937 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+824+674  +824+674
+        1 child:
+        0x3000938 (has no name): ()  1x1+-1+-1  +823+673
+     0x2c03fae "Sublime Text": ("sublime_text" "Sublime_text")  221x227+290+231  +290+231
+        1 child:
+        0x2c03faf (has no name): ()  1x1+-1+-1  +289+230
+     0x2c03f50 "Sublime Text": ("sublime_text" "Sublime_text")  221x198+248+253  +248+253
+        1 child:
+        0x2c03f51 (has no name): ()  1x1+-1+-1  +247+252
+     0x2c037bb "Sublime Text": ("sublime_text" "Sublime_text")  221x198+239+560  +239+560
+        1 child:
+        0x2c037bc (has no name): ()  1x1+-1+-1  +238+559
+     0x300086a "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+850+769  +850+769
+        1 child:
+        0x300086b (has no name): ()  1x1+-1+-1  +849+768
+     0x30007cb "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+156+702  +156+702
+        1 child:
+        0x30007cc (has no name): ()  1x1+-1+-1  +155+701
+     0x300056a "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+886+660  +886+660
+        1 child:
+        0x300056b (has no name): ()  1x1+-1+-1  +885+659
+     0x2c01277 "Sublime Text": ("sublime_text" "Sublime_text")  221x198+255+534  +255+534
+        1 child:
+        0x2c01278 (has no name): ()  1x1+-1+-1  +254+533
+     0x2c01189 "Sublime Text": ("sublime_text" "Sublime_text")  221x227+317+537  +317+537
+        1 child:
+        0x2c0118a (has no name): ()  1x1+-1+-1  +316+536
+     0x30003a6 "x-terminal-emulator": ()  10x10+-100+-100  +-100+-100
+     0x3000366 "x-terminal-emulator": ("x-terminal-emulator" "X-terminal-emulator")  175x261+665+783  +665+783
+        1 child:
+        0x3000367 (has no name): ()  1x1+-1+-1  +664+782
+     0x2c00b59 "Sublime Text": ("sublime_text" "Sublime_text")  221x198+267+773  +267+773
+        1 child:
+        0x2c00b5a (has no name): ()  1x1+-1+-1  +266+772
+     0x1a000c7 "xfdesktop": ()  10x10+-100+-100  +-100+-100
+     0x2c00260 "Sublime Text": ()  10x10+-100+-100  +-100+-100
+     0x2c00026 (has no name): ()  1x1+-1+-1  +-1+-1
+     0x2c00001 "Sublime Text": ("sublime_text" "Sublime_text")  10x10+10+10  +10+10
+        1 child:
+        0x2c00002 (has no name): ()  1x1+-1+-1  +9+9
+     0x1000f7f "xfce4-panel": ("xfce4-panel" "Xfce4-panel")  227x741+188+339  +188+339
+        1 child:
+        0x1000f80 (has no name): ()  1x1+-1+-1  +187+338
+     0x1000f1d "xfce4-panel": ("xfce4-panel" "Xfce4-panel")  153x27+188+808  +188+808
+        1 child:
+        0x1000f1e (has no name): ()  1x1+-1+-1  +187+807
+     0x1000ed4 "xfce4-panel": ("xfce4-panel" "Xfce4-panel")  161x111+188+829  +188+829
+        1 child:
+        0x1000ed5 (has no name): ()  1x1+-1+-1  +187+828
+     0x1000e0e "xfce4-panel": ("xfce4-panel" "Xfce4-panel")  220x489+188+591  +188+591
+        1 child:
+        0x1000e0f (has no name): ()  1x1+-1+-1  +187+590
+     0x1000dac "xfce4-panel": ("xfce4-panel" "Xfce4-panel")  173x384+188+696  +188+696
+        1 child:
+        0x1000dad (has no name): ()  1x1+-1+-1  +187+695
+     0x1000d63 "xfce4-panel": ("xfce4-panel" "Xfce4-panel")  73x27+188+934  +188+934
+        1 child:
+        0x1000d64 (has no name): ()  1x1+-1+-1  +187+933
+     0x1000c39 "xfce4-panel": ("xfce4-panel" "Xfce4-panel")  269x189+188+850  +188+850
+        1 child:
+        0x1000c3a (has no name): ()  1x1+-1+-1  +187+849
+     0x1000bbe "xfce4-panel": ("xfce4-panel" "Xfce4-panel")  238x195+188+787  +188+787
+        1 child:
+        0x1000bbf (has no name): ()  1x1+-1+-1  +187+786
+     0x2e00008 (has no name): ()  1x1+-1+-1  +-1+-1
+     0x3800005 (has no name): ()  1x1+0+0  +0+0
+     0x3a0000a (has no name): ()  1x1+0+0  +0+0
+     0x3e00001 (has no name): ()  1x1+0+0  +0+0
+     0x3600003 "x-www-browser": ("x-www-browser" "X-www-browser")  200x200+0+0  +0+0
+        1 child:
+        0x3600004 (has no name): ()  1x1+-1+-1  +-1+-1
+     0x3600001 "x-www-browser": ("x-www-browser" "X-www-browser")  10x10+10+10  +10+10
+     0x3000003 (has no name): ()  1x1+-1+-1  +-1+-1
+     0x3000001 "x-terminal-emulator": ("x-terminal-emulator" "")  10x10+10+10  +10+10
+     0x220000c (has no name): ()  1x1+-1+-1  +-1+-1
+     0x280000c (has no name): ()  1x1+-1+-1  +-1+-1
+     0x2e00001 "blueman-applet": ("blueman-applet" "")  10x10+10+10  +10+10
+     0x2800001 "NetworkManager Applet": ("nm-applet" "Nm-applet")  10x10+10+10  +10+10
+     0x2600001 "kerneloops-applet": ("kerneloops-applet" "Kerneloops-applet")  10x10+10+10  +10+10
+        1 child:
+        0x2600002 (has no name): ()  1x1+-1+-1  +9+9
+     0x2200001 "update-notifier": ("update-notifier" "Update-notifier")  10x10+10+10  +10+10
+     0x1c00006 (has no name): ()  1x1+0+0  +0+0
+     0x1c00003 (has no name): ()  3x3+0+0  +0+0
+     0x1a0001e (has no name): ()  1x1+-1+-1  +-1+-1
+     0x1800007 (has no name): ()  1x1+0+0  +0+0
+     0x1600001 "fcitx-qimpanel": ("fcitx-qimpanel" "Fcitx-qimpanel")  10x10+10+10  +10+10
+     0x1800003 (has no name): ()  3x3+0+0  +0+0
+     0x1200004 (has no name): ()  10x10+0+0  +0+0
+     0x2000024 (has no name): ()  1x1+-1+-1  +-1+-1
+     0x1e0002a (has no name): ()  1x1+-1+-1  +-1+-1
+     0x1000030 (has no name): ()  1x1+-1+-1  +-1+-1
+     0xe0006a (has no name): ()  1x1+-1+-1  +-1+-1
+     0x2000001 "wrapper-1.0": ("wrapper-1.0" "Wrapper-1.0")  10x10+10+10  +10+10
+        1 child:
+        0x2000002 (has no name): ()  1x1+-1+-1  +9+9
+     0x1e00001 "wrapper-1.0": ("wrapper-1.0" "Wrapper-1.0")  10x10+10+10  +10+10
+        1 child:
+        0x1e00002 (has no name): ()  1x1+-1+-1  +9+9
+     0xc003a7 (has no name): ()  1920x1052+0+0  +0+0
+     0xe00024 "Thunar": ()  10x10+-100+-100  +-100+-100
+     0x1a00001 "xfdesktop": ("xfdesktop" "Xfdesktop")  10x10+10+10  +10+10
+        1 child:
+        0x1a00002 (has no name): ()  1x1+-1+-1  +9+9
+     0x1200003 (has no name): ()  1x1+-1+-1  +-1+-1
+     0x1200001 "xfsettingsd": ("xfsettingsd" "Xfsettingsd")  10x10+10+10  +10+10
+        1 child:
+        0x1200002 (has no name): ()  1x1+-1+-1  +9+9
+     0x1000001 "xfce4-panel": ("xfce4-panel" "Xfce4-panel")  10x10+10+10  +10+10
+        1 child:
+        0x1000002 (has no name): ()  1x1+-1+-1  +9+9
+     0xe00001 "Thunar": ("Thunar" "Thunar")  10x10+10+10  +10+10
+        1 child:
+        0xe00002 (has no name): ()  1x1+-1+-1  +9+9
+     0xc001b9 (has no name): ()  1x1+-1+-1  +-1+-1
+     0xc000ae "Xfwm4": ("xfwm4" "Xfwm4")  5x5+-1000+-1000  +-1000+-1000
+        1 child:
+        0xc000af (has no name): ()  1x1+-1+-1  +-1001+-1001
+     0xc000ad (has no name): ()  10x10+-100+-100  +-100+-100
+     0x600005 (has no name): ()  1x1+-1+-1  +-1+-1
+     0x600002 (has no name): ()  1x1+0+0  +0+0
+     0xc00001 "xfwm4": ("xfwm4" "Xfwm4")  10x10+10+10  +10+10
+        1 child:
+        0xc00002 (has no name): ()  1x1+-1+-1  +9+9
+     0x800001 "xfce4-session": ("xfce4-session" "Xfce4-session")  10x10+10+10  +10+10
+        1 child:
+        0x800002 (has no name): ()  1x1+-1+-1  +9+9
+     0x400001 "xfce4-notifyd": ("xfce4-notifyd" "Xfce4-notifyd")  10x10+10+10  +10+10
+     0x600001 (has no name): ()  1x1+0+0  +0+0
+     0xc000c9 (has no name): ()  1x1080+-1+0  +-1+0
+     0xc000ca (has no name): ()  1x1080+3840+0  +3840+0
+     0xc000cb (has no name): ()  3840x1+0+-1  +0+-1
+     0xc000cc (has no name): ()  3840x1+0+1080  +0+1080
+     0xc00383 (has no name): ()  1920x28+0+1052  +0+1052
+        16 children:
+        0x1000004 "xfce4-panel": ("xfce4-panel" "Xfce4-panel")  1920x28+0+0  +0+1052
+           3 children:
+           0x100002d (has no name): ()  48x27+1872+1  +1872+1053
+              1 child:
+              0x2000004 "wrapper-1.0": ("wrapper-1.0" "Wrapper-1.0")  48x27+0+0  +1872+1053
+                 1 child:
+                 0x2000005 (has no name): ()  1x1+-1+-1  +1871+1052
+           0x100002c (has no name): ()  73x27+1799+1  +1799+1053
+              1 child:
+              0x1e00004 "wrapper-1.0": ("wrapper-1.0" "Wrapper-1.0")  73x27+0+0  +1799+1053
+                 4 children:
+                 0x1e02c7b (has no name): ()  21x21+49+3  +1848+1056
+                    1 child:
+                    0x280003f "Network": ("nm-applet" "nm-applet")  21x21+0+0  +1848+1056
+                       1 child:
+                       0x2800040 (has no name): ()  1x1+-1+-1  +1847+1055
+                 0x1e02c5c (has no name): ()  21x21+3+3  +1802+1056
+                    1 child:
+                    0x1c0000f (has no name): ()  21x21+0+0  +1802+1056
+                       1 child:
+                       0x1c00015 (has no name): ()  1x1+-1+-1  +1801+1055
+                 0x1e02c44 (has no name): ()  21x21+26+3  +1825+1056
+                    1 child:
+                    0x18002ee "fcitx-qimpanel": ("fcitx-qimpanel" "fcitx-qimpanel")  21x21+0+0  +1825+1056
+                       1 child:
+                       0x18002f0 (has no name): ()  1x1+-1+-1  +1824+1055
+                 0x1e00005 (has no name): ()  1x1+-1+-1  +1798+1052
+           0x1000005 (has no name): ()  1x1+-1+-1  +-1+1051
+        0xc00392 (has no name): ()  1x1+0+0  +0+1052
+        0xc00391 (has no name): ()  1x1+0+0  +0+1052
+        0xc00390 (has no name): ()  1x1+0+0  +0+1052
+        0xc0038f (has no name): ()  1x1+0+0  +0+1052
+        0xc0038e (has no name): ()  1x1+0+0  +0+1052
+        0xc0038d (has no name): ()  1x1+0+0  +0+1052
+        0xc0038c (has no name): ()  1x1+0+0  +0+1052
+        0xc0038b (has no name): ()  1x1+0+0  +0+1052
+        0xc0038a (has no name): ()  1x1+0+0  +0+1052
+        0xc00389 (has no name): ()  1x1+0+0  +0+1052
+        0xc00388 (has no name): ()  1x1+0+0  +0+1052
+        0xc00387 (has no name): ()  1x1+0+0  +0+1052
+        0xc00386 (has no name): ()  1x1+0+0  +0+1052
+        0xc00385 (has no name): ()  1x1+0+0  +0+1052
+        0xc00384 (has no name): ()  1x1+0+0  +0+1052
+     0xc00b0c (has no name): ()  1920x1052+0+0  +0+0
+        16 children:
+        0x3000007 "elliott@elliott: ~/Dropbox/Papers/CNS2018": ("x-terminal-emulator" "X-terminal-emulator")  1920x1028+0+24  +0+24
+           1 child:
+           0x3000008 (has no name): ()  1x1+-1+-1  +-1+23
+        0xc00b1b (has no name): ()  18x24+1900+0  +1900+0
+        0xc00b1a (has no name): ()  16x24+1884+0  +1884+0
+        0xc00b19 (has no name): ()  16x24+1868+0  +1868+0
+        0xc00b18 (has no name): ()  1x1+0+0  +0+0
+        0xc00b17 (has no name): ()  1x1+0+0  +0+0
+        0xc00b16 (has no name): ()  16x16+2+4  +2+4
+        0xc00b15 (has no name): ()  1922x3+4+0  +4+0
+        0xc00b14 (has no name): ()  1920x24+0+0  +0+0
+        0xc00b13 (has no name): ()  4x24+1926+0  +1926+0
+        0xc00b12 (has no name): ()  4x24+0+0  +0+0
+        0xc00b11 (has no name): ()  12x12+1918+1045  +1918+1045
+        0xc00b10 (has no name): ()  12x12+0+1045  +0+1045
+        0xc00b0f (has no name): ()  1906x5+12+1052  +12+1052
+        0xc00b0e (has no name): ()  5x1021+1925+24  +1925+24
+        0xc00b0d (has no name): ()  5x1021+0+24  +0+24
+     0xc01093 (has no name): ()  1920x1052+0+0  +0+0
+        16 children:
+        0x3800001 "c - How do I obtain, and synchronize, a complete list of all X11 windows? - Stack Overflow - Google Chrome": ("google-chrome" "Google-chrome")  1920x1052+0+0  +0+0
+           1 child:
+           0x3a0000e (has no name): ()  1920x1052+0+0  +0+0
+        0xc010a2 (has no name): ()  1x1+0+0  +0+0
+        0xc010a1 (has no name): ()  1x1+0+0  +0+0
+        0xc010a0 (has no name): ()  1x1+0+0  +0+0
+        0xc0109f (has no name): ()  1x1+0+0  +0+0
+        0xc0109e (has no name): ()  1x1+0+0  +0+0
+        0xc0109d (has no name): ()  1x1+0+0  +0+0
+        0xc0109c (has no name): ()  1x1+0+0  +0+0
+        0xc0109b (has no name): ()  1x1+0+0  +0+0
+        0xc0109a (has no name): ()  1x1+0+0  +0+0
+        0xc01099 (has no name): ()  1x1+0+0  +0+0
+        0xc01098 (has no name): ()  1x1+0+0  +0+0
+        0xc01097 (has no name): ()  1x1+0+0  +0+0
+        0xc01096 (has no name): ()  1x1+0+0  +0+0
+        0xc01095 (has no name): ()  1x1+0+0  +0+0
+        0xc01094 (has no name): ()  1x1+0+0  +0+0
+     0xc05dca (has no name): ()  1920x1052+0+0  +0+0
+        16 children:
+        0x2c00003 "~/swiftlatex/pdftex/min/texmfmp.h - Sublime Text (UNREGISTERED)": ("sublime_text" "Sublime_text")  1920x1028+0+24  +0+24
+           1 child:
+           0x2c00004 (has no name): ()  1x1+-1+-1  +-1+23
+        0xc05dd9 (has no name): ()  18x24+1900+0  +1900+0
+        0xc05dd8 (has no name): ()  16x24+1884+0  +1884+0
+        0xc05dd7 (has no name): ()  16x24+1868+0  +1868+0
+        0xc05dd6 (has no name): ()  1x1+0+0  +0+0
+        0xc05dd5 (has no name): ()  1x1+0+0  +0+0
+        0xc05dd4 (has no name): ()  16x16+2+4  +2+4
+        0xc05dd3 (has no name): ()  1922x3+4+0  +4+0
+        0xc05dd2 (has no name): ()  1920x24+0+0  +0+0
+        0xc05dd1 (has no name): ()  4x24+1926+0  +1926+0
+        0xc05dd0 (has no name): ()  4x24+0+0  +0+0
+        0xc05dcf (has no name): ()  12x12+1918+1045  +1918+1045
+        0xc05dce (has no name): ()  12x12+0+1045  +0+1045
+        0xc05dcd (has no name): ()  1906x5+12+1052  +12+1052
+        0xc05dcc (has no name): ()  5x1021+1925+24  +1925+24
+        0xc05dcb (has no name): ()  5x1021+0+24  +0+24
+     0xc003aa (has no name): ()  1930x1057+58+23  +58+23
+        16 children:
+        0xe00004 "pdftexdir - File Manager": ("Thunar" "Thunar")  1920x1028+5+24  +63+47
+           1 child:
+           0xe00005 (has no name): ()  1x1+-1+-1  +62+46
+        0xc003b9 (has no name): ()  18x24+1906+0  +1964+23
+        0xc003b8 (has no name): ()  16x24+1890+0  +1948+23
+        0xc003b7 (has no name): ()  16x24+1874+0  +1932+23
+        0xc003b6 (has no name): ()  1x1+0+0  +58+23
+        0xc003b5 (has no name): ()  1x1+0+0  +58+23
+        0xc003b4 (has no name): ()  16x16+6+4  +64+27
+        0xc003b3 (has no name): ()  1922x3+4+0  +62+23
+        0xc003b2 (has no name): ()  1922x24+4+0  +62+23
+        0xc003b1 (has no name): ()  4x24+1926+0  +1984+23
+        0xc003b0 (has no name): ()  4x24+0+0  +58+23
+        0xc003af (has no name): ()  12x12+1918+1045  +1976+1068
+        0xc003ae (has no name): ()  12x12+0+1045  +58+1068
+        0xc003ad (has no name): ()  1906x5+12+1052  +70+1075
+        0xc003ac (has no name): ()  5x1021+1925+24  +1983+47
+        0xc003ab (has no name): ()  5x1021+0+24  +58+47
+     0xc00979 (has no name): ()  499x140+710+460  +710+460
+        16 children:
+        0x2200011 (has no name): ("update-notifier" "Update-notifier")  489x111+5+24  +715+484
+           1 child:
+           0x2200012 (has no name): ()  1x1+-1+-1  +714+483
+        0xc00988 (has no name): ()  18x24+475+0  +1185+460
+        0xc00987 (has no name): ()  1x1+0+0  +710+460
+        0xc00986 (has no name): ()  1x1+0+0  +710+460
+        0xc00985 (has no name): ()  1x1+0+0  +710+460
+        0xc00984 (has no name): ()  1x1+0+0  +710+460
+        0xc00983 (has no name): ()  16x16+6+4  +716+464
+        0xc00982 (has no name): ()  491x3+4+0  +714+460
+        0xc00981 (has no name): ()  491x24+4+0  +714+460
+        0xc00980 (has no name): ()  4x24+495+0  +1205+460
+        0xc0097f (has no name): ()  4x24+0+0  +710+460
+        0xc0097e (has no name): ()  12x12+487+128  +1197+588
+        0xc0097d (has no name): ()  12x12+0+128  +710+588
+        0xc0097c (has no name): ()  475x5+12+135  +722+595
+        0xc0097b (has no name): ()  5x104+494+24  +1204+484
+        0xc0097a (has no name): ()  5x104+0+24  +710+484
+     0xc005e0 (has no name): ()  3840x1080+0+0  +0+0
+        16 children:
+        0x1a00003 "Desktop": ("xfdesktop" "Xfdesktop")  3840x1080+0+0  +0+0
+           1 child:
+           0x1a00004 (has no name): ()  1x1+-1+-1  +-1+-1
+        0xc005ef (has no name): ()  1x1+0+0  +0+0
+        0xc005ee (has no name): ()  1x1+0+0  +0+0
+        0xc005ed (has no name): ()  1x1+0+0  +0+0
+        0xc005ec (has no name): ()  1x1+0+0  +0+0
+        0xc005eb (has no name): ()  1x1+0+0  +0+0
+        0xc005ea (has no name): ()  1x1+0+0  +0+0
+        0xc005e9 (has no name): ()  1x1+0+0  +0+0
+        0xc005e8 (has no name): ()  1x1+0+0  +0+0
+        0xc005e7 (has no name): ()  1x1+0+0  +0+0
+        0xc005e6 (has no name): ()  1x1+0+0  +0+0
+        0xc005e5 (has no name): ()  1x1+0+0  +0+0
+        0xc005e4 (has no name): ()  1x1+0+0  +0+0
+        0xc005e3 (has no name): ()  1x1+0+0  +0+0
+        0xc005e2 (has no name): ()  1x1+0+0  +0+0
+        0xc005e1 (has no name): ()  1x1+0+0  +0+0
+

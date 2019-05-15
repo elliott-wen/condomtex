@@ -1,4 +1,4 @@
- #ifndef MIN_PDFTEX_TEXMFMEM
+#ifndef MIN_PDFTEX_TEXMFMEM
 #define MIN_PDFTEX_TEXMFMEM
  typedef union 
  {
@@ -31,7 +31,7 @@ typedef union
 #define	b1 u.B1
 #define	b2 u.B2
 #define	b3 u.B3
-
+#define me v.ME
 #define rh v.RH
 #define lhfield	v.LH
 

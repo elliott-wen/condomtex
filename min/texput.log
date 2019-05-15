@@ -1,9 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (pdfTeX Standalone 0.1 beta) (INITEX)  11 FEB 2019 10:24
-**s
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (pdfTeX Standalone 0.1 beta) (INITEX)  12 MAY 2019 12:37
+entering extended mode
+***pdftex.ini 
 
 ! Emergency stop.
-<*> s
-     
+<*> *pdftex.ini 
+                
 *** (job aborted, file error in nonstop mode)
 
 No pages of output.

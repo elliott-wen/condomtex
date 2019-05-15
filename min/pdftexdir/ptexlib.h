@@ -191,9 +191,6 @@ extern void delete_fm_entry(fm_entry *);
 extern int avl_do_entry(fm_entry *, int);
 extern int check_std_t1font(char *s);
 
-/* papersiz.c */
-extern integer myatodim(char **);
-extern integer myatol(char **);
 
 /* pkin.c */
 extern int readchar(boolean, chardesc *);

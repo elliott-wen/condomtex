@@ -205,9 +205,9 @@ BLOCK:
 
 LABEL_DEC_PART:		/* empty */
         |	label_tok
-                        { my_output("/*"); }
+                        {  }
                 LABEL_LIST ';'
-                        { my_output("*/"); }
+                        { }
         ;
 
 LABEL_LIST:		LABEL
@@ -215,7 +215,7 @@ LABEL_LIST:		LABEL
         ;
 
 LABEL:
-	i_num_tok { my_output(temp); }
+	i_num_tok {  }
 	;
 
 CONST_DEC_PART:
@@ -845,7 +845,7 @@ STATEMENT:		UNLAB_STAT
 
 S_LABEL:		i_num_tok
 				{if (!doreturn(temp)) {
-				      sprintf(safe_string, "lab%s:", temp);
+				      sprintf(safe_string, "lab%s%s:", my_routine, temp);
 				    my_output (safe_string);
 				 }
 				}
@@ -1034,7 +1034,7 @@ GO_TO_STAT:		goto_tok i_num_tok
 				    else
 					my_output ("return");
 				 } else {
-				     sprintf(safe_string, "goto lab%s",
+				     sprintf(safe_string, "goto lab%s%s", my_routine,
 					temp);
 				     my_output (safe_string);
 				 }

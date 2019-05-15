@@ -1,9 +1,9 @@
 echo "Copying Static Libraries"
-cp ../source/build-pdftex/texk/web2c/libpdftex.a .
-cp ../source/build-pdftex/texk/web2c/libmd5.a .
-cp ../source/build-pdftex/libs/xpdf/libxpdf.a .
-cp ../source/build-pdftex/libs/libpng/libpng.a .
-cp ../source/build-pdftex/libs/zlib/libz.a  .
+cp ../source/build-pdftex/texk/web2c/libpdftex.a ./libs/
+cp ../source/build-pdftex/texk/web2c/libmd5.a ./libs/
+cp ../source/build-pdftex/libs/xpdf/libxpdf.a ./libs/
+cp ../source/build-pdftex/libs/libpng/libpng.a ./libs/
+cp ../source/build-pdftex/libs/zlib/libz.a  ./libs/
 echo "Copying PDFTEX Header Files"
 mkdir -p pdftexdir
 cp ../source/src/texk/web2c/pdftexdir/*.h pdftexdir/
@@ -23,4 +23,4 @@ gcc -g -O2 -O -c pdftex-pool.c  -I.
 echo "Compile Extra"
 gcc -g -O2 -O -c pdftex-extra.c -I.
 echo "Compile Done"
-g++ pdftex0.o pdftex-extra.o pdftexini.o pdftex-pool.o  libpdftex.a libpng.a libxpdf.a libz.a libmd5.a
+g++ pdftex0.o pdftex-extra.o pdftexini.o pdftex-pool.o libs/libpdftex.a libs/libpng.a libs/libxpdf.a libs/libz.a libs/libmd5.a

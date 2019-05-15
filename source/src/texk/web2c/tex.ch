@@ -937,8 +937,8 @@ noreturn procedure confusion(@!s:str_number);
 @d min_halfword==0 {smallest allowable value in a |halfword|}
 @d max_halfword==65535 {largest allowable value in a |halfword|}
 @y 2424
-@d min_halfword==-@"FFFFFFF {smallest allowable value in a |halfword|}
-@d max_halfword==@"FFFFFFF {largest allowable value in a |halfword|}
+@d min_halfword==-@"7FFFFFFF {smallest allowable value in a |halfword|}
+@d max_halfword==@"7FFFFFFF {largest allowable value in a |halfword|}
 @z
 
 @x [8.111] l.2435 - min_halfword and max_halfword

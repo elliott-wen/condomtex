@@ -1,0 +1,5 @@
+\CopyrightYear{2018} 
+\setcopyright{acmlicensed} 
+\conferenceinfo{DocEng '18,}{August 28--31, 2018, Halifax, NS, Canada}
+\isbn{978-1-4503-5769-2/18/08}\acmPrice{$15.00}
+\doi{https://doi.org/10.1145/3209280.3209522}

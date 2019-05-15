@@ -1,0 +1,25 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Related Work}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Readability of E-paper}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{E-paper Applications}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.3}{Integrating WYSIWYG with LaTeX}{section.2}% 5
+\BOOKMARK [1][-]{section.3}{System Overview}{}% 6
+\BOOKMARK [1][-]{section.4}{User Interface Design}{}% 7
+\BOOKMARK [2][-]{subsection.4.1}{A WYSIWYG Editor for LaTeX}{section.4}% 8
+\BOOKMARK [2][-]{subsection.4.2}{Faithful Conversion from PDFs to HTMLs}{section.4}% 9
+\BOOKMARK [1][-]{section.5}{Achieving High Responsiveness}{}% 10
+\BOOKMARK [2][-]{subsection.5.1}{Accelerating LaTeX Compilation Using Checkpointing}{section.5}% 11
+\BOOKMARK [2][-]{subsection.5.2}{Userspace Checkpoint Technology for LaTeX}{section.5}% 12
+\BOOKMARK [1][-]{section.6}{Optimizing the E-paper Display Driver}{}% 13
+\BOOKMARK [2][-]{subsection.6.1}{How E-paper Screens Work?}{section.6}% 14
+\BOOKMARK [2][-]{subsection.6.2}{Heuristic Multi-queue Scheduling Algorithm for E-paper Display}{section.6}% 15
+\BOOKMARK [1][-]{section.7}{Evaluation}{}% 16
+\BOOKMARK [2][-]{subsection.7.1}{Experiment Devices}{section.7}% 17
+\BOOKMARK [2][-]{subsection.7.2}{Usability Evaluation}{section.7}% 18
+\BOOKMARK [1][-]{section.8}{Further Discussions}{}% 19
+\BOOKMARK [2][-]{subsection.8.1}{Exploring Alternative Input Technologies}{section.8}% 20
+\BOOKMARK [2][-]{subsection.8.2}{Display Scheduling Algorithms}{section.8}% 21
+\BOOKMARK [2][-]{subsection.8.3}{Facilitating Structural Edits}{section.8}% 22
+\BOOKMARK [2][-]{subsection.8.4}{Collaborative Editing}{section.8}% 23
+\BOOKMARK [1][-]{section.9}{Conclusion}{}% 24
+\BOOKMARK [1][-]{section.10}{References }{}% 25

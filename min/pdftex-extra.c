@@ -3,6 +3,8 @@
 #include <pdftexd.h>
 string fullnameoffile;
 string output_directory;
+int ac;
+char **av;
 int tfmtemp;
 int texinputtype;
 int kpse_make_tex_discard_errors;
@@ -26,24 +28,7 @@ string versionstring = " (pdfTeX Standalone 0.1 beta)";
 #include <time.h>
 #include <errno.h>
 #include <md5.h>
-int main(int ac, char**av)
-{
- dumpname = DEFAULT_DUMP_NAME;
- int fmtstrlen = strlen(DEFAULT_FMT_NAME);
- TEXformatdefault = xmalloc(fmtstrlen + 2);
- memcpy(TEXformatdefault, DEFAULT_FMT_NAME, fmtstrlen);
- formatdefaultlength = strlen (TEXformatdefault + 1);
-  /* Must be initialized before options are parsed.  */
- interactionoption = 1;
- filelineerrorstylep = 0;
- parsefirstlinep = 0;
 
- iniversion = 1;
-
-  mainbody ();
-
-  return EXIT_SUCCESS;
-}
 
 
 void *xmalloc(size_t newsize)
@@ -80,7 +65,7 @@ xfopen (const_string filename,  const_string mode)
     if (f == NULL)
     {
 
-        fprintf(stderr, "File Open Failed %s", filename);
+        fprintf(stderr, "File Open Failed (%s)\n", filename);
         abort();
     }
 
@@ -683,8 +668,8 @@ void
 xfseeko (FILE *f,  off_t offset,  int wherefrom,  const_string filename)
 {
   if (fseeko (f, offset, wherefrom) != 0) {
-        fprintf(stderr, "File fseeko Failed %s", filename);
-		abort();
+        fprintf(stderr, "File fseeko Failed (%s %ld %d)", filename, offset, wherefrom);
+		    abort();
   }
 }
 
@@ -896,6 +881,19 @@ topenin (void)
 {
   
   buffer[first] = 0; 
+
+  if (optind < ac)
+  {
+  	int k = first;
+  	char *ptr = av[optind];
+	while (*ptr) {
+	        buffer[k++] = *(ptr++);
+	}
+    buffer[k++] = ' ';
+    buffer[k] = 0;
+  	ac = 0;
+  	for (last = first; buffer[last]; ++last);
+  }
 }
 
 
@@ -1329,4 +1327,48 @@ makesrcspecial (strnumber srcfilename, int lineno)
     strpool[poolptr++] = *s++;
 
   return (oldpoolptr);
+}
+
+
+int main(int argc, char**argv)
+{
+ ac = argc;
+ av = argv;
+ //Parse Argument
+ int c;
+ while ((c = getopt (argc, argv, "io:f:")) != -1)
+    switch (c)
+ {
+      case 'i':
+        iniversion = 1;
+        break;
+      case 'o':
+        output_directory= optarg;
+        break;
+      case '?':
+          fprintf (stderr,
+                   "Usage: -i for iniversion, -o for output directory -f for inputfile\n");
+        return 1;
+      default:
+        abort ();
+  }
+
+
+
+  //Now Basic Variable
+
+ dumpname = DEFAULT_DUMP_NAME;
+ int fmtstrlen = strlen(DEFAULT_FMT_NAME);
+ TEXformatdefault = xmalloc(fmtstrlen + 2);
+ memcpy(TEXformatdefault, DEFAULT_FMT_NAME, fmtstrlen);
+ formatdefaultlength = strlen (TEXformatdefault + 1);
+ interactionoption = 1;
+ filelineerrorstylep = 0;
+ parsefirstlinep = 0;
+
+ //Go
+
+  mainbody ();
+
+  return EXIT_SUCCESS;
 }
