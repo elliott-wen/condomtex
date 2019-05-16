@@ -1,0 +1,8 @@
+# images info, 1=ps, 2=eps, 4=epsi, 8=epsf, 16=pdf, 32=png, 64=gif
+see_image("figures/keyboard1",0,1);
+see_image("figures/firefoxos",16,1);
+see_image("figures/UIscreenshot",16,1);
+see_image("figures/htmlconvert",16,1);
+see_image("figures/time",16,1);
+see_image("figures/heruist",16,1);
+see_image("figures/helloworld",16,1);

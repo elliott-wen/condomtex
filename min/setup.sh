@@ -16,6 +16,12 @@
 echo "Prepare Done! Prepare Compile"
 echo "Compile Pdftex0"
 gcc -g -O2 -O -c pdftex0.c  -I.
+echo "Compile Pdftex0 printout"
+gcc -g -O2 -O -c printout.c  -I.
+echo "Compile Pdftex0 error"
+gcc -g -O2 -O -c error.c  -I.
+echo "Compile Pdftex0 math"
+gcc -g -O2 -O -c math.c  -I.
 echo "Compile Pdftexini"
 gcc -g -O2 -O -c pdftexini.c  -I.
 echo "Compile PdftexPool"
@@ -23,4 +29,4 @@ gcc -g -O2 -O -c pdftex-pool.c  -I.
 echo "Compile Extra"
 gcc -g -O2 -O -c pdftex-extra.c -I.
 echo "Compile Done"
-g++ pdftex0.o pdftex-extra.o pdftexini.o pdftex-pool.o libs/libpdftex.a libs/libpng.a libs/libxpdf.a libs/libz.a libs/libmd5.a
+g++ pdftex0.o printout.o error.o math.o  pdftex-extra.o pdftexini.o pdftex-pool.o libs/libpdftex.a libs/libpng.a libs/libxpdf.a libs/libz.a libs/libmd5.a

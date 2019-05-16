@@ -1,0 +1,251 @@
+% reading source swiftlatex.bib
+%
+\citation{ACE18}{cite:acejs}{bid26}{year}{misc}
+\bauthors{\bpers[]{}{}{ACE}{}}
+\cititem{btitle}{Ace - The High Performance Code Editor for the Web}
+\cititem{byear}{2018}
+\csname @href\endcsname{https://ace.c9.io/}{\url{https://ace.c9.io/}}
+\endcitation
+%
+\citation{Acl15}{cite:latexrun}{bid4}{year}{misc}
+\bauthors{\bpers[]{}{}{Aclements}{}}
+\cititem{btitle}{A 21st century LaTeX wrapper}
+\cititem{byear}{2015}
+\csname @href\endcsname{https://github.com/aclements/latexrun/}{\url{https://github.com/aclements/latexrun/}}
+\endcitation
+%
+\citation{Ado08}{cite:libpdf2008}{bid13}{year}{misc}
+\bauthors{\bpers[]{}{}{Adobe}{}}
+\cititem{btitle}{Portable Document Format}
+\cititem{byear}{2008}
+\csname @href\endcsname{https://www.adobe.com/content/dam/acom/en/devnet/pdf/pdfs/PDF32000\_2008.pdf}{\url{https://www.adobe.com/content/dam/acom/en/devnet/pdf/pdfs/PDF32000\_2008.pdf}}
+\endcitation
+%
+\citation{B+96}{cite:brooke1996sus}{bid30}{year}{article}
+\bauthors{\bpers[John]{J.}{}{Brooke}{}\cititem{etal}{}}
+\cititem{btitle}{SUS-A quick and dirty usability scale}
+\cititem{bjournal}{Usability evaluation in industry}
+\cititem{bnumber}{194}
+\cititem{bvolume}{189}
+\cititem{byear}{1996}
+\cititem{bpages}{4--7}
+\endcitation
+%
+\citation{Ban11}{cite:banker2011mongodb}{bid19}{year}{book}
+\bauthors{\bpers[Kyle]{K.}{}{Banker}{}}
+\cititem{btitle}{MongoDB in action}
+\cititem{bpublisher}{Manning Publications Co.}
+\cititem{byear}{2011}
+\endcitation
+%
+\citation{BK08}{cite:bibeault2008jquery}{bid25}{year}{book}
+\bauthors{\bpers[Bear]{B.}{}{Bibeault}{}\bpers[Yehuda]{Y.}{}{Kats}{}}
+\cititem{btitle}{jQuery in Action}
+\cititem{bpublisher}{Dreamtech Press}
+\cititem{byear}{2008}
+\endcitation
+%
+\citation{Bro13}{cite:brown2013integrated}{bid0}{year}{book}
+\bauthors{\bpers[Alan W]{A. W.}{}{Brown}{}}
+\cititem{btitle}{Integrated project support environments: the aspect project}
+\cititem{bvolume}{33}
+\cititem{bpublisher}{Elsevier}
+\cititem{byear}{2013}
+\endcitation
+%
+\citation{Car13}{cite:carlson2013redis}{bid18}{year}{book}
+\bauthors{\bpers[Josiah L]{J. L.}{}{Carlson}{}}
+\cititem{btitle}{Redis in action}
+\cititem{bpublisher}{Manning Publications Co.}
+\cititem{byear}{2013}
+\endcitation
+%
+\citation{Col15}{cite:collins2015latexmk}{bid3}{year}{article}
+\bauthors{\bpers[J]{J.}{}{Collins}{}}
+\cititem{btitle}{Latexmk 4.43 a: Fully automated LaTeX document generation}
+\cititem{bjournal}{Penn State Department of Physics, Pennsylvania State University}
+\cititem{byear}{2015}
+\endcitation
+%
+\citation{Fre18}{cite:libpoppler2008}{bid14}{year}{misc}
+\bauthors{\bpers[]{}{}{FreeDesktop}{}}
+\cititem{btitle}{Poppler Pdf Rendering library}
+\cititem{byear}{2018}
+\csname @href\endcsname{http://poppler.freedesktop.org/}{\url{http://poppler.freedesktop.org/}}
+\endcitation
+%
+\citation{GNO18}{cite:libevince}{bid15}{year}{misc}
+\bauthors{\bpers[]{}{}{GNOME}{}}
+\cititem{btitle}{Document Viewer}
+\cititem{byear}{2018}
+\csname @href\endcsname{https://github.com/GNOME/evince}{\url{https://github.com/GNOME/evince}}
+\endcitation
+%
+\citation{Gr{\"a}08}{cite:gratzer2008gentle}{bid10}{year}{article}
+\bauthors{\bpers[G]{G.}{}{Gr{\"a}tzer}{}}
+\cititem{btitle}{A gentle learning curve for LATEX}
+\cititem{byear}{2008}
+\csname @href\endcsname{https://tug.org/pracjourn/2008-3/gratzer/gratzer.pdf}{\url{https://tug.org/pracjourn/2008-3/gratzer/gratzer.pdf}}
+\endcitation
+%
+\citation{Kas02}{cite:kastrup2002revisiting}{bid7}{year}{article}
+\bauthors{\bpers[David]{D.}{}{Kastrup}{}}
+\cititem{btitle}{Revisiting WYSIWYG paradigms for authoring LATEX}
+\cititem{bjournal}{COMMUNICATIONS OF THE TEX USERS GROUP TUGBOAT EDITOR BARBARA BEETON PROCEEDINGS EDITORS KAJA CHRISTIANSEN}
+\cititem{bnumber}{1}
+\cititem{bvolume}{23}
+\cititem{byear}{2002}
+\cititem{bpages}{57}
+\endcitation
+%
+\citation{KHWC06}{cite:koch2006texshop}{bid6}{year}{article}
+\bauthors{\bpers[Richard]{R.}{}{Koch}{}\bpers[Max]{M.}{}{Horn}{}\bpers[Gerben]{G.}{}{Wierda}{}\bpers[Various]{V.}{}{Contributros}{}}
+\cititem{btitle}{TEXshop}
+\cititem{bjournal}{See website at http://www. uoregon. edu/koch/texshop/texshop. html}
+\cititem{byear}{2006}
+\endcitation
+%
+\citation{Lau08}{cite:laurens2008direct}{bid11}{year}{article}
+\bauthors{\bpers[Jer{\^o}me]{J.}{}{Laurens}{}}
+\cititem{btitle}{Direct and reverse synchronization with SyncTEX}
+\cititem{bjournal}{TUGBoat}
+\cititem{bvolume}{29}
+\cititem{byear}{2008}
+\cititem{bpages}{365--371}
+\endcitation
+%
+\citation{Lau11}{cite:libsynctex2011}{bid12}{year}{misc}
+\bauthors{\bpers[Jer{\^o}me]{J.}{}{Laurens}{}}
+\cititem{btitle}{Library for Parsing SyncTeX files}
+\cititem{byear}{2011}
+\csname @href\endcsname{https://packages.debian.org/sid/libsynctex-dev}{\url{https://packages.debian.org/sid/libsynctex-dev}}
+\endcitation
+%
+\citation{LLC11}{cite:lee2011improving}{bid17}{year}{article}
+\bauthors{\bpers[Yun-Han]{Y.-H.}{}{Lee}{}\bpers[Seiven]{S.}{}{Leu}{}\bpers[Ruay-Shiung]{R.-S.}{}{Chang}{}}
+\cititem{btitle}{Improving job scheduling algorithms in a grid environment}
+\cititem{bjournal}{Future generation computer systems}
+\cititem{bnumber}{8}
+\cititem{bvolume}{27}
+\cititem{byear}{2011}
+\cititem{bpages}{991--998}
+\endcitation
+%
+\citation{LS09}{cite:lewis2009factor}{bid31}{year}{inproceedings}
+\bauthors{\bpers[James R]{J. R.}{}{Lewis}{}\bpers[Jeff]{J.}{}{Sauro}{}}
+\cititem{btitle}{The factor structure of the system usability scale}
+\cititem{bbooktitle}{International conference on human centered design}
+\cititem{borganization}{Springer}
+\cititem{bpages}{94--103}
+\cititem{byear}{2009}
+\endcitation
+%
+\citation{Mer14}{cite:merkel2014docker}{bid20}{year}{article}
+\bauthors{\bpers[Dirk]{D.}{}{Merkel}{}}
+\cititem{btitle}{Docker: lightweight linux containers for consistent development and deployment}
+\cititem{bjournal}{Linux Journal}
+\cititem{bnumber}{239}
+\cititem{bvolume}{2014}
+\cititem{byear}{2014}
+\cititem{bpages}{2}
+\endcitation
+%
+\citation{Moz18a}{cite:pdfjsintro}{bid21}{year}{misc}
+\bauthors{\bpers[]{}{}{Mozilla}{}}
+\cititem{btitle}{A general-purpose, web standards-based platform for parsing and rendering PDFs}
+\cititem{byear}{2018}
+\csname @href\endcsname{https://mozilla.github.io/pdf.js/}{\url{https://mozilla.github.io/pdf.js/}}
+\endcitation
+%
+\citation{Moz18b}{cite:pdfjs}{bid22}{year}{misc}
+\bauthors{\bpers[]{}{}{Mozilla}{}}
+\cititem{btitle}{What browsers are supported by PDF.js?}
+\cititem{byear}{2018}
+\csname @href\endcsname{https://github.com/mozilla/pdf.js/wiki/Frequently-Asked-Questions}{\url{https://github.com/mozilla/pdf.js/wiki/Frequently-Asked-Questions}}
+\endcitation
+%
+\citation{Nie09}{cite:nielsen2009discount}{bid29}{year}{article}
+\bauthors{\bpers[Jakob]{J.}{}{Nielsen}{}}
+\cititem{btitle}{Discount usability: 20 years}
+\cititem{bjournal}{Jakob Nielsen's Alertbox Available at http://www. useit. com/alertbox/discount-usability. html [Accessed 23 January 2012]}
+\cititem{byear}{2009}
+\endcitation
+%
+\citation{Nie15}{cite:nielsen2015you}{bid28}{year}{article}
+\bauthors{\bpers[Jakob]{J.}{}{Nielsen}{}}
+\cititem{btitle}{Why you only need to test with 5 users, March 19, 2000}
+\cititem{bjournal}{Useit.com Alertbox}
+\cititem{bvolume}{27}
+\cititem{byear}{2015}
+\endcitation
+%
+\citation{Nie89}{cite:nielsen1989usability}{bid27}{year}{inproceedings}
+\bauthors{\bpers[Jakob]{J.}{}{Nielsen}{}}
+\cititem{btitle}{Usability engineering at a discount}
+\cititem{bbooktitle}{Proceedings of the third international conference on human-computer interaction on Designing and using human-computer interfaces and knowledge based systems (2nd ed.)}
+\cititem{borganization}{Elsevier Science Inc.}
+\cititem{bpages}{394--401}
+\cititem{byear}{1989}
+\endcitation
+%
+\citation{OAG18}{cite:oswaldsharelatex}{bid1}{year}{misc}
+\bauthors{\bpers[Henry]{H.}{}{Oswald}{}\bpers[James]{J.}{}{Allen}{}\bpers[Brian]{B.}{}{Gough}{}}
+\cititem{btitle}{ShareLaTeX, the Online LaTeX Editor}
+\cititem{byear}{2018}
+\endcitation
+%
+\citation{Ove17}{cite:overleafstat}{bid9}{year}{misc}
+\bauthors{\bpers[]{}{}{Overleaf}{}}
+\cititem{btitle}{600,000 users on Overleaf make over 2 billion edits!}
+\cititem{byear}{2017}
+\csname @href\endcsname{https://www.overleaf.com/blog/449-600-000-users-on-overleaf-make-over-2-billion-edits}{\url{https://www.overleaf.com/blog/449-600-000-users-on-overleaf-make-over-2-billion-edits}}
+\endcitation
+%
+\citation{Ove18}{cite:overleaf}{bid2}{year}{misc}
+\bauthors{\bpers[]{}{}{Overleaf}{}}
+\cititem{btitle}{Overleaf, Collaborative Writing and Publishing}
+\cititem{byear}{2018}
+\csname @href\endcsname{https://www.overleaf.com}{\url{https://www.overleaf.com}}
+\endcitation
+%
+\citation{SC90}{cite:strauss1990basics}{bid32}{year}{book}
+\bauthors{\bpers[Anselm]{A.}{}{Strauss}{}\bpers[Juliet M]{J. M.}{}{Corbin}{}}
+\cititem{btitle}{Basics of qualitative research: Grounded theory procedures and techniques.}
+\cititem{bpublisher}{Sage Publications, Inc}
+\cititem{byear}{1990}
+\endcitation
+%
+\citation{SGG14}{cite:silberschatz2014operating}{bid16}{year}{book}
+\bauthors{\bpers[Abraham]{A.}{}{Silberschatz}{}\bpers[Peter Baer]{P. B.}{}{Galvin}{}\bpers[Greg]{G.}{}{Gagne}{}}
+\cititem{btitle}{Operating system concepts essentials}
+\cititem{bpublisher}{John Wiley \& Sons, Inc.}
+\cititem{byear}{2014}
+\endcitation
+%
+\citation{Sof11}{cite:soft2011bakoma}{bid8}{year}{misc}
+\bauthors{\bpers[BaKoMa]{B.}{}{Soft}{}}
+\cititem{btitle}{BaKoMa TEX 9.77}
+\cititem{byear}{2011}
+\csname @href\endcsname{http://www.bakoma.com}{\url{http://www.bakoma.com}}
+\endcitation
+%
+\citation{Spu13}{cite:spurlock2013bootstrap}{bid24}{year}{book}
+\bauthors{\bpers[Jake]{J.}{}{Spurlock}{}}
+\cititem{btitle}{Bootstrap: Responsive Web Development}
+\cititem{bpublisher}{" O'Reilly Media, Inc."}
+\cititem{byear}{2013}
+\endcitation
+%
+\citation{vdZSB+18}{cite:vantexstudio}{bid5}{year}{misc}
+\bauthors{\bpers[B]{B.}{}{van der Zander}{}\bpers[J]{J.}{}{Sundermeyer}{}\bpers[D]{D.}{}{Braun}{}\cititem{etal}{}}
+\cititem{btitle}{TeXstudio}
+\cititem{bhowpublished}{\url{{https://www.texstudio.org/}}}
+\cititem{byear}{2018}
+\endcitation
+%
+\citation{WL13}{cite:wang2013online}{bid23}{year}{misc}
+\bauthors{\bpers[Lu]{L.}{}{WANG}{}\bpers[Wanmin]{W.}{}{LIU}{}}
+\cititem{btitle}{Online publish via pdf2htmlEX}
+\cititem{bpublisher}{TUGboat}
+\cititem{byear}{2013}
+\endcitation
