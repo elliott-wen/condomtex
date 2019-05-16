@@ -5,11 +5,12 @@
 #define INITEX
 #define TeX
 #define pdfTeX
-#ifdef TEXMF_DEBUG
+/* @c701@ */#ifdef TEXMF_DEBUG
 #endif /* TEXMF_DEBUG */
 #define PDFTEXCOERCE
 #include "texmfmp.h"
-#define hashoffset ( 514 ) 
+#include "pdftexdex.h"
+#define /* @c702@ */hashoffset ( 514 ) 
 #define trieopsize ( 35111L ) 
 #define negtrieopsize ( -35111L ) 
 #define mintrieop ( 0 ) 
@@ -42,7 +43,7 @@
 #define supdvibufsize ( 65536L ) 
 #define inffontmemsize ( 20000 ) 
 #define supfontmemsize ( 147483647L ) 
-#define supfontmax ( 9000 ) 
+#define supfontmax ( /* @d703@ */9000 ) 
 #define inffontmax ( 50 ) 
 #define infpoolsize ( 32000 ) 
 #define suppoolsize ( 40000000L ) 
@@ -72,7 +73,7 @@
 #define vfmaxrecursion ( 10 ) 
 #define vfstacksize ( 100 ) 
 #define pdfmaxlinklevel ( 10 ) 
-typedef unsigned char ASCIIcode  ;
+typedef /* @c704@ */unsigned char ASCIIcode  ;
 typedef unsigned char eightbits  ;
 typedef text /* of  ASCIIcode */ alphafile  ;
 typedef text /* of  eightbits */ bytefile  ;
@@ -82,28 +83,28 @@ typedef unsigned char packedASCIIcode  ;
 typedef integer scaled  ;
 typedef integer nonnegativeinteger  ;
 typedef unsigned char smallnumber  ;
-typedef unsigned char quarterword  ;
+typedef /* @d705@ *//* @d706@ */unsigned char quarterword  ;
 typedef integer halfword  ;
 typedef unsigned char twochoices  ;
 typedef unsigned char fourchoices  ;
 #include "texmfmem.h"
 typedef text /* of  memoryword */ wordfile  ;
-typedef unsigned char glueord  ;
+typedef /* @d707@ *//* @d708@ */unsigned char glueord  ;
 typedef struct {
-    short modefield ;
+    /* @d709@ *//* @d710@ */short modefield ;
   halfword headfield, tailfield ;
   halfword eTeXauxfield ;
   integer pgfield, mlfield ;
   memoryword auxfield ;
 } liststaterecord  ;
-typedef unsigned char groupcode  ;
+typedef /* @d711@ */unsigned char groupcode  ;
 typedef struct {
     quarterword statefield, indexfield ;
   halfword startfield, locfield, limitfield, namefield ;
 } instaterecord  ;
 typedef integer internalfontnumber  ;
 typedef integer fontindex  ;
-typedef short ninebits  ;
+typedef /* @d712@ */short ninebits  ;
 typedef integer dviindex  ;
 typedef struct {
     integer int0, int1 ;
@@ -130,7 +131,7 @@ typedef struct {
   halfword reflinknode ;
 } pdflinkstackrecord  ;
 typedef integer savepointer  ;
-EXTERN integer bad  ;
+/* @c713@ */integer bad  ;
 EXTERN ASCIIcode xord[256]  ;
 EXTERN ASCIIcode xchr[256]  ;
 EXTERN ASCIIcode xprn[256]  ;
@@ -223,19 +224,19 @@ EXTERN strnumber initstrptr  ;
 EXTERN alphafile poolfile  ;
 #endif /* INITEX */
 EXTERN alphafile logfile  ;
-EXTERN unsigned char selector  ;
+/* @d714@ */unsigned char selector  ;
 EXTERN unsigned char dig[23]  ;
 EXTERN integer tally  ;
 EXTERN integer termoffset  ;
 EXTERN integer fileoffset  ;
-EXTERN ASCIIcode trickbuf[256]  ;
+/* @d715@ */ASCIIcode trickbuf[256]  ;
 EXTERN integer trickcount  ;
 EXTERN integer firstcount  ;
-EXTERN unsigned char interaction  ;
-EXTERN unsigned char interactionoption  ;
+/* @d716@ *//* @d717@ */unsigned char interaction  ;
+/* @d718@ *//* @d719@ */unsigned char interactionoption  ;
 EXTERN boolean deletionsallowed  ;
 EXTERN boolean setboxallowed  ;
-EXTERN unsigned char history  ;
+/* @d720@ *//* @d721@ */unsigned char history  ;
 EXTERN schar errorcount  ;
 EXTERN strnumber helpline[6]  ;
 EXTERN unsigned char helpptr  ;
@@ -271,11 +272,11 @@ EXTERN liststaterecord * nest  ;
 EXTERN integer nestptr  ;
 EXTERN integer maxneststack  ;
 EXTERN liststaterecord curlist  ;
-EXTERN short shownmode  ;
+/* @d722@ *//* @d723@ */short shownmode  ;
 EXTERN halfword savetail  ;
-EXTERN unsigned char oldsetting  ;
+/* @d724@ */unsigned char oldsetting  ;
 EXTERN memoryword * zeqtb  ;
-EXTERN quarterword 
+/* @d725@ *//* @d726@ */quarterword 
 #define xeqlevel (zzzaa -29277)
   zzzaa[907]  ;
 EXTERN twohalves * hash  ;
@@ -287,7 +288,7 @@ EXTERN halfword eqtbtop  ;
 EXTERN halfword hashhigh  ;
 EXTERN boolean nonewcontrolsequence  ;
 EXTERN integer cscount  ;
-EXTERN twohalves prim[2101]  ;
+/* @d727@ */twohalves prim[2101]  ;
 EXTERN halfword primused  ;
 EXTERN memoryword * savestack  ;
 EXTERN integer saveptr  ;
@@ -312,7 +313,7 @@ EXTERN integer line  ;
 EXTERN integer * linestack  ;
 EXTERN strnumber * sourcefilenamestack  ;
 EXTERN strnumber * fullsourcefilenamestack  ;
-EXTERN unsigned char scannerstatus  ;
+/* @d728@ *//* @d729@ */unsigned char scannerstatus  ;
 EXTERN halfword warningindex  ;
 EXTERN halfword defref  ;
 EXTERN halfword * paramstack  ;
@@ -325,17 +326,17 @@ EXTERN halfword partoken  ;
 EXTERN boolean forceeof  ;
 EXTERN integer expanddepthcount  ;
 EXTERN boolean isincsname  ;
-EXTERN halfword curmark[5]  ;
-EXTERN unsigned char longstate  ;
+/* @d730@ *//* @d731@ */halfword curmark[5]  ;
+/* @d732@ *//* @d733@ */unsigned char longstate  ;
 EXTERN halfword pstack[9]  ;
 EXTERN integer curval  ;
-EXTERN unsigned char curvallevel  ;
+/* @d734@ *//* @d735@ */unsigned char curvallevel  ;
 EXTERN smallnumber radix  ;
 EXTERN glueord curorder  ;
 EXTERN alphafile readfile[16]  ;
-EXTERN unsigned char readopen[17]  ;
+/* @d736@ *//* @d737@ */unsigned char readopen[17]  ;
 EXTERN halfword condptr  ;
-EXTERN unsigned char iflimit  ;
+/* @d738@ *//* @d739@ */unsigned char iflimit  ;
 EXTERN smallnumber curif  ;
 EXTERN integer ifline  ;
 EXTERN integer skipline  ;
@@ -538,8 +539,8 @@ EXTERN integer * pdffontknacbase  ;
 EXTERN integer fontexpandratio  ;
 EXTERN halfword lastleftmostchar  ;
 EXTERN halfword lastrightmostchar  ;
-EXTERN halfword hliststack[513]  ;
-EXTERN short hliststacklevel  ;
+/* @d740@ */halfword hliststack[513]  ;
+/* @d741@ */short hliststacklevel  ;
 EXTERN halfword preadjusttail  ;
 EXTERN integer packbeginline  ;
 EXTERN twohalves emptyfield  ;
@@ -587,10 +588,10 @@ EXTERN halfword curp  ;
 EXTERN boolean secondpass  ;
 EXTERN boolean finalpass  ;
 EXTERN integer threshold  ;
-EXTERN integer minimaldemerits[4]  ;
+/* @d742@ *//* @d743@ */integer minimaldemerits[4]  ;
 EXTERN integer minimumdemerits  ;
-EXTERN halfword bestplace[4]  ;
-EXTERN halfword bestplline[4]  ;
+/* @d744@ *//* @d745@ */halfword bestplace[4]  ;
+/* @d746@ *//* @d747@ */halfword bestplline[4]  ;
 EXTERN scaled discwidth[9]  ;
 EXTERN halfword easyline  ;
 EXTERN halfword lastspecialline  ;
@@ -662,7 +663,7 @@ EXTERN boolean trienotready  ;
 #endif /* INITEX */
 EXTERN scaled bestheightplusdepth  ;
 EXTERN halfword pagetail  ;
-EXTERN unsigned char pagecontents  ;
+/* @d748@ *//* @d749@ */unsigned char pagecontents  ;
 EXTERN scaled pagemaxdepth  ;
 EXTERN halfword bestpagebreak  ;
 EXTERN integer leastpagecost  ;
@@ -756,7 +757,7 @@ EXTERN savepointer * grpstack  ;
 EXTERN halfword * ifstack  ;
 EXTERN halfword maxregnum  ;
 EXTERN strnumber maxreghelpline  ;
-EXTERN halfword saroot[7]  ;
+/* @d750@ *//* @d751@ */halfword saroot[7]  ;
 EXTERN halfword curptr  ;
 EXTERN memoryword sanull  ;
 EXTERN halfword sachain  ;
@@ -765,11 +766,11 @@ EXTERN halfword lastlinefill  ;
 EXTERN boolean dolastlinefit  ;
 EXTERN smallnumber activenodesize  ;
 EXTERN scaled fillwidth[3]  ;
-EXTERN scaled bestplshort[4]  ;
-EXTERN scaled bestplglue[4]  ;
+/* @d752@ *//* @d753@ */scaled bestplshort[4]  ;
+/* @d754@ *//* @d755@ */scaled bestplglue[4]  ;
 EXTERN triepointer hyphstart  ;
 EXTERN triepointer hyphindex  ;
-EXTERN halfword discptr[4]  ;
+/* @d756@ *//* @d757@ */halfword discptr[4]  ;
 EXTERN poolpointer editnamestart  ;
 EXTERN integer editnamelength, editline  ;
 EXTERN cinttype ipcon  ;

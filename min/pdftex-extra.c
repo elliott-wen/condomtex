@@ -457,7 +457,7 @@ string kpse_find_file(const_string name, kpse_file_format_type format,  boolean 
    
     
 
-    #define PREFIX(path) //Todo if there is confusion, we can enforce matching the prefix
+    #define PREFIXPATH(path) //Todo if there is confusion, we can enforce matching the prefix
     #define SUFFIX(suf) \
     if(strrchr(patched_name, '.') == NULL) \
         strcat(patched_name, suf); \
@@ -466,34 +466,34 @@ string kpse_find_file(const_string name, kpse_file_format_type format,  boolean 
     switch (format)
     { 
         case kpse_gf_format:
-          PREFIX("fonts/gf/");
+          PREFIXPATH("fonts/gf/");
           SUFFIX (".gf");
           break;
         case kpse_pk_format:
-          PREFIX("fonts/pk/");
+          PREFIXPATH("fonts/pk/");
           SUFFIX (".pk");
           break;
         case kpse_tfm_format:
-          PREFIX("fonts/tfm/");
+          PREFIXPATH("fonts/tfm/");
           SUFFIX (".tfm");
           break;
         case kpse_afm_format:
-          PREFIX("fonts/atm/");
+          PREFIXPATH("fonts/atm/");
           SUFFIX (".afm");
           break;
         case kpse_base_format:
           SUFFIX (".base");
           break;
         case kpse_bib_format:
-          PREFIX("bibtex/bib/");
+          PREFIXPATH("bibtex/bib/");
           SUFFIX (".bib");
           break;
         case kpse_bst_format:
-          PREFIX("bibtex/bst/");
+          PREFIXPATH("bibtex/bst/");
           SUFFIX (".bst");
           break;
         case kpse_fontmap_format:
-          PREFIX("fonts/map/");
+          PREFIXPATH("fonts/map/");
           SUFFIX (".map");
           break;
         case kpse_mem_format:
@@ -503,7 +503,7 @@ string kpse_find_file(const_string name, kpse_file_format_type format,  boolean 
           SUFFIX (".mf");
           break;
         case kpse_mft_format:
-          PREFIX("mft/")
+          PREFIXPATH("mft/")
           SUFFIX (".mft");
           break;
         case kpse_mfpool_format:
@@ -549,7 +549,7 @@ string kpse_find_file(const_string name, kpse_file_format_type format,  boolean 
           SUFFIX (".pfa");
           break;
         case kpse_vf_format:
-          PREFIX("fonts/vf/");
+          PREFIXPATH("fonts/vf/");
           SUFFIX (".vf");
           break;
         case kpse_ist_format:
@@ -564,11 +564,11 @@ string kpse_find_file(const_string name, kpse_file_format_type format,  boolean 
         case kpse_miscfonts_format:
           break;
         case kpse_enc_format:
-          PREFIX('fonts/enc/pdftex/');
+          PREFIXPATH('fonts/enc/pdftex/');
           SUFFIX (".enc");
           break;
         case kpse_cmap_format:
-          PREFIX("fonts/cmap/");
+          PREFIXPATH("fonts/cmap/");
           break;
         case kpse_sfd_format:
           SUFFIX (".sfd");
@@ -610,7 +610,7 @@ string kpse_find_file(const_string name, kpse_file_format_type format,  boolean 
   }
 
 #undef SUFFIX
-#undef PREFIX
+#undef PREFIXPATH
   //printf("I am looking for %s\n", patched_name);
 
   if(skpse_file_deamon_search(patched_name) == 0) //Nope Try download it //Now we can ask for help to download the file
