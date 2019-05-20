@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (pdfTeX Standalone 0.1 beta) (preloaded format=pdflatex 2019.5.16)  16 MAY 2019 16:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (pdfTeX Standalone 0.1 beta) (preloaded format=pdflatex 2019.5.16)  16 MAY 2019 16:52
 entering extended mode
 **test.tex 
 (test.tex
@@ -814,22 +814,29 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 111.
  (test.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 111.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 111.
-Package rerunfilecheck Info: File `test.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+
+
+Package rerunfilecheck Warning: File `test.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `test.out':
+(rerunfilecheck)             Before: 0DB8B2D771F9C1CD4DB12AB14A521387;482
+(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 16806 strings out of 494483
- 319501 string characters out of 6175818
- 508264 words of memory out of 5000000
- 20120 multiletter control sequences out of 15000+600000
+ 16889 strings out of 494483
+ 320705 string characters out of 6175818
+ 510064 words of memory out of 5000000
+ 20194 multiletter control sequences out of 15000+600000
  10859 words of font info for 40 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
  48i,14n,51p,788b,562s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 No pages of output.
 PDF statistics:
- 392 PDF objects out of 1000 (max. 8388607)
- 4 compressed objects within 1 object stream
- 0 named destinations out of 1000 (max. 500000)
- 43 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 437 PDF objects out of 1000 (max. 8388607)
+ 22 compressed objects within 1 object stream
+ 9 named destinations out of 1000 (max. 500000)
+ 115 words of extra memory for PDF output out of 10000 (max. 10000000)
 
