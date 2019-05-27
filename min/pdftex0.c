@@ -2808,7 +2808,6 @@ zpdfbeginobj ( integer i , integer pdfoslevel )
   pdfbeginobj_regmem 
   checkpdfminorversion () ;
   pdfosprepareobj ( i , pdfoslevel ) ;
-  eqtb [29333 ].cint = 0 ;
   if ( ! pdfosmode ) 
   {
     pdfprintint ( i ) ;
@@ -2894,7 +2893,6 @@ zpdfbegindict ( integer i , integer pdfoslevel )
   pdfbegindict_regmem 
   checkpdfminorversion () ;
   pdfosprepareobj ( i , pdfoslevel ) ;
-  eqtb [29333 ].cint = 0 ;
   if ( ! pdfosmode ) 
   {
     pdfprintint ( i ) ;
@@ -18423,6 +18421,7 @@ pdfbeginstream ( void )
   pdfstreamlengthoffset = ( pdfgone + pdfptr ) - 11 ;
   pdfstreamlength = 0 ;
   pdflastbyte = 0 ;
+  if ( eqtb [29333 ].cint > 0 ) 
   eqtb [29333 ].cint = 0 ;
   if ( eqtb [29333 ].cint > 0 ) 
   {
@@ -37727,7 +37726,6 @@ maincontrol ( void )
   halfword tmpk1, tmpk2  ;
   if ( eqtb [27165 ].hh .v.RH != -2147483647L ) 
   begintokenlist ( eqtb [27165 ].hh .v.RH , 12 ) ;
-  eqtb [29333 ].cint = 0 ;
   labmaincontrol60: getxtoken () ;
   labmaincontrol21: if ( interrupt != 0 ) {
       

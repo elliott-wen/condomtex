@@ -1,6 +1,6 @@
-CC=clang
-CXX=clang++
-DEBUGFLAGS =  -g
+CC=gcc
+CXX=g++
+DEBUGFLAGS = -O2 -g
 #DEBUGFLAGS = -ggdb -pg
 
 CFLAGS = $(DEBUGFLAGS) -Wall $(XCFLAGS)
@@ -16,7 +16,7 @@ LIBZLIB = $(LIBDIR)/libz.a
 LIBMD5 = $(LIBDIR)/libmd5.a
 LIBPDFTEX = $(LIBDIR)/libpdftex.a
 
-sources = pdftex0.c pdftexini.c pdftex-pool.c pdftex-extra.c print.c
+sources = pdftex0.c pdftexini.c pdftex-pool.c pdftex-extra.c
 
 objects = $(sources:.c=.o)
 

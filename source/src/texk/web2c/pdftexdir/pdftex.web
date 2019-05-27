@@ -15499,7 +15499,7 @@ begin
     pdf_stream_length_offset := pdf_offset - 11;
     pdf_stream_length := 0;
     pdf_last_byte := 0;
-    pdf_compress_level := 0;
+    if pdf_compress_level > 0 then pdf_compress_level := 0;
     if pdf_compress_level > 0 then begin
         pdf_print_ln("/Filter /FlateDecode");
         pdf_print_ln(">>");
@@ -16795,7 +16795,6 @@ procedure pdf_begin_obj(i: integer; pdf_os_level: integer); {begin a PDF object}
 begin
     check_pdfminorversion;
     pdf_os_prepare_obj(i, pdf_os_level);
-    pdf_compress_level := 0;
     if not pdf_os_mode then begin
         pdf_print_int(i);
         pdf_print_ln(" 0 obj");
@@ -16825,7 +16824,6 @@ procedure pdf_begin_dict(i: integer; pdf_os_level: integer); {begin a PDF dictio
 begin
     check_pdfminorversion;
     pdf_os_prepare_obj(i, pdf_os_level);
-    pdf_compress_level:= 0;
     if not pdf_os_mode then begin
         pdf_print_int(i);
         pdf_print_ln(" 0 obj");
@@ -28559,7 +28557,6 @@ label big_switch,reswitch,main_loop,main_loop_wrapup,
 var@!t:integer; {general-purpose temporary variable}
 tmp_k1, tmp_k2: pointer; {for testing whether an auto kern should be inserted}
 begin if every_job<>null then begin_token_list(every_job,every_job_text);
-pdf_compress_level:=0; {force disable pdf write zip}
 big_switch: get_x_token;@/
 reswitch: @<Give diagnostic information, if requested@>;
 case abs(mode)+cur_cmd of

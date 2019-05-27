@@ -1,0 +1,60 @@
+ 148.
+
+
+LaTeX Warning: Reference `conclusion' on page 2 undefined on input line 148.
+
+
+LaTeX Warning: Citation `andemu' on page 2 undefined on input line 157.
+
+
+LaTeX Warning: Citation `bluestack' on page 2 undefined on input line 157.
+
+
+LaTeX Warning: Citation `genymotion' on page 2 undefined on input line 157.
+
+
+LaTeX Warning: Citation `vpscom' on page 2 undefined on input line 157.
+
+[2]
+No file old.bbl.
+
+** Conference Paper **
+Before submitting the final camera ready copy, remember to:
+
+ 1. Manually equalize the lengths of two columns on the last page
+ of your paper;
+
+ 2. Ensure that any PostScript and/or PDF output post-processing
+ uses only Type 1 fonts and that every step in the generation
+ process uses the appropriate paper size.
+
+[3
+
+] (./old.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 4397 strings out of 492976
+ 69045 string characters out of 6134932
+ 140397 words of memory out of 5000000
+ 7914 multiletter control sequences out of 15000+600000
+ 39336 words of font info for 78 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 41i,8n,41p,1270b,311s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
+e/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/
+times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.p
+fb>
+Output written on old.pdf (3 pages, 209158 bytes).
+PDF statistics:
+ 68 PDF objects out of 1000 (max. 8388607)
+ 47 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+

@@ -1,0 +1,251 @@
+% reading source myrefs.bib
+%
+\citation{BCDZ+14}{cite:benedetto2014effects}{bid4}{year}{article}
+\bauthors{\bpers[Simone]{S.}{}{Benedetto}{}\bpers[Andrea]{A.}{}{Carbone}{}\bpers[V{\'e}ronique]{V.}{}{Drai-Zerbib}{}\bpers[Marco]{M.}{}{Pedrotti}{}\bpers[Thierry]{T.}{}{Baccino}{}}
+\cititem{btitle}{Effects of luminance and illuminance on visual fatigue and arousal during digital reading}
+\cititem{bjournal}{Computers in human behavior}
+\cititem{bvolume}{41}
+\cititem{byear}{2014}
+\cititem{bpages}{112--119}
+\endcitation
+%
+\citation{BDR+18}{cite:blankenbach201822}{bid7}{year}{inproceedings}
+\bauthors{\bpers[Karlheinz]{K.}{}{Blankenbach}{}\bpers[Peter]{P.}{}{Duchemin}{}\bpers[Benjamin]{B.}{}{Rist}{}\bpers[Danny]{D.}{}{Bogner}{}\bpers[Marcel]{M.}{}{Krause}{}}
+\cititem{btitle}{22-2: Smart Pharmaceutical Packaging with E-Paper Display for improved Patient Compliance}
+\cititem{bbooktitle}{SID Symposium Digest of Technical Papers}
+\cititem{bnumber}{1}
+\cititem{bvolume}{49}
+\cititem{borganization}{Wiley Online Library}
+\cititem{bpages}{271--274}
+\cititem{byear}{2018}
+\endcitation
+%
+\citation{BDZP+13}{cite:benedetto2013readers}{bid3}{year}{article}
+\bauthors{\bpers[Simone]{S.}{}{Benedetto}{}\bpers[V{\'e}ronique]{V.}{}{Drai-Zerbib}{}\bpers[Marco]{M.}{}{Pedrotti}{}\bpers[Geoffrey]{G.}{}{Tissier}{}\bpers[Thierry]{T.}{}{Baccino}{}}
+\cititem{btitle}{E-readers and visual fatigue}
+\cititem{bjournal}{PloS one}
+\cititem{bnumber}{12}
+\cititem{bvolume}{8}
+\cititem{byear}{2013}
+\cititem{bpages}{e83676}
+\endcitation
+%
+\citation{CSH+18}{cite:chiu2018interactive}{bid6}{year}{incollection}
+\bauthors{\bpers[Po-Sheng]{P.-S.}{}{Chiu}{}\bpers[Yen-Ning]{Y.-N.}{}{Su}{}\bpers[Yueh-Min]{Y.-M.}{}{Huang}{}\bpers[Ying-Hung]{Y.-H.}{}{Pu}{}\bpers[Pei-Yu]{P.-Y.}{}{Cheng}{}\bpers[I-Ching]{I.-C.}{}{Chao}{}\bpers[Yong-Ming]{Y.-M.}{}{Huang}{}}
+\cititem{btitle}{Interactive Electronic Book for Authentic Learning}
+\cititem{bbooktitle}{Authentic Learning Through Advances in Technologies}
+\cititem{bpublisher}{Springer}
+\cititem{byear}{2018}
+\cititem{bpages}{45--60}
+\endcitation
+%
+\citation{DNP18}{cite:dierk2018alterwear}{bid8}{year}{inproceedings}
+\bauthors{\bpers[Christine]{C.}{}{Dierk}{}\bpers[Molly Jane Pearce]{M. J. P.}{}{Nicholas}{}\bpers[Eric]{E.}{}{Paulos}{}}
+\cititem{btitle}{AlterWear: Battery-free wearable displays for opportunistic interactions}
+\cititem{bbooktitle}{Proceedings of the 2018 CHI Conference on Human Factors in Computing Systems}
+\cititem{borganization}{ACM}
+\cititem{bpages}{220}
+\cititem{byear}{2018}
+\endcitation
+%
+\citation{Ell18}{cite:elliott2018}{bid13}{year}{article}
+\bauthors{\bpers[Gerald Weber]{G. W.}{}{Elliott Wen}{}}
+\cititem{btitle}{SwiftLaTeX: Exploring the true WYSWIYG editing for publication}
+\cititem{bjournal}{DocEng}
+\cititem{byear}{2018}
+\endcitation
+%
+\citation{EME}{cite:emelyanovcriu}{bid22}{year}{misc}
+\bauthors{\bpers[P]{P.}{}{EMELYANOV}{}}
+\cititem{btitle}{CRIU: Checkpoint/Restore In Userspace, July 2011}
+\endcitation
+%
+\citation{F19}{cite:foxitreader}{bid16}{year}{misc}
+\bauthors{\bpers[]{}{}{{Foxit Reader}}{}}
+\cititem{btitle}{{PDF Viewer from Foxit Software}}
+\cititem{bhowpublished}{\url{https://goo.gl/w1918D}}
+\cititem{byear}{2019}
+\endcitation
+%
+\citation{HD06}{cite:hargrove2006berkeley}{bid21}{year}{inproceedings}
+\bauthors{\bpers[Paul H]{P. H.}{}{Hargrove}{}\bpers[Jason C]{J. C.}{}{Duell}{}}
+\cititem{btitle}{Berkeley lab checkpoint/restart (blcr) for linux clusters}
+\cititem{bbooktitle}{Journal of Physics: Conference Series}
+\cititem{bnumber}{1}
+\cititem{bvolume}{46}
+\cititem{borganization}{IOP Publishing}
+\cititem{bpages}{494}
+\cititem{byear}{2006}
+\endcitation
+%
+\citation{hoo}{cite:hooking}{bid23}{year}{misc}
+\cititem{btitle}{Dynamic linker hooking techniques}
+\csname @href\endcsname{http://man7.org/linux/man-pages/man8/ld.so.8.html}{\url{http://man7.org/linux/man-pages/man8/ld.so.8.html}}
+\endcitation
+%
+\citation{Int}{cite:onyxboox}{bid24}{year}{misc}
+\bauthors{\bpers[Onyx]{O.}{}{Intl}{}}
+\cititem{btitle}{ONYX BOOX electronic books}
+\csname @href\endcsname{https://onyxboox.com}{\url{https://onyxboox.com}}
+\endcitation
+%
+\citation{Kas02}{cite:kastrup2002revisiting}{bid11}{year}{article}
+\bauthors{\bpers[David]{D.}{}{Kastrup}{}}
+\cititem{btitle}{Revisiting WYSIWYG paradigms for authoring LATEX}
+\cititem{bjournal}{COMMUNICATIONS OF THE TEX USERS GROUP TUGBOAT EDITOR BARBARA BEETON PROCEEDINGS EDITORS KAJA CHRISTIANSEN}
+\cititem{bnumber}{1}
+\cititem{bvolume}{23}
+\cititem{byear}{2002}
+\cititem{bpages}{57}
+\endcitation
+%
+\citation{mup18}{cite:mupdf}{bid18}{year}{misc}
+\bauthors{\bpers[]{}{}{mupdf}{}}
+\cititem{btitle}{MuPDF, a lightweight PDF, XPS, and E-book viewer}
+\cititem{byear}{2018}
+\csname @href\endcsname{https://mupdf.com}{\url{https://mupdf.com}}
+\endcitation
+%
+\citation{Nie09}{cite:nielsen2009discount}{bid29}{year}{article}
+\bauthors{\bpers[Jakob]{J.}{}{Nielsen}{}}
+\cititem{btitle}{Discount usability: 20 years}
+\cititem{bjournal}{Jakob Nielsen's Alertbox Available at http://www. useit. com/alertbox/discount-usability. html [Accessed 23 January 2012]}
+\cititem{byear}{2009}
+\endcitation
+%
+\citation{Nie15}{cite:nielsen2015you}{bid28}{year}{article}
+\bauthors{\bpers[Jakob]{J.}{}{Nielsen}{}}
+\cititem{btitle}{Why you only need to test with 5 users, March 19, 2000}
+\cititem{bjournal}{Useit.com Alertbox}
+\cititem{bvolume}{27}
+\cititem{byear}{2015}
+\endcitation
+%
+\citation{Nie89}{cite:nielsen1989usability}{bid27}{year}{inproceedings}
+\bauthors{\bpers[Jakob]{J.}{}{Nielsen}{}}
+\cititem{btitle}{Usability engineering at a discount}
+\cititem{bbooktitle}{Proceedings of the third international conference on human-computer interaction on Designing and using human-computer interfaces and knowledge based systems (2nd ed.)}
+\cititem{borganization}{Elsevier Science Inc.}
+\cititem{bpages}{394--401}
+\cititem{byear}{1989}
+\endcitation
+%
+\citation{nxp}{cite:nxpsoc}{bid26}{year}{misc}
+\cititem{btitle}{i.MX6 Quad Applications Processors}
+\csname @href\endcsname{https://goo.gl/mqtw9v}{\url{https://goo.gl/mqtw9v}}
+\endcitation
+%
+\citation{Ove18}{cite:overleaf}{bid10}{year}{misc}
+\bauthors{\bpers[]{}{}{Overleaf}{}}
+\cititem{btitle}{Overleaf, Collaborative Writing and Publishing}
+\cititem{byear}{2018}
+\csname @href\endcsname{https://www.overleaf.com}{\url{https://www.overleaf.com}}
+\endcitation
+%
+\citation{PODI+17}{cite:peroni2017research}{bid14}{year}{article}
+\bauthors{\bpers[Silvio]{S.}{}{Peroni}{}\bpers[Francesco]{F.}{}{Osborne}{}\bpers[Angelo]{A.}{}{Di Iorio}{}\bpers[Andrea Giovanni]{A. G.}{}{Nuzzolese}{}\bpers[Francesco]{F.}{}{Poggi}{}\bpers[Fabio]{F.}{}{Vitali}{}\bpers[Enrico]{E.}{}{Motta}{}}
+\cititem{btitle}{Research Articles in Simplified HTML: a Web-first format for HTML-based scholarly articles}
+\cititem{bjournal}{PeerJ Computer Science}
+\cititem{bvolume}{3}
+\cititem{byear}{2017}
+\cititem{bpages}{e132}
+\endcitation
+%
+\citation{R18}{cite:researchmarket}{bid0}{year}{misc}
+\bauthors{\bpers[]{}{}{{Research and Markets}}{}}
+\cititem{btitle}{{e-Paper Display Market 2016-2020}}
+\cititem{bhowpublished}{\url{https://goo.gl/PvVHTs}}
+\cititem{byear}{2018}
+\endcitation
+%
+\citation{reM}{cite:reMarkable}{bid25}{year}{misc}
+\cititem{btitle}{reMarkable:Paper-like Tablet}
+\csname @href\endcsname{https://remarkable.com/}{\url{https://remarkable.com/}}
+\endcitation
+%
+\citation{Sha11}{cite:sharedb}{bid30}{year}{misc}
+\bauthors{\bpers[]{}{}{ShareDB}{}}
+\cititem{btitle}{ShareDB: A database frontend for concurrent editing systems}
+\cititem{byear}{2011}
+\csname @href\endcsname{https://goo.gl/wAT43N}{\url{https://goo.gl/wAT43N}}
+\endcitation
+%
+\citation{Sof11}{cite:soft2011bakoma}{bid12}{year}{misc}
+\bauthors{\bpers[BaKoMa]{B.}{}{Soft}{}}
+\cititem{btitle}{BaKoMa TEX 9.77}
+\cititem{byear}{2011}
+\csname @href\endcsname{http://www.bakoma.com}{\url{http://www.bakoma.com}}
+\endcitation
+%
+\citation{Sou08}{cite:souders2008high}{bid17}{year}{article}
+\bauthors{\bpers[Steve]{S.}{}{Souders}{}}
+\cititem{btitle}{High-performance web sites}
+\cititem{bjournal}{Communications of the ACM}
+\cititem{bnumber}{12}
+\cititem{bvolume}{51}
+\cititem{byear}{2008}
+\cititem{bpages}{36--41}
+\endcitation
+%
+\citation{SWBG11}{cite:siegenthaler2011comparing}{bid1}{year}{article}
+\bauthors{\bpers[Eva]{E.}{}{Siegenthaler}{}\bpers[Pascal]{P.}{}{Wurtz}{}\bpers[Per]{P.}{}{Bergamin}{}\bpers[Rudolf]{R.}{}{Groner}{}}
+\cititem{btitle}{Comparing reading processes on e-ink displays and print}
+\cititem{bjournal}{Displays}
+\cititem{bnumber}{5}
+\cititem{bvolume}{32}
+\cititem{byear}{2011}
+\cititem{bpages}{268--273}
+\endcitation
+%
+\citation{SWG10}{cite:siegenthaler2010improving}{bid2}{year}{article}
+\bauthors{\bpers[Eva]{E.}{}{Siegenthaler}{}\bpers[Pascal]{P.}{}{Wurtz}{}\bpers[Rudolf]{R.}{}{Groner}{}}
+\cititem{btitle}{Improving the usability of E-book readers}
+\cititem{bjournal}{Journal of Usability Studies}
+\cititem{bnumber}{1}
+\cititem{bvolume}{6}
+\cititem{byear}{2010}
+\cititem{bpages}{25--38}
+\endcitation
+%
+\citation{Wil03}{cite:williams2003font}{bid19}{year}{article}
+\bauthors{\bpers[George]{G.}{}{Williams}{}}
+\cititem{btitle}{Font creation with FontForge}
+\cititem{bjournal}{EuroTEX 2003 Proceedings, TUGboat}
+\cititem{bnumber}{3}
+\cititem{bvolume}{24}
+\cititem{byear}{2003}
+\cititem{bpages}{531--544}
+\endcitation
+%
+\citation{WL13a}{cite:wang2013online}{bid20}{year}{misc}
+\bauthors{\bpers[Lu]{L.}{}{WANG}{}\bpers[Wanmin]{W.}{}{LIU}{}}
+\cititem{btitle}{Pdf2htmlEX}
+\cititem{byear}{2013}
+\csname @href\endcsname{https://goo.gl/89SDo6}{\url{https://goo.gl/89SDo6}}
+\endcitation
+%
+\citation{WL13b}{cite:wang2013onlineperformance}{bid15}{year}{misc}
+\bauthors{\bpers[Lu]{L.}{}{WANG}{}\bpers[Wanmin]{W.}{}{LIU}{}}
+\cititem{btitle}{Performance Comparison Between PDFs and HTMLs}
+\cititem{byear}{2013}
+\csname @href\endcsname{https://goo.gl/s2yd1x}{\url{https://goo.gl/s2yd1x}}
+\endcitation
+%
+\citation{WW18}{cite:wen2018going}{bid9}{year}{inproceedings}
+\bauthors{\bpers[Elliott]{E.}{}{Wen}{}\bpers[Gerald]{G.}{}{Weber}{}}
+\cititem{btitle}{Going Grey: Exploring the Potential of Electrophoretic Displays}
+\cititem{bbooktitle}{Proceedings of the 2018 ACM International Joint Conference and 2018 International Symposium on Pervasive and Ubiquitous Computing and Wearable Computers}
+\cititem{borganization}{ACM}
+\cititem{bpages}{1761--1764}
+\cititem{byear}{2018}
+\endcitation
+%
+\citation{ZC12}{cite:zambarbieri2012eye}{bid5}{year}{article}
+\bauthors{\bpers[Daniela]{D.}{}{Zambarbieri}{}\bpers[Elena]{E.}{}{Carniglia}{}}
+\cititem{btitle}{Eye movement analysis of reading from computer displays, eReaders and printed books}
+\cititem{bjournal}{Ophthalmic and Physiological Optics}
+\cititem{bnumber}{5}
+\cititem{bvolume}{32}
+\cititem{byear}{2012}
+\cititem{bpages}{390--396}
+\endcitation

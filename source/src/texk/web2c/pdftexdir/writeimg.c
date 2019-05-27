@@ -379,7 +379,7 @@ void writeimage(integer img)
         epdf_doc = pdf_ptr(img)->doc;
         epdf_selected_page = pdf_ptr(img)->selected_page;
         epdf_page_box = pdf_ptr(img)->page_box;
-        write_epdf();
+        //write_epdf();
         break;
     default:
         pdftex_fail("unknown type of image");

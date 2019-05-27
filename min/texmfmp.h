@@ -11,13 +11,13 @@
 typedef int integer;
 typedef int boolean;
 typedef long longinteger;
-typedef const unsigned char* constcstring;
-typedef unsigned char* cstring;
+typedef const char* constcstring;
+typedef char* cstring;
 typedef int cinttype;
 typedef signed char schar;
-typedef unsigned char* string;
-typedef const unsigned char* const_string;
-typedef  FILE* text;
+typedef char* string;
+typedef const char* const_string;
+typedef FILE* text;
 typedef double real;
 typedef double glueratio;
 #define false 0
