@@ -1,10 +1,10 @@
-This is superme pdfTeX, Version Alpha 1 (TeX Live 2018) (INITEX)  14 JUN 2018 10:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (pdfTeX Standalone 0.1 beta) (INITEX)  27 MAY 2019 12:18
 entering extended mode
-***pdflatex.ini
-(/home/elliott/pdftextexmfdist/pdflatex.ini
-(/home/elliott/pdftextexmfdist/pdftexconfig.tex)
-(/home/elliott/pdftextexmfdist/latex.ltx
-(/home/elliott/pdftextexmfdist/texsys.cfg)
+***pdflatex.ini 
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/pdflatex.ini
+(/var/lib/texmf/tex/generic/config/pdftexconfig.tex)
+(/usr/share/texlive/texmf-dist/tex/latex/base/latex.ltx
+(/usr/share/texlive/texmf-dist/tex/latex/base/texsys.cfg)
 \openout15 = `texsys.aux'.
 
 
@@ -34,7 +34,7 @@ catcodes, registers,
 \interfootnotelinepenalty=\count23
 \strutbox=\box11
 
-LaTeX2e <2018-04-01> patch level 2
+LaTeX2e <2018-12-01>
 hacks,
 \@tempcnta=\count24
 \@tempcntb=\count25
@@ -73,37 +73,37 @@ hacks,
 Local config file fonttext.cfg used
 
 ====================================
-(/home/elliott/pdftextexmfdist/fonttext.cfg
-File: fonttext.cfg 2016/12/03 v3.0a LaTeX Kernel (Uncustomised text font setup)
+(/usr/share/texlive/texmf-dist/tex/latex/base/fonttext.cfg
+File: fonttext.cfg 2018/09/24 v3.0b LaTeX Kernel (Uncustomised text font setup)
 
 
-(/home/elliott/pdftextexmfdist/fonttext.ltx
-File: fonttext.ltx 2016/12/03 v3.0a LaTeX Kernel (Text font setup)
+(/usr/share/texlive/texmf-dist/tex/latex/base/fonttext.ltx
+File: fonttext.ltx 2018/09/24 v3.0b LaTeX Kernel (Text font setup)
 
 === Don't modify this file, use a .cfg file instead ===
 
-(/home/elliott/pdftextexmfdist/omlenc.def
-File: omlenc.def 2017/04/05 v2.0i Standard LaTeX file
+(/usr/share/texlive/texmf-dist/tex/latex/base/omlenc.def
+File: omlenc.def 2018/08/11 v2.0j Standard LaTeX file
 )
-(/home/elliott/pdftextexmfdist/t1enc.def
-File: t1enc.def 2017/04/05 v2.0i Standard LaTeX file
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2018/08/11 v2.0j Standard LaTeX file
 )
-(/home/elliott/pdftextexmfdist/ot1enc.def
-File: ot1enc.def 2017/04/05 v2.0i Standard LaTeX file
+(/usr/share/texlive/texmf-dist/tex/latex/base/ot1enc.def
+File: ot1enc.def 2018/08/11 v2.0j Standard LaTeX file
 )
-(/home/elliott/pdftextexmfdist/omsenc.def
-File: omsenc.def 2017/04/05 v2.0i Standard LaTeX file
+(/usr/share/texlive/texmf-dist/tex/latex/base/omsenc.def
+File: omsenc.def 2018/08/11 v2.0j Standard LaTeX file
 )
-(/home/elliott/pdftextexmfdist/t1cmr.fd
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1cmr.fd
 File: t1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-(/home/elliott/pdftextexmfdist/ot1cmr.fd
+(/usr/share/texlive/texmf-dist/tex/latex/base/ot1cmr.fd
 File: ot1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-(/home/elliott/pdftextexmfdist/ot1cmss.fd
+(/usr/share/texlive/texmf-dist/tex/latex/base/ot1cmss.fd
 File: ot1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-(/home/elliott/pdftextexmfdist/ot1cmtt.fd
+(/usr/share/texlive/texmf-dist/tex/latex/base/ot1cmtt.fd
 File: ot1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )))
 ====================================
@@ -111,27 +111,27 @@ File: ot1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 Local config file fontmath.cfg used
 
 ====================================
-(/home/elliott/pdftextexmfdist/fontmath.cfg
-File: fontmath.cfg 2016/12/03 v3.0a LaTeX Kernel (Uncustomised math font setup)
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontmath.cfg
+File: fontmath.cfg 2018/09/24 v3.0b LaTeX Kernel (Uncustomised math font setup)
 
 
-(/home/elliott/pdftextexmfdist/fontmath.ltx
-File: fontmath.ltx 2016/12/03 v3.0a LaTeX Kernel (Math font setup)
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontmath.ltx
+File: fontmath.ltx 2018/09/24 v3.0b LaTeX Kernel (Math font setup)
 
 === Don't modify this file, use a .cfg file instead ===
 
 LaTeX Font Info:    Redeclaring font encoding OML on input line 44.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 45.
-(/home/elliott/pdftextexmfdist/omlcmm.fd
+(/usr/share/texlive/texmf-dist/tex/latex/base/omlcmm.fd
 File: omlcmm.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-(/home/elliott/pdftextexmfdist/omscmsy.fd
+(/usr/share/texlive/texmf-dist/tex/latex/base/omscmsy.fd
 File: omscmsy.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-(/home/elliott/pdftextexmfdist/omxcmex.fd
+(/usr/share/texlive/texmf-dist/tex/latex/base/omxcmex.fd
 File: omxcmex.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-(/home/elliott/pdftextexmfdist/ucmr.fd
+(/usr/share/texlive/texmf-dist/tex/latex/base/ucmr.fd
 File: ucmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 \symoperators=\mathgroup0
@@ -154,19 +154,21 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 Local config file preload.cfg used
 
 =====================================
-(/home/elliott/pdftextexmfdist/preload.cfg
-File: preload.cfg 2016/12/03 v3.0a LaTeX Kernel (Uncustomised preload font setu
+(/usr/share/texlive/texmf-dist/tex/latex/base/preload.cfg
+File: preload.cfg 2018/09/24 v3.0b LaTeX Kernel (Uncustomised preload font setu
 p)
 
-(/home/elliott/pdftextexmfdist/preload.ltx
+(/usr/share/texlive/texmf-dist/tex/latex/base/preload.ltx
 File: preload.ltx 2014/09/29 v2.1g LaTeX Kernel (Font Preloading)
-)) page nos., x-ref, environments,
-center,
+)) page nos., x-ref,
+environments, center,
 \@rightskip=\skip21
- verbatim, math definitions,
+ verbatim,
+\@verbvisiblespacebox=\box13
+ math definitions,
 \jot=\dimen20
 \interdisplaylinepenalty=\count30
-\rootbox=\box13
+\rootbox=\box14
 \c@equation=\count31
 \@eqcnt=\count32
 \@eqpen=\count33
@@ -196,7 +198,7 @@ center,
 \@itempenalty=\count35
 \@beginparpenalty=\count36
 \@endparpenalty=\count37
-\@labels=\box14
+\@labels=\box15
 \par@deathcycles=\count38
 \@enumdepth=\count39
 \c@enumi=\count40
@@ -228,9 +230,9 @@ center,
 \@curtab=\count48
 \@hightab=\count49
 \@tabpush=\count50
-\@curline=\box15
-\@curfield=\box16
-\@tabfbox=\box17
+\@curline=\box16
+\@curfield=\box17
+\@tabfbox=\box18
 \tabbingsep=\dimen51
 \@chclass=\count51
 \@lastchclass=\count52
@@ -239,11 +241,11 @@ center,
 \tabcolsep=\dimen53
 \arrayrulewidth=\dimen54
 \doublerulesep=\dimen55
-\@arstrutbox=\box18
+\@arstrutbox=\box19
 \@wholewidth=\dimen56
 \@halfwidth=\dimen57
 \unitlength=\dimen58
-\@picbox=\box19
+\@picbox=\box20
 \@picht=\dimen59
 \@ovxx=\dimen60
 \@ovyy=\dimen61
@@ -257,19 +259,19 @@ center,
 \@multicnt=\count57
 \@xdim=\dimen66
 \@ydim=\dimen67
-\@linechar=\box20
+\@linechar=\box21
 \@linelen=\dimen68
 \@clnwd=\dimen69
 \@clnht=\dimen70
 \@dashdim=\dimen71
-\@dashbox=\box21
+\@dashbox=\box22
 \@dashcnt=\count58
  title, sectioning,
 \@secpenalty=\count59
 \c@secnumdepth=\count60
 \c@tocdepth=\count61
- contents,
-floats,
+
+contents, floats,
 \@floatpenalty=\count62
  footnotes,
 \footins=\insert253
@@ -343,7 +345,7 @@ floats,
 \marginparwidth=\dimen84
 \marginparsep=\dimen85
 \marginparpush=\dimen86
-\@begindvibox=\box22
+\@begindvibox=\box23
 \@maxdepth=\dimen87
 \paperheight=\dimen88
 \paperwidth=\dimen89
@@ -363,9 +365,9 @@ floats,
 \@pagedp=\dimen98
 \@mparbottom=\dimen99
 \@currtype=\count70
-\@outputbox=\box23
-\@leftcolumn=\box24
-\@holdpg=\box25
+\@outputbox=\box24
+\@leftcolumn=\box25
+\@holdpg=\box26
 \@kludgeins=\insert200
 \@fpstype=\count71
 \@reqcolroom=\dimen100
@@ -393,476 +395,57 @@ floats,
 ===========================================
 Local configuration file hyphen.cfg used
 ===========================================
-(/home/elliott/pdftextexmfdist/hyphen.cfg
-File: hyphen.cfg 2018/02/14 3.18 Babel hyphens
+(/usr/share/texlive/texmf-dist/tex/generic/babel/hyphen.cfg
+File: hyphen.cfg 2018/11/13 3.27 Babel hyphens
 
-(/home/elliott/pdftextexmfdist/switch.def
-File: switch.def 2018/02/14 3.18 Babel switching mechanism
+(/usr/share/texlive/texmf-dist/tex/generic/babel/switch.def
+File: switch.def 2018/11/13 3.27 Babel switching mechanism
 )
 \l@english=\language0
 
-(/home/elliott/pdftextexmfdist/hyphen.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/hyphen/hyphen.tex)
 \l@usenglish=\language0
 \l@USenglish=\language0
 \l@american=\language0
 \l@dumylang=\language1
 
-(/home/elliott/pdftextexmfdist/dumyhyph.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/hyphen/dumyhyph.tex)
 \l@nohyphenation=\language2
 
-(/home/elliott/pdftextexmfdist/zerohyph.tex)
-\l@german-x-2018-03-31=\language3
+(/usr/share/texlive/texmf-dist/tex/generic/hyphen/zerohyph.tex)
+\l@ibycus=\language3
 
-(/home/elliott/pdftextexmfdist/dehypht-x-2018-03-31.tex
-dehyph-exptl: using an 8-bit TeX engine.
-(/home/elliott/pdftextexmfdist/dehypht-x-2018-03-31.pat
-German Hyphenation Patterns (Traditional Orthography) `dehypht-x' 2018-03-31 (W
-L)))
-\l@german-x-latest=\language3
-\l@ngerman-x-2018-03-31=\language4
- (/home/elliott/pdftextexmfdist/dehyphn-x-2018-03-31.tex
-dehyph-exptl: using an 8-bit TeX engine.
-(/home/elliott/pdftextexmfdist/dehyphn-x-2018-03-31.pat
-German Hyphenation Patterns (Reformed Orthography, 2006) `dehyphn-x' 2018-03-31
- (WL)))
-\l@ngerman-x-latest=\language4
-\l@afrikaans=\language5
- (/home/elliott/pdftextexmfdist/loadhyph-af.tex
-EC Afrikaans hyphenation patterns
-(/home/elliott/pdftextexmfdist/conv-utf8-ec.tex)
-(/home/elliott/pdftextexmfdist/hyph-af.tex))
-\l@ancientgreek=\language6
-
-(/home/elliott/pdftextexmfdist/loadhyph-grc.tex
-Hyphenation patterns for Ancient Greek
-(/home/elliott/pdftextexmfdist/grahyph5.tex
-Hyphenation patterns for Ancient Greek))
-\l@ibycus=\language7
-
-(/home/elliott/pdftextexmfdist/ibyhyph.tex
+(/usr/share/texlive/texmf-dist/tex/generic/hyphen/ibyhyph.tex
 Greek hyphenation patterns for Ibycus encoding, v3.0)
-\l@arabic=\language8
+\l@ancientgreek=\language4
 
-(/home/elliott/pdftextexmfdist/zerohyph.tex)
-\l@armenian=\language9
+(/usr/share/texlive/texmf-dist/tex/generic/hyph-utf8/loadhyph/loadhyph-grc.tex
+Hyphenation patterns for Ancient Greek
+(/usr/share/texlive/texmf-dist/tex/generic/hyphen/grahyph5.tex
+Hyphenation patterns for Ancient Greek))
+\l@monogreek=\language5
 
-(/home/elliott/pdftextexmfdist/loadhyph-hy.tex
-No Armenian hyphenation patterns - only for Unicode engines)
-\l@basque=\language10
-
-(/home/elliott/pdftextexmfdist/loadhyph-eu.tex EC Basque hyphenation patterns
-(/home/elliott/pdftextexmfdist/conv-utf8-ec.tex)
-(/home/elliott/pdftextexmfdist/hyph-eu.tex))
-\l@belarusian=\language11
-
-(/home/elliott/pdftextexmfdist/loadhyph-be.tex
-T2A Belarusian hyphenation patterns
-(/home/elliott/pdftextexmfdist/conv-utf8-t2a.tex)
-(/home/elliott/pdftextexmfdist/hyph-be.tex))
-\l@bulgarian=\language12
-
-(/home/elliott/pdftextexmfdist/loadhyph-bg.tex
-T2A Bulgarian hyphenation patterns
-(/home/elliott/pdftextexmfdist/conv-utf8-t2a.tex)
-(/home/elliott/pdftextexmfdist/hyph-bg.tex
-Bulgarian hyphenation patterns (options: --safe-morphology --standalone-tex, ve
-rsion 21 October 2017)))
-\l@catalan=\language13
- (/home/elliott/pdftextexmfdist/loadhyph-ca.tex
-EC Catalan hyphenation patterns (/home/elliott/pdftextexmfdist/conv-utf8-ec.tex
-) (/home/elliott/pdftextexmfdist/hyph-ca.tex))
-\l@pinyin=\language14
-
-(/home/elliott/pdftextexmfdist/loadhyph-zh-latn-pinyin.tex
-EC Hyphenation patterns for unaccented pinyin syllables (CJK 4.8.0)
-(/home/elliott/pdftextexmfdist/conv-utf8-ec.tex)
-(/home/elliott/pdftextexmfdist/hyph-zh-latn-pinyin.tex))
-\l@churchslavonic=\language15
-
-(/home/elliott/pdftextexmfdist/loadhyph-cu.tex
-No Church Slavonic hyphenation patterns - only for Unicode engines)
-\l@coptic=\language16
-
-(/home/elliott/pdftextexmfdist/loadhyph-cop.tex Coptic hyphenation patterns
-(/home/elliott/pdftextexmfdist/copthyph.tex))
-\l@croatian=\language17
-
-(/home/elliott/pdftextexmfdist/loadhyph-hr.tex
-EC Croatian hyphenation patterns
-(/home/elliott/pdftextexmfdist/conv-utf8-ec.tex)
-(/home/elliott/pdftextexmfdist/hyph-hr.tex))
-\l@czech=\language18
-
-(/home/elliott/pdftextexmfdist/loadhyph-cs.tex
-EC Czech hyphenation patterns (Pavel Sevecek, v3, 1995)
-(/home/elliott/pdftextexmfdist/conv-utf8-ec.tex)
-(/home/elliott/pdftextexmfdist/hyph-cs.tex))
-\l@danish=\language19
-
-(/home/elliott/pdftextexmfdist/loadhyph-da.tex EC Danish hyphenation patterns
-(/home/elliott/pdftextexmfdist/conv-utf8-ec.tex)
-(/home/elliott/pdftextexmfdist/hyph-da.tex))
-\l@dutch=\language20
-
-(/home/elliott/pdftextexmfdist/loadhyph-nl.tex EC Dutch hyphenation patterns
-(/home/elliott/pdftextexmfdist/conv-utf8-ec.tex)
-(/home/elliott/pdftextexmfdist/hyph-nl.tex))
-\l@ukenglish=\language21
-
-(/home/elliott/pdftextexmfdist/loadhyph-en-gb.tex
-ASCII Hyphenation patterns for British English
-(/home/elliott/pdftextexmfdist/hyph-en-gb.tex))
-\l@british=\language21
-\l@UKenglish=\language21
-\l@usenglishmax=\language22
-
-(/home/elliott/pdftextexmfdist/loadhyph-en-us.tex
-ASCII Hyphenation patterns for American English
-(/home/elliott/pdftextexmfdist/hyph-en-us.tex))
-\l@esperanto=\language23
-
-(/home/elliott/pdftextexmfdist/loadhyph-eo.tex
-IL3 Esperanto hyphenation patterns
-(/home/elliott/pdftextexmfdist/conv-utf8-il3.tex)
-(/home/elliott/pdftextexmfdist/hyph-eo.tex))
-\l@estonian=\language24
-
-(/home/elliott/pdftextexmfdist/loadhyph-et.tex
-EC Estonian hyphenation patterns
-(/home/elliott/pdftextexmfdist/conv-utf8-ec.tex)
-(/home/elliott/pdftextexmfdist/hyph-et.tex))
-\l@ethiopic=\language25
-
-(/home/elliott/pdftextexmfdist/loadhyph-mul-ethi.tex
-No Pan-Ethiopic hyphenation patterns - only for Unicode engines)
-\l@amharic=\language25
-\l@geez=\language25
-\l@farsi=\language26
-
-(/home/elliott/pdftextexmfdist/zerohyph.tex)
-\l@persian=\language26
-\l@finnish=\language27
-
-(/home/elliott/pdftextexmfdist/loadhyph-fi.tex EC Finnish hyphenation patterns
-(/home/elliott/pdftextexmfdist/conv-utf8-ec.tex)
-(/home/elliott/pdftextexmfdist/hyph-fi.tex))
-\l@french=\language28
-
-(/home/elliott/pdftextexmfdist/loadhyph-fr.tex EC French hyphenation patterns
-(/home/elliott/pdftextexmfdist/conv-utf8-ec.tex)
-(/home/elliott/pdftextexmfdist/hyph-fr.tex))
-\l@patois=\language28
-\l@francais=\language28
-\l@friulan=\language29
-
-(/home/elliott/pdftextexmfdist/loadhyph-fur.tex
-EC Friulan hyphenation patterns (/home/elliott/pdftextexmfdist/conv-utf8-ec.tex
-) (/home/elliott/pdftextexmfdist/hyph-fur.tex))
-\l@galician=\language30
-
-(/home/elliott/pdftextexmfdist/loadhyph-gl.tex
-EC Galician hyphenation patterns
-(/home/elliott/pdftextexmfdist/conv-utf8-ec.tex)
-(/home/elliott/pdftextexmfdist/hyph-gl.tex))
-\l@georgian=\language31
-
-(/home/elliott/pdftextexmfdist/loadhyph-ka.tex
-T8M Georgian hyphenation patterns
-(/home/elliott/pdftextexmfdist/conv-utf8-t8m.tex)
-(/home/elliott/pdftextexmfdist/hyph-ka.tex))
-\l@german=\language32
-
-(/home/elliott/pdftextexmfdist/loadhyph-de-1901.tex
-EC German hyphenation patterns (traditional orthography)
-(/home/elliott/pdftextexmfdist/dehypht.tex
-German Traditional Hyphenation Patterns `dehypht' Version 3.2a <1999/03/03>
-(Formerly known under the name `ghyph31' and `ghyphen'.)))
-\l@ngerman=\language33
-
-(/home/elliott/pdftextexmfdist/loadhyph-de-1996.tex
-EC German hyphenation patterns (reformed orthography)
-(/home/elliott/pdftextexmfdist/dehyphn.tex
-New German Hyphenation Patterns `dehyphn' Rev.31 <2001-05-07> (WaS)))
-\l@swissgerman=\language34
-
-(/home/elliott/pdftextexmfdist/loadhyph-de-ch-1901.tex
-EC Swiss-German hyphenation patterns (traditional orthography)
-(/home/elliott/pdftextexmfdist/conv-utf8-ec.tex)
-(/home/elliott/pdftextexmfdist/hyph-de-ch-1901.tex
-Swiss-German Hyphenation Patterns (Traditional Orthography) `dehyphts-x' 2018-0
-3-31 (WL)))
-\l@monogreek=\language35
- (/home/elliott/pdftextexmfdist/loadhyph-el-monoton.tex
-Hyphenation patterns for uni-accent (monotonic) Modern Greek
-(/home/elliott/pdftextexmfdist/grmhyph5.tex
+(/usr/share/texlive/texmf-dist/tex/generic/hyph-utf8/loadhyph/loadhyph-el-monot
+on.tex Hyphenation patterns for uni-accent (monotonic) Modern Greek
+(/usr/share/texlive/texmf-dist/tex/generic/hyphen/grmhyph5.tex
 Hyphenation patterns for uni-accent (monotonic) Modern Greek))
-\l@greek=\language36
+\l@greek=\language6
 
-(/home/elliott/pdftextexmfdist/loadhyph-el-polyton.tex
-Hyphenation patterns for multi-accent (polytonic) Modern Greek
-(/home/elliott/pdftextexmfdist/grphyph5.tex
+(/usr/share/texlive/texmf-dist/tex/generic/hyph-utf8/loadhyph/loadhyph-el-polyt
+on.tex Hyphenation patterns for multi-accent (polytonic) Modern Greek
+(/usr/share/texlive/texmf-dist/tex/generic/hyphen/grphyph5.tex
 Hyphenation patterns for multi-accent (polytonic) Modern Greek))
-\l@polygreek=\language36
-\l@hungarian=\language37
-
-(/home/elliott/pdftextexmfdist/loadhyph-hu.tex
-EC Hungarian hyphenation patterns (v20110815)
-(/home/elliott/pdftextexmfdist/conv-utf8-ec.tex)
-(/home/elliott/pdftextexmfdist/hyph-hu.tex
-Huhyphn - hungarian hyphenation patterns v20110815))
-\l@icelandic=\language38
-
-(/home/elliott/pdftextexmfdist/loadhyph-is.tex
-EC Icelandic hyphenation patterns
-(/home/elliott/pdftextexmfdist/conv-utf8-ec.tex)
-(/home/elliott/pdftextexmfdist/hyph-is.tex))
-\l@assamese=\language39
-
-(/home/elliott/pdftextexmfdist/loadhyph-as.tex
-No Assamese hyphenation patterns - only for Unicode engines)
-\l@bengali=\language40
-
-(/home/elliott/pdftextexmfdist/loadhyph-bn.tex
-No Bengali hyphenation patterns - only for Unicode engines)
-\l@gujarati=\language41
-
-(/home/elliott/pdftextexmfdist/loadhyph-gu.tex
-No Gujarati hyphenation patterns - only for Unicode engines)
-\l@hindi=\language42
-
-(/home/elliott/pdftextexmfdist/loadhyph-hi.tex
-No Hindi hyphenation patterns - only for Unicode engines)
-\l@kannada=\language43
-
-(/home/elliott/pdftextexmfdist/loadhyph-kn.tex
-No Kannada hyphenation patterns - only for Unicode engines)
-\l@malayalam=\language44
-
-(/home/elliott/pdftextexmfdist/loadhyph-ml.tex
-No Malayalam hyphenation patterns - only for Unicode engines)
-\l@marathi=\language45
-
-(/home/elliott/pdftextexmfdist/loadhyph-mr.tex
-No Marathi hyphenation patterns - only for Unicode engines)
-\l@oriya=\language46
-
-(/home/elliott/pdftextexmfdist/loadhyph-or.tex
-No Oriya hyphenation patterns - only for Unicode engines)
-\l@panjabi=\language47
-
-(/home/elliott/pdftextexmfdist/loadhyph-pa.tex
-No Panjabi hyphenation patterns - only for Unicode engines)
-\l@tamil=\language48
-
-(/home/elliott/pdftextexmfdist/loadhyph-ta.tex
-No Tamil hyphenation patterns - only for Unicode engines)
-\l@telugu=\language49
-
-(/home/elliott/pdftextexmfdist/loadhyph-te.tex
-No Telugu hyphenation patterns - only for Unicode engines)
-\l@indonesian=\language50
-
-(/home/elliott/pdftextexmfdist/loadhyph-id.tex
-ASCII Indonesian hyphenation patterns
-(/home/elliott/pdftextexmfdist/hyph-id.tex))
-\l@interlingua=\language51
-
-(/home/elliott/pdftextexmfdist/loadhyph-ia.tex
-ASCII Hyphenation patterns for Interlingua
-(/home/elliott/pdftextexmfdist/hyph-ia.tex))
-\l@irish=\language52
-
-(/home/elliott/pdftextexmfdist/loadhyph-ga.tex EC Irish hyphenation patterns
-(/home/elliott/pdftextexmfdist/conv-utf8-ec.tex)
-(/home/elliott/pdftextexmfdist/hyph-ga.tex))
-\l@italian=\language53
-
-(/home/elliott/pdftextexmfdist/loadhyph-it.tex
-ASCII Italian hyphenation patterns (/home/elliott/pdftextexmfdist/hyph-it.tex))
-\l@kurmanji=\language54
-(/home/elliott/pdftextexmfdist/loadhyph-kmr.tex
-EC Kurmanji hyphenation patterns (v. 1.0 2009/06/29 JKn and MSh)
-(/home/elliott/pdftextexmfdist/conv-utf8-ec.tex)
-(/home/elliott/pdftextexmfdist/hyph-kmr.tex))
-\l@latin=\language55
-
-(/home/elliott/pdftextexmfdist/loadhyph-la.tex EC Latin hyphenation patterns
-(/home/elliott/pdftextexmfdist/conv-utf8-ec.tex)
-(/home/elliott/pdftextexmfdist/hyph-la.tex))
-\l@classiclatin=\language56
-
-(/home/elliott/pdftextexmfdist/loadhyph-la-x-classic.tex
-ASCII Classical Latin hyphenation patterns
-(/home/elliott/pdftextexmfdist/hyph-la-x-classic.tex))
-\l@liturgicallatin=\language57
-
-(/home/elliott/pdftextexmfdist/loadhyph-la-x-liturgic.tex
-EC Liturgical Latin hyphenation patterns
-(/home/elliott/pdftextexmfdist/hyph-la-x-liturgic.ec.tex))
-\l@latvian=\language58
-
-(/home/elliott/pdftextexmfdist/loadhyph-lv.tex
-L7X Latvian hyphenation patterns
-(/home/elliott/pdftextexmfdist/conv-utf8-l7x.tex)
-(/home/elliott/pdftextexmfdist/hyph-lv.tex))
-\l@lithuanian=\language59
-
-(/home/elliott/pdftextexmfdist/loadhyph-lt.tex
-L7X Lithuanian hyphenation patterns
-(/home/elliott/pdftextexmfdist/conv-utf8-l7x.tex)
-(/home/elliott/pdftextexmfdist/hyph-lt.tex))
-\l@mongolian=\language60
-
-(/home/elliott/pdftextexmfdist/loadhyph-mn-cyrl.tex
-T2A (New) Mongolian hyphenation patterns
-(/home/elliott/pdftextexmfdist/conv-utf8-t2a.tex)
-(/home/elliott/pdftextexmfdist/hyph-mn-cyrl.tex))
-\l@mongolianlmc=\language61
-
-(/home/elliott/pdftextexmfdist/loadhyph-mn-cyrl-x-lmc.tex
-LMC Mongolian hyphenation patterns
-(/home/elliott/pdftextexmfdist/conv-utf8-lmc.tex)
-(/home/elliott/pdftextexmfdist/hyph-mn-cyrl-x-lmc.tex))
-\l@bokmal=\language62
-
-(/home/elliott/pdftextexmfdist/loadhyph-nb.tex
-EC Norwegian Bokmal hyphenation patterns
-(/home/elliott/pdftextexmfdist/conv-utf8-ec.tex)
-(/home/elliott/pdftextexmfdist/hyph-nb.tex
-(/home/elliott/pdftextexmfdist/hyph-no.tex)))
-\l@norwegian=\language62
-\l@norsk=\language62
-\l@nynorsk=\language63
-
-(/home/elliott/pdftextexmfdist/loadhyph-nn.tex
-EC Norwegian Nynorsk hyphenation patterns
-(/home/elliott/pdftextexmfdist/conv-utf8-ec.tex)
-(/home/elliott/pdftextexmfdist/hyph-nn.tex
-(/home/elliott/pdftextexmfdist/hyph-no.tex)))
-\l@occitan=\language64
-
-(/home/elliott/pdftextexmfdist/loadhyph-oc.tex EC Occitan hyphenation patterns
-(/home/elliott/pdftextexmfdist/conv-utf8-ec.tex)
-(/home/elliott/pdftextexmfdist/hyph-oc.tex))
-\l@piedmontese=\language65
-
-(/home/elliott/pdftextexmfdist/loadhyph-pms.tex
-ASCII Piedmontese hyphenation patterns
-(/home/elliott/pdftextexmfdist/hyph-pms.tex))
-\l@polish=\language66
-
-(/home/elliott/pdftextexmfdist/loadhyph-pl.tex QX Polish hyphenation patterns
-(/home/elliott/pdftextexmfdist/conv-utf8-qx.tex)
-(/home/elliott/pdftextexmfdist/hyph-pl.tex))
-\l@portuguese=\language67
-
-(/home/elliott/pdftextexmfdist/loadhyph-pt.tex
-EC Portuguese hyphenation patterns
-(/home/elliott/pdftextexmfdist/conv-utf8-ec.tex)
-(/home/elliott/pdftextexmfdist/hyph-pt.tex))
-\l@portuges=\language67
-\l@romanian=\language68
-
-(/home/elliott/pdftextexmfdist/loadhyph-ro.tex
-EC Romanian hyphenation patterns
-(/home/elliott/pdftextexmfdist/conv-utf8-ec.tex)
-(/home/elliott/pdftextexmfdist/hyph-ro.tex))
-\l@romansh=\language69
-
-(/home/elliott/pdftextexmfdist/loadhyph-rm.tex
-ASCII Romansh hyphenation patterns (/home/elliott/pdftextexmfdist/hyph-rm.tex))
-\l@russian=\language70
-(/home/elliott/pdftextexmfdist/loadhyph-ru.tex
-T2A Russian hyphenation patterns (/home/elliott/pdftextexmfdist/ruhyphen.tex
-(/home/elliott/pdftextexmfdist/catkoi.tex)
-(/home/elliott/pdftextexmfdist/koi2t2a.tex)
-(/home/elliott/pdftextexmfdist/ruhyphal.tex)
-(/home/elliott/pdftextexmfdist/cyryoal.tex)
-(/home/elliott/pdftextexmfdist/hypht2.tex)))
-\l@sanskrit=\language71
-
-(/home/elliott/pdftextexmfdist/loadhyph-sa.tex
-No Sanskrit hyphenation patterns (v0.6, 2011/09/14) - only for Unicode engines)
-\l@serbian=\language72
-(/home/elliott/pdftextexmfdist/loadhyph-sr-latn.tex
-EC Serbian hyphenation patterns in Latin script
-(/home/elliott/pdftextexmfdist/conv-utf8-ec.tex)
-(/home/elliott/pdftextexmfdist/hyph-sh-latn.tex))
-\l@serbianc=\language73
-
-(/home/elliott/pdftextexmfdist/loadhyph-sr-cyrl.tex
-T2A Serbian hyphenation patterns in Cyrillic script
-(/home/elliott/pdftextexmfdist/conv-utf8-t2a.tex)
-(/home/elliott/pdftextexmfdist/hyph-sh-cyrl.tex))
-\l@slovak=\language74
-
-(/home/elliott/pdftextexmfdist/loadhyph-sk.tex
-EC Slovak hyphenation patterns (Jana Chlebikova, 1992)
-(/home/elliott/pdftextexmfdist/conv-utf8-ec.tex)
-(/home/elliott/pdftextexmfdist/hyph-sk.tex))
-\l@slovenian=\language75
-
-(/home/elliott/pdftextexmfdist/loadhyph-sl.tex
-EC Slovenian hyphenation patterns
-(/home/elliott/pdftextexmfdist/conv-utf8-ec.tex)
-(/home/elliott/pdftextexmfdist/hyph-sl.tex))
-\l@slovene=\language75
-\l@spanish=\language76
-
-(/home/elliott/pdftextexmfdist/loadhyph-es.tex EC Spanish hyphenation patterns
-(/home/elliott/pdftextexmfdist/conv-utf8-ec.tex)
-(/home/elliott/pdftextexmfdist/hyph-es.tex))
-\l@espanol=\language76
-\l@swedish=\language77
-
-(/home/elliott/pdftextexmfdist/loadhyph-sv.tex
-EC Swedish hyphenation patterns (Jan Michael Rynning, 1994-03-03)
-(/home/elliott/pdftextexmfdist/conv-utf8-ec.tex)
-(/home/elliott/pdftextexmfdist/hyph-sv.tex))
-\l@thai=\language78
-
-(/home/elliott/pdftextexmfdist/loadhyph-th.tex LTH Thai hyphenation patterns
-(/home/elliott/pdftextexmfdist/conv-utf8-lth.tex)
-(/home/elliott/pdftextexmfdist/hyph-th.tex))
-\l@turkish=\language79
-
-(/home/elliott/pdftextexmfdist/loadhyph-tr.tex EC Turkish hyphenation patterns
-(/home/elliott/pdftextexmfdist/conv-utf8-ec.tex)
-(/home/elliott/pdftextexmfdist/hyph-tr.tex))
-\l@turkmen=\language80
-
-(/home/elliott/pdftextexmfdist/loadhyph-tk.tex EC Turkmen hyphenation patterns
-(/home/elliott/pdftextexmfdist/conv-utf8-ec.tex)
-(/home/elliott/pdftextexmfdist/hyph-tk.tex))
-\l@ukrainian=\language81
-
-(/home/elliott/pdftextexmfdist/loadhyph-uk.tex
-T2A Ukrainian hyphenation patterns (/home/elliott/pdftextexmfdist/ukrhyph.tex
-Ukrainian hyphenation patterns in t2a encoding
-(/home/elliott/pdftextexmfdist/catlcy.tex)
-(/home/elliott/pdftextexmfdist/lcy2t2a.tex)
-(/home/elliott/pdftextexmfdist/ukrhypmp.tex)
-(/home/elliott/pdftextexmfdist/hypht2.tex)))
-\l@uppersorbian=\language82
-
-(/home/elliott/pdftextexmfdist/loadhyph-hsb.tex
-EC Upper Sorbian hyphenation patterns (E. Werner)
-(/home/elliott/pdftextexmfdist/conv-utf8-ec.tex)
-(/home/elliott/pdftextexmfdist/hyph-hsb.tex))
-\l@welsh=\language83
-
-(/home/elliott/pdftextexmfdist/loadhyph-cy.tex EC Welsh hyphenation patterns
-(/home/elliott/pdftextexmfdist/conv-utf8-ec.tex)
-(/home/elliott/pdftextexmfdist/hyph-cy.tex)))
-(/home/elliott/pdftextexmfdist/utf8.def
-File: utf8.def 2018/04/05 v1.2c UTF-8 support for inputenc
+\l@polygreek=\language6
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2018/10/05 v1.2f UTF-8 support for inputenc
 Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encoding T1
 
-(/home/elliott/pdftextexmfdist/t1enc.dfu
-File: t1enc.dfu 2018/04/05 v1.2c UTF-8 support for inputenc
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.dfu
+File: t1enc.dfu 2018/10/05 v1.2f UTF-8 support for inputenc
    defining Unicode char U+00A0 (decimal 160)
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
@@ -1076,8 +659,12 @@ File: t1enc.dfu 2018/04/05 v1.2c UTF-8 support for inputenc
    defining Unicode char U+021B (decimal 539)
    defining Unicode char U+0232 (decimal 562)
    defining Unicode char U+0233 (decimal 563)
+   defining Unicode char U+0237 (decimal 567)
+   defining Unicode char U+02D9 (decimal 729)
+   defining Unicode char U+02DB (decimal 731)
    defining Unicode char U+1E02 (decimal 7682)
    defining Unicode char U+1E03 (decimal 7683)
+   defining Unicode char U+1E9E (decimal 7838)
    defining Unicode char U+200C (decimal 8204)
    defining Unicode char U+2010 (decimal 8208)
    defining Unicode char U+2011 (decimal 8209)
@@ -1102,8 +689,8 @@ File: t1enc.dfu 2018/04/05 v1.2c UTF-8 support for inputenc
 Now handling font encoding OT1 ...
 ... processing UTF-8 mapping file for font encoding OT1
 
-(/home/elliott/pdftextexmfdist/ot1enc.dfu
-File: ot1enc.dfu 2018/04/05 v1.2c UTF-8 support for inputenc
+(/usr/share/texlive/texmf-dist/tex/latex/base/ot1enc.dfu
+File: ot1enc.dfu 2018/10/05 v1.2f UTF-8 support for inputenc
    defining Unicode char U+00A0 (decimal 160)
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
@@ -1133,6 +720,7 @@ File: ot1enc.dfu 2018/04/05 v1.2c UTF-8 support for inputenc
    defining Unicode char U+0219 (decimal 537)
    defining Unicode char U+021A (decimal 538)
    defining Unicode char U+021B (decimal 539)
+   defining Unicode char U+0237 (decimal 567)
    defining Unicode char U+2013 (decimal 8211)
    defining Unicode char U+2014 (decimal 8212)
    defining Unicode char U+2018 (decimal 8216)
@@ -1143,8 +731,8 @@ File: ot1enc.dfu 2018/04/05 v1.2c UTF-8 support for inputenc
 Now handling font encoding OMS ...
 ... processing UTF-8 mapping file for font encoding OMS
 
-(/home/elliott/pdftextexmfdist/omsenc.dfu
-File: omsenc.dfu 2018/04/05 v1.2c UTF-8 support for inputenc
+(/usr/share/texlive/texmf-dist/tex/latex/base/omsenc.dfu
+File: omsenc.dfu 2018/10/05 v1.2f UTF-8 support for inputenc
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00B6 (decimal 182)
    defining Unicode char U+00B7 (decimal 183)
@@ -1170,10 +758,10 @@ Now handling font encoding U ...
 )
  ) )
 Beginning to dump on file pdflatex.fmt
- (preloaded format=pdflatex 2018.6.14)
-7343 strings of total length 103699
-55437 memory locations dumped; current usage is 144&55183
-3987 multiletter control sequences
+ (preloaded format=pdflatex 2019.5.27)
+5501 strings of total length 73868
+51361 memory locations dumped; current usage is 144&51187
+3776 multiletter control sequences
 \font\nullfont=nullfont
 \font\OMX/cmex/m/n/10=cmex10
 \font\tenln=line10
@@ -1190,72 +778,12 @@ Beginning to dump on file pdflatex.fmt
 \font\OMS/cmsy/m/n/7=cmsy7
 \font\OMS/cmsy/m/n/10=cmsy10
 3633 words of font info for 14 preloaded fonts
-1141 hyphenation exceptions
-Hyphenation trie of length 370691 has 8997 ops out of 35111
-  143 for language 83
-  110 for language 82
-  138 for language 81
-  7 for language 80
-  12 for language 79
-  53 for language 78
-  127 for language 77
-  183 for language 76
-  71 for language 75
-  248 for language 74
-  62 for language 73
-  66 for language 72
-  119 for language 70
-  43 for language 69
-  58 for language 68
-  7 for language 67
-  194 for language 66
-  37 for language 65
-  23 for language 64
-  852 for language 63
-  852 for language 62
-  21 for language 61
-  38 for language 60
-  77 for language 59
-  58 for language 58
-  201 for language 57
-  105 for language 56
-  25 for language 55
-  27 for language 54
-  37 for language 53
-  229 for language 52
-  38 for language 51
-  21 for language 50
-  147 for language 38
-  185 for language 37
-  50 for language 36
-  18 for language 35
-  533 for language 34
-  235 for language 33
-  207 for language 32
-  39 for language 31
-  76 for language 30
-  40 for language 29
-  89 for language 28
-  31 for language 27
-  113 for language 24
-  145 for language 23
-  377 for language 22
-  224 for language 21
-  265 for language 20
-  60 for language 19
-  63 for language 18
-  19 for language 17
-  14 for language 16
-  2 for language 14
-  21 for language 13
-  54 for language 12
-  36 for language 11
-  5 for language 10
-  148 for language 7
-  97 for language 6
-  137 for language 5
-  551 for language 4
-  551 for language 3
+59 hyphenation exceptions
+Hyphenation trie of length 15110 has 496 ops out of 35111
+  50 for language 6
+  18 for language 5
+  97 for language 4
+  148 for language 3
   2 for language 1
   181 for language 0
 0 words of pdfTeX memory

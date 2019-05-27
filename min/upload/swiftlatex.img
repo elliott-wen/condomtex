@@ -1,8 +1,0 @@
-# images info, 1=ps, 2=eps, 4=epsi, 8=epsf, 16=pdf, 32=png, 64=gif
-see_image("figure/editing_example",16,1);
-see_image("figure/timechart",16,1);
-see_image("figure/flowchart",16,1);
-see_image("figure/charmapping",16,1);
-see_image("figure/patchengine",16,1);
-see_image("figure/cloudarchitecture",16,1);
-see_image("figure/screenshot",16,1);

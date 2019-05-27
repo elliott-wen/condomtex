@@ -350,9 +350,17 @@ void kpse_set_program_name (const_string argv0,
   //printf("Set Program name Argv %s progname %s\n", argv0, progname);
 }
 
-string kpse_find_glyph(const_string passed_fontname,  unsigned dpi, kpse_file_format_type format, void *notused)
+string kpse_find_glyph(const_string passed_fontname,  unsigned int dpi, kpse_file_format_type format, void *notused)
 {
-	return NULL;
+  char tryname[256];
+  printf("Looking for %s dpi %d format %d\n", passed_fontname, dpi, format);
+  if(strlen(passed_fontname) > 128)
+  {
+    return NULL;
+  }
+  sprintf(tryname, "%s.%dpk", passed_fontname, dpi);
+  return kpse_find_file(tryname, kpse_pk_format, false);
+	
 }
 
 void kpse_reset_program_name (const_string progname)
@@ -461,6 +469,7 @@ string kpse_find_file(const_string name, kpse_file_format_type format,  boolean 
     #define SUFFIX(suf) \
     if(strrchr(patched_name, '.') == NULL) \
         strcat(patched_name, suf); \
+
 
 
     switch (format)

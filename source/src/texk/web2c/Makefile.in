@@ -3876,7 +3876,6 @@ pdftex_ch_srcs = \
 	pdftexdir/pdftex.web \
 	pdftexdir/tex.ch0 \
 	tex.ch \
-	enctex.ch \
 	$(pdftex_ch_synctex) \
 	pdftexdir/pdftex.ch \
 	tex-binpool.ch

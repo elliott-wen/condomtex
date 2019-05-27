@@ -25,7 +25,7 @@ void zprintint (longinteger n);
 #define printint_regmem
 void zprintcs (integer p);
 #define printcs(p) zprintcs((integer) (p))
-#define printcs_regmem register memoryword *mem=zmem, *eqtb=zeqtb;
+#define printcs_regmem register memoryword *eqtb=zeqtb;
 void zsprintcs (halfword p);
 #define sprintcs(p) zsprintcs((halfword) (p))
 #define sprintcs_regmem
@@ -46,12 +46,6 @@ void zprintcsnames (integer hstart,integer hfinish);
 #define printcsnames_regmem
 void printfileline (void);
 #define printfileline_regmem
-ASCIIcode zzreadbuffer (integer * i);
-#define readbuffer(i) zzreadbuffer((integer *) &(i))
-#define readbuffer_regmem register memoryword *mem=zmem, *eqtb=zeqtb;
-void zzprintbuffer (integer * i);
-#define printbuffer(i) zzprintbuffer((integer *) &(i))
-#define printbuffer_regmem register memoryword *eqtb=zeqtb;
 WEB2C_NORETURN void jumpout (void);
 #define jumpout_regmem
 void error (void);
@@ -489,14 +483,6 @@ void endfilereading (void);
 #define endfilereading_regmem
 void clearforerrorprompt (void);
 #define clearforerrorprompt_regmem
-void mubyteupdate (void);
-#define mubyteupdate_regmem register memoryword *mem=zmem;
-void zdisposemunode (halfword p);
-#define disposemunode(p) zdisposemunode((halfword) (p))
-#define disposemunode_regmem register memoryword *mem=zmem;
-void zdisposemutableout (halfword cs);
-#define disposemutableout(cs) zdisposemutableout((halfword) (cs))
-#define disposemutableout_regmem register memoryword *mem=zmem;
 void checkoutervalidity (void);
 #define checkoutervalidity_regmem register memoryword *mem=zmem;
 void getnext (void);
@@ -684,7 +670,7 @@ void zprunemovements (integer l);
 #define prunemovements_regmem register memoryword *mem=zmem;
 void zspecialout (halfword p);
 #define specialout(p) zspecialout((halfword) (p))
-#define specialout_regmem register memoryword *mem=zmem, *eqtb=zeqtb;
+#define specialout_regmem register memoryword *mem=zmem;
 void zwriteout (halfword p);
 #define writeout(p) zwriteout((halfword) (p))
 #define writeout_regmem register memoryword *mem=zmem, *eqtb=zeqtb;
@@ -1496,7 +1482,7 @@ void znewwhatsit (smallnumber s,smallnumber w);
 #define newwhatsit_regmem register memoryword *mem=zmem;
 void znewwritewhatsit (smallnumber w);
 #define newwritewhatsit(w) znewwritewhatsit((smallnumber) (w))
-#define newwritewhatsit_regmem register memoryword *mem=zmem, *eqtb=zeqtb;
+#define newwritewhatsit_regmem register memoryword *mem=zmem;
 void zcheckpdfoutput (strnumber s,boolean iserror);
 #define checkpdfoutput(s, iserror) zcheckpdfoutput((strnumber) (s), (boolean) (iserror))
 #define checkpdfoutput_regmem register memoryword *eqtb=zeqtb;

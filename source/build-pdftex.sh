@@ -22,6 +22,7 @@ CFG_OPTS="\
     --disable-shared \
     --disable-all-pkgs \
     --enable-pdftex \
+    --without-enctex \
     --disable-synctex \
     --disable-pdftex-synctex \
     --disable-poppler \

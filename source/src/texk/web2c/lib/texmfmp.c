@@ -873,9 +873,9 @@ maininit (int ac, string *av)
       fprintf(stderr, "-mltex only works with -ini\n");
     }
 #if !defined(XeTeX) && !IS_pTeX
-    if (enctexp) {
-      fprintf(stderr, "-enc only works with -ini\n");
-    }
+    // if (enctexp) {
+    //   fprintf(stderr, "-enc only works with -ini\n");
+    // }
 #endif
 #endif
 #if IS_eTeX
@@ -1597,7 +1597,7 @@ static struct option long_options[]
 #if !defined(Aleph)
       { "mltex",                     0, &mltexp, 1 },
 #if !defined(XeTeX) && !IS_pTeX
-      { "enc",                       0, &enctexp, 1 },
+      // { "enc",                       0, &enctexp, 1 },
 #endif
 #endif /* !Aleph */
 #if IS_eTeX
