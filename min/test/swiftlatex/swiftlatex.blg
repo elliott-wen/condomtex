@@ -1,11 +1,6 @@
-This is BibTeX, Version 0.99d (TeX Live 2017)
-Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
-The top-level auxiliary file: swiftlatex.aux
+This is BibTeX, Version 0.99dThe top-level auxiliary file: swiftlatex.aux
 The style file: ACM-Reference-Format.bst
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Database file #1: swiftlatex.bib
-Reallocated singl_function (elt_size=4) to 100 items from 50.
 Warning--empty address in banker2011mongodb
 Warning--empty address in bibeault2008jquery
 Warning--empty address in brown2013integrated
@@ -27,45 +22,4 @@ Warning--page numbers missing in both pages and numpages fields in nielsen2015yo
 Warning--empty address in silberschatz2014operating
 Warning--empty address in spurlock2013bootstrap
 Warning--empty address in strauss1990basics
-You've used 33 entries,
-            5706 wiz_defined-function locations,
-            1457 strings with 19089 characters,
-and the built_in function-call counts, 33475 in all, are:
-= -- 4357
-> -- 875
-< -- 0
-+ -- 229
-- -- 851
-* -- 2165
-:= -- 3536
-add.period$ -- 173
-call.type$ -- 33
-change.case$ -- 180
-chr.to.int$ -- 32
-cite$ -- 54
-duplicate$ -- 2176
-empty$ -- 1666
-format.name$ -- 367
-if$ -- 7379
-int.to.chr$ -- 2
-int.to.str$ -- 0
-missing$ -- 64
-newline$ -- 326
-num.names$ -- 263
-pop$ -- 1021
-preamble$ -- 1
-purify$ -- 344
-quote$ -- 0
-skip$ -- 832
-stack$ -- 0
-substring$ -- 3699
-swap$ -- 145
-text.length$ -- 1052
-text.prefix$ -- 0
-top$ -- 0
-type$ -- 739
-warning$ -- 21
-while$ -- 272
-width$ -- 0
-write$ -- 621
 (There were 21 warnings)

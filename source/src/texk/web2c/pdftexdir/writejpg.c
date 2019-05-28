@@ -370,35 +370,35 @@ void read_jpg_info(integer img)
 
 void write_jpg(integer img)
 {
-    long unsigned l;
-    FILE *f;
-    pdf_puts("/Type /XObject\n/Subtype /Image\n");
-    pdf_printf("/Width %i\n/Height %i\n/BitsPerComponent %i\n/Length %i\n",
-               (int) img_width(img),
-               (int) img_height(img),
-               (int) jpg_ptr(img)->bits_per_component,
-               (int) jpg_ptr(img)->length);
-    pdf_puts("/ColorSpace ");
-    if (img_colorspace_ref(img) != 0) {
-        pdf_printf("%i 0 R\n", (int) img_colorspace_ref(img));
-    } else {
-        switch (jpg_ptr(img)->color_space) {
-        case JPG_GRAY:
-            pdf_puts("/DeviceGray\n");
-            break;
-        case JPG_RGB:
-            pdf_puts("/DeviceRGB\n");
-            break;
-        case JPG_CMYK:
-            pdf_puts("/DeviceCMYK\n/Decode [1 0 1 0 1 0 1 0]\n");
-            break;
-        default:
-            pdftex_fail("Unsupported color space %i",
-                        (int) jpg_ptr(img)->color_space);
-        }
-    }
-    pdf_puts("/Filter /DCTDecode\n>>\nstream\n");
-    for (l = jpg_ptr(img)->length, f = jpg_ptr(img)->file; l > 0; l--)
-        pdfout(xgetc(f));
-    pdfendstream();
+    // long unsigned l;
+    // FILE *f;
+    // pdf_puts("/Type /XObject\n/Subtype /Image\n");
+    // pdf_printf("/Width %i\n/Height %i\n/BitsPerComponent %i\n/Length %i\n",
+    //            (int) img_width(img),
+    //            (int) img_height(img),
+    //            (int) jpg_ptr(img)->bits_per_component,
+    //            (int) jpg_ptr(img)->length);
+    // pdf_puts("/ColorSpace ");
+    // if (img_colorspace_ref(img) != 0) {
+    //     pdf_printf("%i 0 R\n", (int) img_colorspace_ref(img));
+    // } else {
+    //     switch (jpg_ptr(img)->color_space) {
+    //     case JPG_GRAY:
+    //         pdf_puts("/DeviceGray\n");
+    //         break;
+    //     case JPG_RGB:
+    //         pdf_puts("/DeviceRGB\n");
+    //         break;
+    //     case JPG_CMYK:
+    //         pdf_puts("/DeviceCMYK\n/Decode [1 0 1 0 1 0 1 0]\n");
+    //         break;
+    //     default:
+    //         pdftex_fail("Unsupported color space %i",
+    //                     (int) jpg_ptr(img)->color_space);
+    //     }
+    // }
+    // pdf_puts("/Filter /DCTDecode\n>>\nstream\n");
+    // for (l = jpg_ptr(img)->length, f = jpg_ptr(img)->file; l > 0; l--)
+    //     pdfout(xgetc(f));
+    // pdfendstream();
 }

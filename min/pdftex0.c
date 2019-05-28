@@ -39035,7 +39035,6 @@ closefilesandterminate ( void )
 	  pdfflush () ;
 	  if ( totalpages % 6 != 0 ) 
 	  objtab [pdflastpages ].int0 = totalpages % 6 ;
-	  flushjbig2page0objects () ;
 	  k = headtab [1 ];
 	  while ( objtab [k ].int4 == 0 ) {
 	      

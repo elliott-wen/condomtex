@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (pdfTeX Standalone 0.1 beta) (preloaded format=pdflatex 2019.5.27)  28 MAY 2019 09:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (pdfTeX Standalone 0.1 beta) (preloaded format=pdflatex 2019.5.27)  28 MAY 2019 12:16
 entering extended mode
 **swiftlatex.tex 
 (swiftlatex.tex
@@ -830,11 +830,11 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 1377) has occurred while \output is active []
 
  [3.3]
-<figure/editing_example.pdf, id=182, 739.10338pt x 431.11063pt>
-File: figure/editing_example.pdf Graphic file (type pdf)
-<use figure/editing_example.pdf>
-Package pdftex.def Info: figure/editing_example.pdf  used on input line 388.
-(pdftex.def)             Requested size: 202.51491pt x 118.12491pt.
+<figure/download.jpg, id=182, 349.305pt x 145.54375pt>
+File: figure/download.jpg Graphic file (type jpg)
+<use figure/download.jpg>
+Package pdftex.def Info: figure/download.jpg  used on input line 388.
+(pdftex.def)             Requested size: 202.51491pt x 84.38211pt.
 <figure/timechart.pdf, id=186, 588.90474pt x 142.13994pt>
 File: figure/timechart.pdf Graphic file (type pdf)
 <use figure/timechart.pdf>
@@ -845,12 +845,15 @@ Overfull \hbox (12.0pt too wide) in paragraph at lines 414--415
  [] 
  []
 
-[4.4 <figure/editing_example.pdf>]
+[4.4 <figure/download.jpg> <figure/timechart.pdf>]
 <figure/flowchart.pdf, id=196, 476.78125pt x 297.37068pt>
 File: figure/flowchart.pdf Graphic file (type pdf)
 <use figure/flowchart.pdf>
 Package pdftex.def Info: figure/flowchart.pdf  used on input line 436.
 (pdftex.def)             Requested size: 202.51491pt x 126.31053pt.
+
+Underfull \vbox (badness 3746) has occurred while \output is active []
+
 <figure/charmapping.pdf, id=199, 688.32156pt x 125.46875pt>
 File: figure/charmapping.pdf Graphic file (type pdf)
 <use figure/charmapping.pdf>
@@ -862,7 +865,7 @@ LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <9> not available
 (Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 583.
 
 
-[5.5 <figure/timechart.pdf> <figure/flowchart.pdf> <figure/charmapping.pdf>]
+[5.5 <figure/flowchart.pdf> <figure/charmapping.pdf>]
 <figure/patchengine.pdf, id=214, 534.49687pt x 177.85907pt>
 File: figure/patchengine.pdf Graphic file (type pdf)
 <use figure/patchengine.pdf>
@@ -922,40 +925,42 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
  [10.10] (swiftlatex.bbl
-Underfull \hbox (badness 6658) in paragraph at lines 63--69
-[]\OT1/cmr/m/n/7 (+20) Adobe. 2008.  Portable Doc-u-ment For-mat.  (2008).
+LaTeX Info: Redefining \tempurl on input line 60.
+LaTeX Info: Redefining \tempurl on input line 72.
+
+Underfull \hbox (badness 2837) in paragraph at lines 67--75
+[]\OT1/cmr/m/n/7 (+20) Adobe. 2008.  Portable Doc-u-ment For-mat.    []$https :
+
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 63--69
-[]$\OT1/cmr/m/n/7 (+20) https : / / www . adobe . com / content / dam / acom / 
-en / devnet / pdf /
+Underfull \hbox (badness 10000) in paragraph at lines 67--75
+\OT1/cmr/m/n/7 (+20) / / www . adobe . com / content / dam / acom / en / devnet
+ / pdf / pdfs /
  []
 
+LaTeX Info: Redefining \tempurl on input line 145.
+LaTeX Info: Redefining \tempurl on input line 157.
+LaTeX Info: Redefining \tempurl on input line 170.
+LaTeX Info: Redefining \tempurl on input line 217.
+LaTeX Info: Redefining \tempurl on input line 264.
+LaTeX Info: Redefining \tempurl on input line 276.
+LaTeX Info: Redefining \tempurl on input line 333.
 
-Underfull \hbox (badness 10000) in paragraph at lines 255--261
-[]\OT1/cmr/m/n/7 (+20) Mozilla. 2018.  What browsers are sup-ported by
- []
-
-
-Underfull \hbox (badness 1735) in paragraph at lines 255--261
-\OT1/cmr/m/n/7 (+20) PDF.js?  (2018).  []$https : / / github . com / mozilla / 
-pdf . js / wiki /
- []
-
-
-Underfull \hbox (badness 3601) in paragraph at lines 310--316
+Underfull \hbox (badness 3601) in paragraph at lines 328--336
 []\OT1/cmr/m/n/7 (+20) Overleaf. 2017.  600,000 users on Over-leaf make over
  []
 
 
-Underfull \hbox (badness 1796) in paragraph at lines 310--316
-\OT1/cmr/m/n/7 (+20) 2 bil-lion ed-its!  (2017).  []$https : / / www . overleaf
- . com / blog /
+Underfull \hbox (badness 10000) in paragraph at lines 328--336
+\OT1/cmr/m/n/7 (+20) 2 bil-lion ed-its!    []$https : / / www . overleaf . com 
+/ blog /
  []
 
+LaTeX Info: Redefining \tempurl on input line 345.
+LaTeX Info: Redefining \tempurl on input line 369.
 
-Underfull \hbox (badness 1147) in paragraph at lines 385--389
+Underfull \hbox (badness 1147) in paragraph at lines 408--412
 []\OT1/cmr/m/n/7 (+20) Lu WANG and Wan-min LIU. 2013.  On-line pub-lish via
  []
 
@@ -969,11 +974,11 @@ Package rerunfilecheck Info: File `swiftlatex.out' has not changed.
 (rerunfilecheck)             Checksum: 6BE16CD7620B71A9EA8B50C68208D1AF;5888.
  ) 
 Here is how much of TeX's memory you used:
- 15907 strings out of 494499
- 230338 string characters out of 6176132
+ 15909 strings out of 494499
+ 230290 string characters out of 6176132
  376120 words of memory out of 5000000
- 18887 multiletter control sequences out of 15000+600000
- 21949 words of font info for 148 fonts, out of 8000000 for 9000
+ 18889 multiletter control sequences out of 15000+600000
+ 21896 words of font info for 147 fonts, out of 8000000 for 9000
  220 hyphenation exceptions out of 8191
  60i,14n,94p,802b,466s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/elliott/.texlive2018/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm0700.6
@@ -995,9 +1000,9 @@ r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on swiftlatex.pdf (11 pages, 1920722 bytes).
+Output written on swiftlatex.pdf (11 pages, 1919050 bytes).
 PDF statistics:
- 433 PDF objects out of 1000 (max. 8388607)
+ 434 PDF objects out of 1000 (max. 8388607)
  96 named destinations out of 1000 (max. 500000)
  23816 words of extra memory for PDF output out of 24883 (max. 10000000)
 

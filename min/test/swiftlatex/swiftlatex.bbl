@@ -2,7 +2,7 @@
 %%% Do NOT edit. File created by BibTeX with style
 %%% ACM-Reference-Format-Journals [18-Jan-2012].
 
-\begin{thebibliography}{00}
+\begin{thebibliography}{33}
 
 %%% ====================================================================
 %%% NOTE TO THE USER: you can override these defaults by providing
@@ -41,10 +41,12 @@
         {acejs}
 \bibfield{author}{\bibinfo{person}{ACE}.} \bibinfo{year}{2018}\natexlab{}.
 \newblock \bibinfo{title}{Ace - The High Performance Code Editor for the Web}.
-\newblock   (\bibinfo{year}{2018}).
 \newblock
+\newblock
+\urldef\tempurl%
+\url{https://ace.c9.io/}
 \showURL{%
-\url{https://ace.c9.io/}}
+\tempurl}
 
 
 \bibitem[\protect\citeauthoryear{Aclements}{Aclements}{2015}]%
@@ -52,27 +54,31 @@
 \bibfield{author}{\bibinfo{person}{Aclements}.}
   \bibinfo{year}{2015}\natexlab{}.
 \newblock \bibinfo{title}{A 21st century LaTeX wrapper}.
-\newblock   (\bibinfo{year}{2015}).
 \newblock
+\newblock
+\urldef\tempurl%
+\url{https://github.com/aclements/latexrun/}
 \showURL{%
-\url{https://github.com/aclements/latexrun/}}
+\tempurl}
 
 
 \bibitem[\protect\citeauthoryear{Adobe}{Adobe}{2008}]%
         {libpdf2008}
 \bibfield{author}{\bibinfo{person}{Adobe}.} \bibinfo{year}{2008}\natexlab{}.
 \newblock \bibinfo{title}{Portable Document Format}.
-\newblock   (\bibinfo{year}{2008}).
 \newblock
+\newblock
+\urldef\tempurl%
+\url{https://www.adobe.com/content/dam/acom/en/devnet/pdf/pdfs/PDF32000\_2008.pdf}
 \showURL{%
-\url{https://www.adobe.com/content/dam/acom/en/devnet/pdf/pdfs/PDF32000\_2008.pdf}}
+\tempurl}
 
 
 \bibitem[\protect\citeauthoryear{Banker}{Banker}{2011}]%
         {banker2011mongodb}
 \bibfield{author}{\bibinfo{person}{Kyle Banker}.}
   \bibinfo{year}{2011}\natexlab{}.
-\newblock \bibinfo{booktitle}{{\em MongoDB in action}}.
+\newblock \bibinfo{booktitle}{\emph{MongoDB in action}}.
 \newblock \bibinfo{publisher}{Manning Publications Co.}
 \newblock
 
@@ -81,7 +87,7 @@
         {bibeault2008jquery}
 \bibfield{author}{\bibinfo{person}{Bear Bibeault} {and} \bibinfo{person}{Yehuda
   Kats}.} \bibinfo{year}{2008}\natexlab{}.
-\newblock \bibinfo{booktitle}{{\em jQuery in Action}}.
+\newblock \bibinfo{booktitle}{\emph{jQuery in Action}}.
 \newblock \bibinfo{publisher}{Dreamtech Press}.
 \newblock
 
@@ -92,7 +98,7 @@
 \bibfield{author}{\bibinfo{person}{John Brooke} {et~al\mbox{.}}}
   \bibinfo{year}{1996}\natexlab{}.
 \newblock \showarticletitle{SUS-A quick and dirty usability scale}.
-\newblock \bibinfo{journal}{{\em Usability evaluation in industry\/}}
+\newblock \bibinfo{journal}{\emph{Usability evaluation in industry}}
   \bibinfo{volume}{189}, \bibinfo{number}{194} (\bibinfo{year}{1996}),
   \bibinfo{pages}{4--7}.
 \newblock
@@ -102,8 +108,8 @@
         {brown2013integrated}
 \bibfield{author}{\bibinfo{person}{Alan~W Brown}.}
   \bibinfo{year}{2013}\natexlab{}.
-\newblock \bibinfo{booktitle}{{\em Integrated project support environments: the
-  aspect project}}. Vol.~\bibinfo{volume}{33}.
+\newblock \bibinfo{booktitle}{\emph{Integrated project support environments:
+  the aspect project}}. Vol.~\bibinfo{volume}{33}.
 \newblock \bibinfo{publisher}{Elsevier}.
 \newblock
 
@@ -112,7 +118,7 @@
         {carlson2013redis}
 \bibfield{author}{\bibinfo{person}{Josiah~L Carlson}.}
   \bibinfo{year}{2013}\natexlab{}.
-\newblock \bibinfo{booktitle}{{\em Redis in action}}.
+\newblock \bibinfo{booktitle}{\emph{Redis in action}}.
 \newblock \bibinfo{publisher}{Manning Publications Co.}
 \newblock
 
@@ -123,8 +129,8 @@
   \bibinfo{year}{2015}\natexlab{}.
 \newblock \showarticletitle{Latexmk 4.43 a: Fully automated LaTeX document
   generation}.
-\newblock \bibinfo{journal}{{\em Penn State Department of Physics, Pennsylvania
-  State University\/}} (\bibinfo{year}{2015}).
+\newblock \bibinfo{journal}{\emph{Penn State Department of Physics,
+  Pennsylvania State University}} (\bibinfo{year}{2015}).
 \newblock
 
 
@@ -133,20 +139,24 @@
 \bibfield{author}{\bibinfo{person}{FreeDesktop}.}
   \bibinfo{year}{2018}\natexlab{}.
 \newblock \bibinfo{title}{Poppler Pdf Rendering library}.
-\newblock   (\bibinfo{year}{2018}).
 \newblock
+\newblock
+\urldef\tempurl%
+\url{http://poppler.freedesktop.org/}
 \showURL{%
-\url{http://poppler.freedesktop.org/}}
+\tempurl}
 
 
 \bibitem[\protect\citeauthoryear{GNOME}{GNOME}{2018}]%
         {libevince}
 \bibfield{author}{\bibinfo{person}{GNOME}.} \bibinfo{year}{2018}\natexlab{}.
 \newblock \bibinfo{title}{Document Viewer}.
-\newblock   (\bibinfo{year}{2018}).
 \newblock
+\newblock
+\urldef\tempurl%
+\url{https://github.com/GNOME/evince}
 \showURL{%
-\url{https://github.com/GNOME/evince}}
+\tempurl}
 
 
 \bibitem[\protect\citeauthoryear{Gr{\"a}tzer}{Gr{\"a}tzer}{2008}]%
@@ -156,8 +166,10 @@
 \newblock \showarticletitle{A gentle learning curve for LATEX}.
 \newblock  (\bibinfo{year}{2008}).
 \newblock
+\urldef\tempurl%
+\url{https://tug.org/pracjourn/2008-3/gratzer/gratzer.pdf}
 \showURL{%
-\url{https://tug.org/pracjourn/2008-3/gratzer/gratzer.pdf}}
+\tempurl}
 
 
 \bibitem[\protect\citeauthoryear{Kastrup}{Kastrup}{2002}]%
@@ -165,8 +177,8 @@
 \bibfield{author}{\bibinfo{person}{David Kastrup}.}
   \bibinfo{year}{2002}\natexlab{}.
 \newblock \showarticletitle{Revisiting WYSIWYG paradigms for authoring LATEX}.
-\newblock \bibinfo{journal}{{\em COMMUNICATIONS OF THE TEX USERS GROUP TUGBOAT
-  EDITOR BARBARA BEETON PROCEEDINGS EDITORS KAJA CHRISTIANSEN\/}}
+\newblock \bibinfo{journal}{\emph{COMMUNICATIONS OF THE TEX USERS GROUP TUGBOAT
+  EDITOR BARBARA BEETON PROCEEDINGS EDITORS KAJA CHRISTIANSEN}}
   \bibinfo{volume}{23}, \bibinfo{number}{1} (\bibinfo{year}{2002}),
   \bibinfo{pages}{57}.
 \newblock
@@ -179,8 +191,8 @@
   \bibinfo{person}{Gerben Wierda}, {and} \bibinfo{person}{Various
   Contributros}.} \bibinfo{year}{2006}\natexlab{}.
 \newblock \showarticletitle{TEXshop}.
-\newblock \bibinfo{journal}{{\em See website at http://www. uoregon.
-  edu/koch/texshop/texshop. html\/}} (\bibinfo{year}{2006}).
+\newblock \bibinfo{journal}{\emph{See website at http://www. uoregon.
+  edu/koch/texshop/texshop. html}} (\bibinfo{year}{2006}).
 \newblock
 
 
@@ -189,7 +201,7 @@
 \bibfield{author}{\bibinfo{person}{Jer{\^o}me Laurens}.}
   \bibinfo{year}{2008}\natexlab{}.
 \newblock \showarticletitle{Direct and reverse synchronization with SyncTEX}.
-\newblock \bibinfo{journal}{{\em TUGBoat\/}}  \bibinfo{volume}{29}
+\newblock \bibinfo{journal}{\emph{TUGBoat}}  \bibinfo{volume}{29}
   (\bibinfo{year}{2008}), \bibinfo{pages}{365--371}.
 \newblock
 
@@ -199,10 +211,12 @@
 \bibfield{author}{\bibinfo{person}{Jer{\^o}me Laurens}.}
   \bibinfo{year}{2011}\natexlab{}.
 \newblock \bibinfo{title}{Library for Parsing SyncTeX files}.
-\newblock   (\bibinfo{year}{2011}).
 \newblock
+\newblock
+\urldef\tempurl%
+\url{https://packages.debian.org/sid/libsynctex-dev}
 \showURL{%
-\url{https://packages.debian.org/sid/libsynctex-dev}}
+\tempurl}
 
 
 \bibitem[\protect\citeauthoryear{Lee, Leu, and Chang}{Lee
@@ -212,7 +226,7 @@
   {and} \bibinfo{person}{Ruay-Shiung Chang}.} \bibinfo{year}{2011}\natexlab{}.
 \newblock \showarticletitle{Improving job scheduling algorithms in a grid
   environment}.
-\newblock \bibinfo{journal}{{\em Future generation computer systems\/}}
+\newblock \bibinfo{journal}{\emph{Future generation computer systems}}
   \bibinfo{volume}{27}, \bibinfo{number}{8} (\bibinfo{year}{2011}),
   \bibinfo{pages}{991--998}.
 \newblock
@@ -223,7 +237,7 @@
 \bibfield{author}{\bibinfo{person}{James~R Lewis} {and} \bibinfo{person}{Jeff
   Sauro}.} \bibinfo{year}{2009}\natexlab{}.
 \newblock \showarticletitle{The factor structure of the system usability
-  scale}. In \bibinfo{booktitle}{{\em International conference on human
+  scale}. In \bibinfo{booktitle}{\emph{International conference on human
   centered design}}. Springer, \bibinfo{pages}{94--103}.
 \newblock
 
@@ -234,7 +248,7 @@
   \bibinfo{year}{2014}\natexlab{}.
 \newblock \showarticletitle{Docker: lightweight linux containers for consistent
   development and deployment}.
-\newblock \bibinfo{journal}{{\em Linux Journal\/}} \bibinfo{volume}{2014},
+\newblock \bibinfo{journal}{\emph{Linux Journal}} \bibinfo{volume}{2014},
   \bibinfo{number}{239} (\bibinfo{year}{2014}), \bibinfo{pages}{2}.
 \newblock
 
@@ -244,20 +258,24 @@
 \bibfield{author}{\bibinfo{person}{Mozilla}.} \bibinfo{year}{2018}\natexlab{a}.
 \newblock \bibinfo{title}{A general-purpose, web standards-based platform for
   parsing and rendering PDFs}.
-\newblock   (\bibinfo{year}{2018}).
 \newblock
+\newblock
+\urldef\tempurl%
+\url{https://mozilla.github.io/pdf.js/}
 \showURL{%
-\url{https://mozilla.github.io/pdf.js/}}
+\tempurl}
 
 
 \bibitem[\protect\citeauthoryear{Mozilla}{Mozilla}{2018b}]%
         {pdfjs}
 \bibfield{author}{\bibinfo{person}{Mozilla}.} \bibinfo{year}{2018}\natexlab{b}.
 \newblock \bibinfo{title}{What browsers are supported by PDF.js?}
-\newblock   (\bibinfo{year}{2018}).
 \newblock
+\newblock
+\urldef\tempurl%
+\url{https://github.com/mozilla/pdf.js/wiki/Frequently-Asked-Questions}
 \showURL{%
-\url{https://github.com/mozilla/pdf.js/wiki/Frequently-Asked-Questions}}
+\tempurl}
 
 
 \bibitem[\protect\citeauthoryear{Nielsen}{Nielsen}{1989}]%
@@ -265,9 +283,9 @@
 \bibfield{author}{\bibinfo{person}{Jakob Nielsen}.}
   \bibinfo{year}{1989}\natexlab{}.
 \newblock \showarticletitle{Usability engineering at a discount}. In
-  \bibinfo{booktitle}{{\em Proceedings of the third international conference on
-  human-computer interaction on Designing and using human-computer interfaces
-  and knowledge based systems (2nd ed.)}}. Elsevier Science Inc.,
+  \bibinfo{booktitle}{\emph{Proceedings of the third international conference
+  on human-computer interaction on Designing and using human-computer
+  interfaces and knowledge based systems (2nd ed.)}}. Elsevier Science Inc.,
   \bibinfo{pages}{394--401}.
 \newblock
 
@@ -277,9 +295,9 @@
 \bibfield{author}{\bibinfo{person}{Jakob Nielsen}.}
   \bibinfo{year}{2009}\natexlab{}.
 \newblock \showarticletitle{Discount usability: 20 years}.
-\newblock \bibinfo{journal}{{\em Jakob Nielsen's Alertbox Available at
+\newblock \bibinfo{journal}{\emph{Jakob Nielsen's Alertbox Available at
   http://www. useit. com/alertbox/discount-usability. html [Accessed 23 January
-  2012]\/}} (\bibinfo{year}{2009}).
+  2012]}} (\bibinfo{year}{2009}).
 \newblock
 
 
@@ -289,7 +307,7 @@
   \bibinfo{year}{2015}\natexlab{}.
 \newblock \showarticletitle{Why you only need to test with 5 users, March 19,
   2000}.
-\newblock \bibinfo{journal}{{\em Useit.com Alertbox\/}}  \bibinfo{volume}{27}
+\newblock \bibinfo{journal}{\emph{Useit.com Alertbox}}  \bibinfo{volume}{27}
   (\bibinfo{year}{2015}).
 \newblock
 
@@ -301,7 +319,7 @@
   Allen}, {and} \bibinfo{person}{Brian Gough}.}
   \bibinfo{year}{2018}\natexlab{}.
 \newblock \bibinfo{title}{ShareLaTeX, the Online LaTeX Editor}.
-\newblock   (\bibinfo{year}{2018}).
+\newblock
 \newblock
 
 
@@ -309,20 +327,24 @@
         {overleafstat}
 \bibfield{author}{\bibinfo{person}{Overleaf}.} \bibinfo{year}{2017}\natexlab{}.
 \newblock \bibinfo{title}{600,000 users on Overleaf make over 2 billion edits!}
-\newblock   (\bibinfo{year}{2017}).
 \newblock
+\newblock
+\urldef\tempurl%
+\url{https://www.overleaf.com/blog/449-600-000-users-on-overleaf-make-over-2-billion-edits}
 \showURL{%
-\url{https://www.overleaf.com/blog/449-600-000-users-on-overleaf-make-over-2-billion-edits}}
+\tempurl}
 
 
 \bibitem[\protect\citeauthoryear{Overleaf}{Overleaf}{2018}]%
         {overleaf}
 \bibfield{author}{\bibinfo{person}{Overleaf}.} \bibinfo{year}{2018}\natexlab{}.
 \newblock \bibinfo{title}{Overleaf, Collaborative Writing and Publishing}.
-\newblock   (\bibinfo{year}{2018}).
 \newblock
+\newblock
+\urldef\tempurl%
+\url{https://www.overleaf.com}
 \showURL{%
-\url{https://www.overleaf.com}}
+\tempurl}
 
 
 \bibitem[\protect\citeauthoryear{Silberschatz, Galvin, and Gagne}{Silberschatz
@@ -331,7 +353,7 @@
 \bibfield{author}{\bibinfo{person}{Abraham Silberschatz},
   \bibinfo{person}{Peter~Baer Galvin}, {and} \bibinfo{person}{Greg Gagne}.}
   \bibinfo{year}{2014}\natexlab{}.
-\newblock \bibinfo{booktitle}{{\em Operating system concepts essentials}}.
+\newblock \bibinfo{booktitle}{\emph{Operating system concepts essentials}}.
 \newblock \bibinfo{publisher}{John Wiley \& Sons, Inc.}
 \newblock
 
@@ -341,17 +363,19 @@
 \bibfield{author}{\bibinfo{person}{BaKoMa Soft}.}
   \bibinfo{year}{2011}\natexlab{}.
 \newblock \bibinfo{title}{BaKoMa TEX 9.77}.
-\newblock   (\bibinfo{year}{2011}).
 \newblock
+\newblock
+\urldef\tempurl%
+\url{http://www.bakoma.com}
 \showURL{%
-\url{http://www.bakoma.com}}
+\tempurl}
 
 
 \bibitem[\protect\citeauthoryear{Spurlock}{Spurlock}{2013}]%
         {spurlock2013bootstrap}
 \bibfield{author}{\bibinfo{person}{Jake Spurlock}.}
   \bibinfo{year}{2013}\natexlab{}.
-\newblock \bibinfo{booktitle}{{\em Bootstrap: Responsive Web Development}}.
+\newblock \bibinfo{booktitle}{\emph{Bootstrap: Responsive Web Development}}.
 \newblock \bibinfo{publisher}{" O'Reilly Media, Inc."}.
 \newblock
 
@@ -361,7 +385,7 @@
         {strauss1990basics}
 \bibfield{author}{\bibinfo{person}{Anselm Strauss} {and}
   \bibinfo{person}{Juliet~M Corbin}.} \bibinfo{year}{1990}\natexlab{}.
-\newblock \bibinfo{booktitle}{{\em Basics of qualitative research: Grounded
+\newblock \bibinfo{booktitle}{\emph{Basics of qualitative research: Grounded
   theory procedures and techniques.}}
 \newblock \bibinfo{publisher}{Sage Publications, Inc}.
 \newblock
@@ -375,7 +399,6 @@
   \bibinfo{year}{2018}\natexlab{}.
 \newblock \bibinfo{title}{TeXstudio}.
 \newblock \bibinfo{howpublished}{\url{{https://www.texstudio.org/}}}.
-  (\bibinfo{year}{2018}).
 \newblock
 
 
@@ -384,7 +407,7 @@
 \bibfield{author}{\bibinfo{person}{Lu WANG} {and} \bibinfo{person}{Wanmin
   LIU}.} \bibinfo{year}{2013}\natexlab{}.
 \newblock \bibinfo{title}{Online publish via pdf2htmlEX}.
-\newblock   (\bibinfo{year}{2013}).
+\newblock
 \newblock
 
 

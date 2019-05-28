@@ -21,7 +21,7 @@ sources = pdftex0.c pdftexini.c pdftex-pool.c pdftex-extra.c
 objects = $(sources:.c=.o)
 
 cpdfetex: $(headers) $(objects)
-	$(CXX_LINK) $(objects) $(LIBPDFTEX) $(LIBXPDF) $(LIBPNG) $(LIBZLIB) $(LIBMD5)
+	$(CXX_LINK) $(objects) $(LIBPDFTEX) $(LIBXPDF) $(LIBZLIB) $(LIBMD5)
 
 $(objects): %.o: %.c
 	$(CC) -c $(CFLAGS) -I.  $< -o $@

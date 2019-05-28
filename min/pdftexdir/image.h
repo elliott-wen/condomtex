@@ -17,7 +17,7 @@ You should have received a copy of the GNU General Public License along
 with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-#include <png.h>
+
 
 /* JPG_IMAGE_INFO is main structure for interchange of image data */
 
@@ -33,8 +33,8 @@ typedef struct {
 } JPG_IMAGE_INFO;
 
 typedef struct {
-    png_structp png_ptr;
-    png_infop info_ptr;
+    unsigned int bits_per_component;       /* bits per component                         */
+    FILE *file;                 /* jpg file                                   */
 } png_image_struct;
 
 typedef struct {
@@ -64,7 +64,7 @@ typedef struct {
     integer group_ref;          // if it's <=0, the page has no group
     union {
         pdf_image_struct *pdf;
-        png_image_struct png;
+        png_image_struct *png;
         JPG_IMAGE_INFO *jpg;
         JBIG2_IMAGE_INFO *jbig2;
     } image_struct;
@@ -96,8 +96,7 @@ extern integer image_max;
 #define img_rotate(N)   (img_ptr(N)->rotate)
 #define img_xres(N)     (img_ptr(N)->x_res)
 #define img_yres(N)     (img_ptr(N)->y_res)
-#define png_ptr(N)      (img_ptr(N)->image_struct.png.png_ptr)
-#define png_info(N)     (img_ptr(N)->image_struct.png.info_ptr)
+#define png_ptr(N)      (img_ptr(N)->image_struct.png)
 #define pdf_ptr(N)      (img_ptr(N)->image_struct.pdf)
 #define jpg_ptr(N)      (img_ptr(N)->image_struct.jpg)
 #define jbig2_ptr(N)    (img_ptr(N)->image_struct.jbig2)

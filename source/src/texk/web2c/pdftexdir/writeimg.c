@@ -19,8 +19,7 @@ with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #include "ptexlib.h"
 #include "image.h"
-#include <kpathsea/c-auto.h>
-#include <kpathsea/c-memstr.h>
+
 
 #define bp2int(p)    round(p*(onehundredbp/100.0))
 
@@ -137,7 +136,7 @@ integer imagecolordepth(integer img)
 {
     switch (img_type(img)) {
     case IMAGE_TYPE_PNG:
-        return png_get_bit_depth(png_ptr(img), png_info(img));
+        return png_ptr(img)->bits_per_component;
     case IMAGE_TYPE_JPG:
         return jpg_ptr(img)->bits_per_component;
     case IMAGE_TYPE_JBIG2:
@@ -334,6 +333,7 @@ integer readimage(strnumber s, integer page_num, strnumber page_name,
             img_group_ref(img) = 0;     // no page group present
         break;
     case IMAGE_TYPE_PNG:
+    	png_ptr(img) = xtalloc(1, png_image_struct);
         img_pages(img) = 1;
         read_png_info(img);
         break;
@@ -343,15 +343,16 @@ integer readimage(strnumber s, integer page_num, strnumber page_name,
         read_jpg_info(img);
         break;
     case IMAGE_TYPE_JBIG2:
-        if (pdfversion < 4) {
-            pdftex_fail
-                ("JBIG2 images only possible with at least PDF 1.4; you are generating PDF 1.%i",
-                 (int) pdfversion);
-        }
-        jbig2_ptr(img) = xtalloc(1, JBIG2_IMAGE_INFO);
-        img_type(img) = IMAGE_TYPE_JBIG2;
-        jbig2_ptr(img)->selected_page = page_num;
-        read_jbig2_info(img);
+    	pdftex_fail("JBIG2 images support is disabled");
+        // if (pdfversion < 4) {
+        //     pdftex_fail
+        //         ("JBIG2 images only possible with at least PDF 1.4; you are generating PDF 1.%i",
+        //          (int) pdfversion);
+        // }
+        // jbig2_ptr(img) = xtalloc(1, JBIG2_IMAGE_INFO);
+        // img_type(img) = IMAGE_TYPE_JBIG2;
+        // jbig2_ptr(img)->selected_page = page_num;
+        // read_jbig2_info(img);
         break;
     default:
         pdftex_fail("unknown type of image");
@@ -373,7 +374,8 @@ void writeimage(integer img)
         write_jpg(img);
         break;
     case IMAGE_TYPE_JBIG2:
-        write_jbig2(img);
+    	pdftex_fail("JBIG2 images support is disabled");
+        //write_jbig2(img);
         break;
     case IMAGE_TYPE_PDF:
         epdf_doc = pdf_ptr(img)->doc;
@@ -399,8 +401,7 @@ void deleteimage(integer img)
         epdf_delete();
         break;
     case IMAGE_TYPE_PNG:
-        xfclose((FILE *) png_get_io_ptr(png_ptr(img)), cur_file_name);
-        png_destroy_read_struct(&(png_ptr(img)), &(png_info(img)), NULL);
+        xfclose(png_ptr(img)->file, cur_file_name);
         break;
     case IMAGE_TYPE_JPG:
         xfclose(jpg_ptr(img)->file, cur_file_name);
@@ -555,6 +556,7 @@ void undumpimagemeta(integer pdfversion, integer pdfinclusionerrorlevel)
             pdf_ptr(img)->doc = epdf_doc;
             break;
         case IMAGE_TYPE_PNG:
+        	png_ptr(img) = xtalloc(1, png_image_struct);
             img_pages(img) = 1;
             read_png_info(img);
             break;
@@ -564,15 +566,16 @@ void undumpimagemeta(integer pdfversion, integer pdfinclusionerrorlevel)
             read_jpg_info(img);
             break;
         case IMAGE_TYPE_JBIG2:
-            if (pdfversion < 4) {
-                pdftex_fail
-                    ("JBIG2 images only possible with at least PDF 1.4; you are generating PDF 1.%i",
-                     (int) pdfversion);
-            }
-            jbig2_ptr(img) = xtalloc(1, JBIG2_IMAGE_INFO);
-            img_type(img) = IMAGE_TYPE_JBIG2;
-            undumpinteger(jbig2_ptr(img)->selected_page);
-            read_jbig2_info(img);
+        	pdftex_fail("JBIG2 images support is disabled");
+            // if (pdfversion < 4) {
+            //     pdftex_fail
+            //         ("JBIG2 images only possible with at least PDF 1.4; you are generating PDF 1.%i",
+            //          (int) pdfversion);
+            // }
+            // jbig2_ptr(img) = xtalloc(1, JBIG2_IMAGE_INFO);
+            // img_type(img) = IMAGE_TYPE_JBIG2;
+            // undumpinteger(jbig2_ptr(img)->selected_page);
+            // read_jbig2_info(img);
             break;
         default:
             pdftex_fail("unknown type of image");

@@ -968,22 +968,13 @@ char *stripzeros(char *a)
 
 void initversionstring(char **versions)
 {
-    const_string fmt =
-                    "Compiled with libpng %s; using libpng %s\n"
-                    "Compiled with zlib %s; using zlib %s\n"
-                    "Compiled with %s version %s\n";
-    size_t len = strlen(fmt)
-                    + strlen(PNG_LIBPNG_VER_STRING) + strlen(png_libpng_ver)
-                    + strlen(ZLIB_VERSION) + strlen(zlib_version)
-                    + strlen(xpdfString) + strlen(xpdfVersion)
-                    + 1;
+    const_string fmt = "UPdfTeX Proudly Uses Nothing.\n";
+    size_t len = strlen(fmt) + 1;
 
     /* len will be more than enough, because of the placeholder chars in fmt
        that get replaced by the arguments.  */
     *versions = xmalloc(len);
-    sprintf(*versions, fmt,
-                    PNG_LIBPNG_VER_STRING, png_libpng_ver,
-                    ZLIB_VERSION, zlib_version, xpdfString, xpdfVersion);
+    memcpy(*versions, fmt, len);
 }
 
 
