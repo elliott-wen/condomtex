@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (pdfTeX Standalone 0.1 beta) (INITEX)  27 MAY 2019 12:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (pdfTeX Standalone 0.1 beta) (INITEX)  28 MAY 2019 12:35
 entering extended mode
 ***pdflatex.ini 
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/pdflatex.ini
@@ -758,7 +758,7 @@ Now handling font encoding U ...
 )
  ) )
 Beginning to dump on file pdflatex.fmt
- (preloaded format=pdflatex 2019.5.27)
+ (preloaded format=pdflatex 2019.5.28)
 5501 strings of total length 73868
 51361 memory locations dumped; current usage is 144&51187
 3776 multiletter control sequences

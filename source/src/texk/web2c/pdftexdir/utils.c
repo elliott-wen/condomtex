@@ -324,6 +324,21 @@ void makepdftexbanner(void)
     pdftexbanner_init = true;
 }
 
+unsigned int _crc32_for_byte(uint32_t r) {
+  for(int j = 0; j < 8; ++j)
+    r = (r & 1? 0: (uint32_t)0xEDB88320L) ^ r >> 1;
+  return r ^ (uint32_t)0xFF000000L;
+}
+
+static void simple_crc32(uint32_t* crc, const void *data, size_t n_bytes) {
+  static uint32_t table[0x100];
+  if(!*table)
+    for(size_t i = 0; i < 0x100; ++i)
+      table[i] = _crc32_for_byte(i);
+  for(size_t i = 0; i < n_bytes; ++i)
+    *crc = table[(uint8_t)*crc ^ ((uint8_t*)data)[i]] ^ *crc >> 8;
+}
+
 strnumber getresnameprefix(void)
 {
 /*     static char name_str[] = */
@@ -332,11 +347,10 @@ strnumber getresnameprefix(void)
     static char name_str[] =
         "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
     char prefix[7];             /* make a tag of 6 chars long */
-    unsigned long crc;
+    unsigned int crc = 0;
     int i;
     size_t base = strlen(name_str);
-    crc = crc32(0L, Z_NULL, 0);
-    crc = crc32(crc, (Bytef *) job_id_string, strlen(job_id_string));
+    simple_crc32(&crc, job_id_string, strlen(job_id_string));
     for (i = 0; i < 6; i++) {
         prefix[i] = name_str[crc % base];
         crc /= base;
