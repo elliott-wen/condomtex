@@ -11,7 +11,7 @@ LIBS =
 LIBDIR = libs
 
 LIBXPDF = $(LIBDIR)/libxpdf.a 
-LIBMD5 = $(LIBDIR)/libmd5.a
+LIBMD5 = $(LIBDIR)/libmd5.a 
 LIBPDFTEX = $(LIBDIR)/libpdftex.a
 
 sources = pdftex0.c pdftexini.c pdftex-pool.c pdftex-extra.c

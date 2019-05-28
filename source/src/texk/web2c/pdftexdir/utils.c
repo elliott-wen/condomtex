@@ -711,39 +711,39 @@ void unescapehex(poolpointer in)
  */
 void printID(strnumber filename)
 {
-    md5_state_t state;
-    md5_byte_t digest[16];
-    char id[64];
-    char *file_name;
-    /* start md5 */
-    md5_init(&state);
-    /* get the time */
-    initstarttime();
-    md5_append(&state, (const md5_byte_t *) start_time_str, strlen(start_time_str));
-    /* get the file name */
-    file_name = makecstring(filename);
-    md5_append(&state, (const md5_byte_t *) file_name, strlen(file_name));
-    /* finish md5 */
-    md5_finish(&state, digest);
-    /* write the IDs */
-    convertStringToHexString((char *) digest, id, 16);
-    pdf_printf("/ID [<%s> <%s>]", id, id);
+    // md5_state_t state;
+    // md5_byte_t digest[16];
+    // char id[64];
+    // char *file_name;
+    // /* start md5 */
+    // md5_init(&state);
+    // /* get the time */
+    // initstarttime();
+    // md5_append(&state, (const md5_byte_t *) start_time_str, strlen(start_time_str));
+    // /* get the file name */
+    // file_name = makecstring(filename);
+    // md5_append(&state, (const md5_byte_t *) file_name, strlen(file_name));
+    // /* finish md5 */
+    // md5_finish(&state, digest);
+    // /* write the IDs */
+    // convertStringToHexString((char *) digest, id, 16);
+    // pdf_printf("/ID [<%s> <%s>]", id, id);
 }
 
 void printIDalt(integer toks)
 {
-    md5_state_t state;
-    md5_byte_t digest[16];
-    char id[64];
-    char *s = makecstring(tokenstostring(toks));
-    flushstr(lasttokensstring);
-    if (strlen(s) == 0)
-        return;
-    md5_init(&state);
-    md5_append(&state, (const md5_byte_t *) s, strlen(s));
-    md5_finish(&state, digest);
-    convertStringToHexString((char *) digest, id, 16);
-    pdf_printf("/ID [<%s> <%s>]", id, id);
+    // md5_state_t state;
+    // md5_byte_t digest[16];
+    // char id[64];
+    // char *s = makecstring(tokenstostring(toks));
+    // flushstr(lasttokensstring);
+    // if (strlen(s) == 0)
+    //     return;
+    // md5_init(&state);
+    // md5_append(&state, (const md5_byte_t *) s, strlen(s));
+    // md5_finish(&state, digest);
+    // convertStringToHexString((char *) digest, id, 16);
+    // pdf_printf("/ID [<%s> <%s>]", id, id);
 }
 
 
@@ -1565,7 +1565,7 @@ unsigned int getcharsigslot(int index, int line, int column, int group, int cs)
     
     if(curcharsigslot == MAX_RECORD_NUM - 1)
     {
-            printf("No more memory");
+            printf("No more memory\n");
             abort();
     }
     curcharsigslot += 1;

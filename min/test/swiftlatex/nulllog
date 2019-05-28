@@ -135,35 +135,83 @@ X-works, TeXnic-
 
 Underfull \vbox (badness 10000) has occurred while \output is active [2.2]
 Underfull \vbox (badness 1377) has occurred while \output is active [3.3]
-Overfull \hbox (12.0pt too wide) in paragraph at lines 414--415
- [] 
-[4.4 <figure/test2.png>]
+
+LaTeX Warning: Reference `fig:editingexample' on page 4 undefined on input line
+ 380.
+
+
+LaTeX Warning: Reference `fig:editingexample' on page 4 undefined on input line
+ 394.
+
+
+LaTeX Warning: Reference `fig:editingexample' on page 4 undefined on input line
+ 394.
+
+
+LaTeX Warning: Reference `fig:timingchart' on page 4 undefined on input line 40
+1.
+
+
+LaTeX Warning: Reference `fig:timingchart' on page 4 undefined on input line 42
+0.
+
+
+LaTeX Warning: Reference `fig:timingchart' on page 4 undefined on input line 42
+7.
+
+[4.4]
+
+LaTeX Warning: Reference `fig:flowchart' on page 5 undefined on input line 443.
+
+
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <9> not available
 (Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 583.
 
 
-[5.5 <figure/timechart.pdf> <figure/flowchart.pdf> <figure/charmapping.pdf>]
-(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd) [6.6 <figure/patchengi
-ne.pdf>]
-Underfull \vbox (badness 2698) has occurred while \output is active [7.7 <figur
-e/cloudarchitecture.pdf>]
+
+LaTeX Warning: Reference `fig:char' on page 5 undefined on input line 583.
+
+
+LaTeX Warning: Reference `fig:char' on page 5 undefined on input line 585.
+
+
+LaTeX Warning: Reference `fig:char' on page 5 undefined on input line 587.
+
+[5.5]
+
+LaTeX Warning: Reference `fig:enginepatch' on page 6 undefined on input line 64
+7.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd)
 Underfull \vbox (badness 10000) has occurred while \output is active
+Underfull \vbox (badness 2698) has occurred while \output is active [6.6]
+
+LaTeX Warning: Reference `fig:cloudarch' on page 7 undefined on input line 743.
+
+
+
+LaTeX Warning: Reference `fig:cloudarch' on page 7 undefined on input line 752.
+
+
+
 Overfull \hbox (5.82036pt too wide) in paragraph at lines 795--796
 []\OT1/cmr/m/n/9 (-20) The first method takes ad-van-tage of \OT1/cmr/m/it/9 (-
 20) PDF.js \OT1/cmr/m/n/9 (-20) [[]], a Javascript
 
+Underfull \vbox (badness 1270) has occurred while \output is active [7.7]
 Overfull \hbox (17.9976pt too wide) in paragraph at lines 797--801
 []\OT1/cmr/m/n/9 (-20) The sec-ond ap-proach is in-spired by a li-brary named \
 OT1/cmr/m/it/9 (-20) Pdf2htmlEX
 
-Underfull \vbox (badness 10000) has occurred while \output is active [8.8]
-[9.9 <figure/screenshot.pdf>]
+LaTeX Warning: Reference `fig:screenshot' on page 8 undefined on input line 805
+.
+
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 880.
 
-<<ot1tt.cmap>> [10.10] (swiftlatex.bbl
+[8.8]<<ot1tt.cmap>> [9.9] (swiftlatex.bbl
 Underfull \hbox (badness 2837) in paragraph at lines 67--75
 []\OT1/cmr/m/n/7 (+20) Adobe. 2008.  Portable Doc-u-ment For-mat.    []$https :
 
@@ -181,7 +229,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 328--336
 
 Underfull \hbox (badness 1147) in paragraph at lines 408--412
 []\OT1/cmr/m/n/7 (+20) Lu WANG and Wan-min LIU. 2013.  On-line pub-lish via
-) [11.11] (swiftlatex.aux) )
+) [10.10] (swiftlatex.aux)
+
+LaTeX Warning: There were undefined references.
+
+ )
 (see the transcript file for additional information)Looking for tcrm0700 dpi 600 format 1
  </home/elliott/.texlive201
 8/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm0700.600pk>Looking for tcrm0900 dpi 600 format 1
@@ -204,5 +256,5 @@ nts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/typ
 e1/public/amsfonts/cm/cmti7.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
 ic/amsfonts/cm/cmti9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
 onts/cm/cmtt8.pfb>
-Output written on swiftlatex.pdf (11 pages, 1919170 bytes).
+Output written on swiftlatex.pdf (10 pages, 1900456 bytes).
 Transcript written on swiftlatex.log.

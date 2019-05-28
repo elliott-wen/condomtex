@@ -712,7 +712,9 @@ dopdffont(integer font_objnum, internalfontnumber f)
 
     fm = hasfmentry(f) ? (fm_entry *) pdffontmap[f] : NULL;
     if (fm == NULL || is_pk(fm))
-        writet3(fm, font_objnum, f);
+    {
+        //writet3(fm, font_objnum, f);
+    }
     else
         create_fontdictionary(fm, font_objnum, f);
 }
