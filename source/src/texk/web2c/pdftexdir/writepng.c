@@ -25,7 +25,7 @@ with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 const unsigned char IHDRCHUNK[4] = {'I', 'H', 'D', 'R'};
 struct  __attribute__ ((packed)) ChunkHeader{
-    unsigned int signature[8];
+    unsigned char signature[8];
     unsigned int len;
     unsigned char type[4];
     unsigned int width;

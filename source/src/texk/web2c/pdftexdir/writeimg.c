@@ -402,9 +402,11 @@ void deleteimage(integer img)
         break;
     case IMAGE_TYPE_PNG:
         xfclose(png_ptr(img)->file, cur_file_name);
+        xfree(png_ptr(img));
         break;
     case IMAGE_TYPE_JPG:
         xfclose(jpg_ptr(img)->file, cur_file_name);
+        xfree(jpg_ptr(img));
         break;
     case IMAGE_TYPE_JBIG2:
         break;
