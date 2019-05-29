@@ -11,15 +11,14 @@ LIBS =
 LIBDIR = libs
 
 LIBXPDF = $(LIBDIR)/libxpdf.a 
-LIBMD5 = $(LIBDIR)/libmd5.a 
 LIBPDFTEX = $(LIBDIR)/libpdftex.a
 
-sources = pdftex0.c pdftexini.c pdftex-pool.c pdftex-extra.c
+sources = pdftex0.c pdftexini.c pdftex-pool.c pdftex-extra.c md5.c
 
 objects = $(sources:.c=.o)
 
 cpdfetex: $(headers) $(objects)
-	$(CXX_LINK) $(objects) $(LIBPDFTEX) $(LIBXPDF) $(LIBMD5)
+	$(CXX_LINK) $(objects) $(LIBPDFTEX) $(LIBXPDF) 
 
 $(objects): %.o: %.c
 	$(CC) -c $(CFLAGS) -I.  $< -o $@

@@ -422,7 +422,7 @@ void libpdffinish(void)
     enc_free();
     img_free();
     vf_free();
-    epdf_free();
+    epdf_check_mem();
     ttf_free();
     sfd_free();
     glyph_unicode_free();

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (pdfTeX Standalone 0.1 beta) (preloaded format=pdflatex 2019.5.28)  29 MAY 2019 10:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (pdfTeX Standalone 0.1 beta) (preloaded format=pdflatex 2019.5.28)  29 MAY 2019 11:00
 entering extended mode
 **swiftlatex.tex 
 (swiftlatex.tex
@@ -989,81 +989,26 @@ Here is how much of TeX's memory you used:
  21896 words of font info for 147 fonts, out of 8000000 for 9000
  220 hyphenation exceptions out of 8191
  60i,14n,94p,802b,466s stack positions out of 5000i,500n,10000p,200000b,80000s
-
-
-pdfTeX warning: : No flags specified for non-embedded font `CMBX10' (cmbx10) (I
-'m using 34): fix your map entry.
-
-
-pdfTeX warning: : No flags specified for non-embedded font `CMBX8' (cmbx8) (I'm
- using 34): fix your map entry.
-
-
-pdfTeX warning: : No flags specified for non-embedded font `CMBX9' (cmbx9) (I'm
- using 34): fix your map entry.
-
-
-pdfTeX warning: : No flags specified for non-embedded font `CMEX9' (cmex9) (I'm
- using 34): fix your map entry.
-
-
-pdfTeX warning: : No flags specified for non-embedded font `CMMI6' (cmmi6) (I'm
- using 34): fix your map entry.
-
-
-pdfTeX warning: : No flags specified for non-embedded font `CMMI9' (cmmi9) (I'm
- using 34): fix your map entry.
-
-
-pdfTeX warning: : No flags specified for non-embedded font `CMR10' (cmr10) (I'm
- using 34): fix your map entry.
-
-
-pdfTeX warning: : No flags specified for non-embedded font `CMR12' (cmr12) (I'm
- using 34): fix your map entry.
-
-
-pdfTeX warning: : No flags specified for non-embedded font `CMR6' (cmr6) (I'm u
-sing 34): fix your map entry.
-
-
-pdfTeX warning: : No flags specified for non-embedded font `CMR7' (cmr7) (I'm u
-sing 34): fix your map entry.
-
-
-pdfTeX warning: : No flags specified for non-embedded font `CMR9' (cmr9) (I'm u
-sing 34): fix your map entry.
-
-
-pdfTeX warning: : No flags specified for non-embedded font `CMSS9' (cmss9) (I'm
- using 34): fix your map entry.
-
-
-pdfTeX warning: : No flags specified for non-embedded font `CMSSBX10' (cmssbx10
-) (I'm using 34): fix your map entry.
-
-
-pdfTeX warning: : No flags specified for non-embedded font `CMSSI9' (cmssi9) (I
-'m using 34): fix your map entry.
-
-
-pdfTeX warning: : No flags specified for non-embedded font `CMSY9' (cmsy9) (I'm
- using 34): fix your map entry.
-
-
-pdfTeX warning: : No flags specified for non-embedded font `CMTI7' (cmti7) (I'm
- using 34): fix your map entry.
-
-
-pdfTeX warning: : No flags specified for non-embedded font `CMTI9' (cmti9) (I'm
- using 34): fix your map entry.
-
-
-pdfTeX warning: : No flags specified for non-embedded font `CMTT8' (cmtt8) (I'm
- using 34): fix your map entry.
-Output written on swiftlatex.pdf (10 pages, 1621922 bytes).
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+r9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmtt8.pfb>
+Output written on swiftlatex.pdf (10 pages, 1897076 bytes).
 PDF statistics:
- 355 PDF objects out of 1000 (max. 8388607)
+ 391 PDF objects out of 1000 (max. 8388607)
  88 named destinations out of 1000 (max. 500000)
  23781 words of extra memory for PDF output out of 24883 (max. 10000000)
 
