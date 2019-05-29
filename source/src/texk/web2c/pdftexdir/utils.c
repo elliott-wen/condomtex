@@ -418,11 +418,11 @@ void libpdffinish(void)
     xfree(char_array);
     xfree(job_id_string);
     fm_free();
-    t1_free();
-    enc_free();
+    // t1_free();
+    // enc_free();
     img_free();
     vf_free();
-    ttf_free();
+    //ttf_free();
     sfd_free();
     glyph_unicode_free();
     zip_free();

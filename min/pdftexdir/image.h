@@ -17,7 +17,8 @@ You should have received a copy of the GNU General Public License along
 with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-
+#ifndef IMAGE_HEADER
+#define IMAGE_HEADER
 
 /* JPG_IMAGE_INFO is main structure for interchange of image data */
 
@@ -108,3 +109,4 @@ extern void read_jpg_info(integer);
 extern void write_jpg(integer);
 extern void read_jbig2_info(integer);
 extern void write_jbig2(integer);
+#endif

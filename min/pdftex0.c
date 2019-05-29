@@ -39113,8 +39113,10 @@ closefilesandterminate ( void )
 	      
 	    f = objtab [k ].int0 ;
 	    pdfassert ( pdffontnum [f ]> 0 ) ;
+	    dopdffont ( k , f ) ;
 	    k = objtab [k ].int1 ;
 	  } 
+	  writefontstuff () ;
 	  a = sysobjptr + 1 ;
 	  l = headtab [2 ];
 	  k = headtab [1 ];

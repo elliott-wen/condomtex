@@ -1,5 +1,4 @@
 #define	EXTERN /* Instantiate data from pdftexd.h here.  */
-
 #include <pdftexd.h>
 string fullnameoffile;
 string output_directory;
@@ -31,61 +30,9 @@ string versionstring = " (pdfTeX Standalone 0.1 beta)";
 
 
 
-void *xmalloc(size_t newsize)
-{
-	void *ptr = malloc(newsize);
-	if(!ptr)
-	{
-		fprintf(stderr, "Malloc Failed");
-		abort();
-	}
-	memset(ptr, 0, newsize);
-	return ptr;
-}
-
-void* xrealloc(void* oriptr, size_t newsize)
-{
-	void *ptr = realloc(oriptr, newsize);
-	if(!ptr)
-	{
-		fprintf(stderr, "Realloc Failed");
-		abort();
-	}
-	return ptr;
-}
-
-FILE *
-xfopen (const_string filename,  const_string mode)
-{
-    FILE *f;
-
-    //assert(filename && mode);
-
-    f = fopen(filename, mode);
-    if (f == NULL)
-    {
-
-        fprintf(stderr, "File Open Failed (%s)\n", filename);
-        abort();
-    }
-
-    return f;
-}
 
 
 
-
-
-int xfclose ( FILE * stream,  const_string filename )
-{
-	int ret = fclose(stream);	
-	if(ret != 0)
-	{
-		fprintf(stderr, "File Close Failed %s", filename);
-		abort();
-	}
-	return 0;
-}
 
 void
 close_file (FILE *f)
@@ -106,12 +53,7 @@ kpse_absolute_p (const_string filename, boolean relative_ok)
   return absolute || explicit_relative;
 }
 
-boolean
-dir_p (string fn)
-{
-  struct stat stats;
-  return stat (fn, &stats) == 0 && S_ISDIR (stats.st_mode);
-}
+
 
 void
 recorder_record_input (const_string name)
@@ -633,54 +575,6 @@ string kpse_find_file(const_string name, kpse_file_format_type format,  boolean 
 }
 
 
-void xfseek (FILE *fp, long offset, int wherefrom, const_string filename)
-{
-	int ret = fseek(fp, offset, wherefrom);
-	if(ret != 0)
-	{
-		fprintf(stderr, "File Seek Failed %s", filename);
-		abort();
-	}
-	
-}
-
-long
-xftell (FILE *f,  const_string filename)
-{
-    long where = ftell (f);
-
-    if (where < 0)
-    {
-		fprintf(stderr, "File Tell Failed %s", filename);
-		abort();
-	}
-
-    return where;
-}
-
-
-long
-xftello (FILE *f,  const_string filename)
-{
-    long where = ftello (f);
-
-    if (where < 0)
-    {
-		fprintf(stderr, "File Tello Failed %s", filename);
-		abort();
-	}
-
-    return where;
-}
-
-void
-xfseeko (FILE *f,  off_t offset,  int wherefrom,  const_string filename)
-{
-  if (fseeko (f, offset, wherefrom) != 0) {
-        fprintf(stderr, "File fseeko Failed (%s %ld %d)", filename, offset, wherefrom);
-		    abort();
-  }
-}
 
 void do_undump (char *p, int item_size, int nitems, FILE *in_file)
 {
@@ -1337,6 +1231,14 @@ makesrcspecial (strnumber srcfilename, int lineno)
 
   return (oldpoolptr);
 }
+
+boolean
+dir_p (string fn)
+{
+  struct stat stats;
+  return stat (fn, &stats) == 0 && S_ISDIR (stats.st_mode);
+}
+
 
 
 int main(int argc, char**argv)

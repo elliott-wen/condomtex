@@ -6,6 +6,7 @@
 #include <math.h>
 #include <string.h>
 #include <assert.h>
+#include <errno.h>
 
 //Typedef
 typedef int integer;
@@ -28,6 +29,9 @@ typedef double glueratio;
 #define libcfree free
 #define xmallocarray(type,size) ((type*)xmalloc((size+1)*sizeof(type)))
 #define xreallocarray(ptr,type,size) ((type*)xrealloc(ptr,(size+1)*sizeof(type)))
+#define XTALLOC(n, t) ((t *) xmalloc ((n) * sizeof (t)))
+#define XRETALLOC(addr, n, t) ((addr) = (t *) xrealloc (addr, (n) * sizeof(t)))
+
 //File
 #define FOPEN_W_MODE "wb"
 #define FOPEN_R_MODE "rb"
@@ -172,6 +176,9 @@ typedef enum
 #ifndef PRIxPTR
 #define PRIxPTR "lx"
 #endif
+#define LONGINTEGER_TYPE long
+#define LONGINTEGER_PRI "l"
+  
 #define undumpcheckedthings(low, high, base, len)			\
   do {                                                                  \
     unsigned i;                                                         \
@@ -248,6 +255,11 @@ extern boolean eof (FILE *);
 extern void do_dump (char *, int, int, FILE *);
 extern void do_undump (char *, int, int, FILE *);
 extern int xfclose ( FILE * stream, const_string filename );
+extern FILE * xfopen (const_string filename,  const_string mode);
+extern void xfseek (FILE *fp, long offset, int wherefrom, const_string filename);
+extern long xftell (FILE *f,  const_string filename);
+extern long xftello (FILE *f,  const_string filename);
+extern void xfseeko (FILE *f,  off_t offset,  int wherefrom,  const_string filename);
 
 //Memory Function
 extern void* xrealloc(void*, size_t newsize);
@@ -263,6 +275,8 @@ extern int runsystem(const char *);
 
 
 extern char *makecstring(integer s);
+extern char *makecfilename(integer s);
+
 extern void kpse_init_prog (const_string prefix,  unsigned dpi,  const_string mode,
                 const_string fallback);
 extern void kpse_set_program_enabled (kpse_file_format_type fmt,

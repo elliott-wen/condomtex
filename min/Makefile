@@ -13,17 +13,26 @@ LIBDIR = libs
 LIBXPDF = $(LIBDIR)/libxpdf.a 
 LIBPDFTEX = $(LIBDIR)/libpdftex.a
 
-sources = pdftex0.c pdftexini.c pdftex-pool.c pdftex-extra.c md5.c
+ansicsources = pdftex0.c pdftexini.c pdftex-pool.c pdftex-extra.c memory.c fileop.c md5.c \
+		  pdftexdir/avl.c pdftexdir/avlstuff.c \
+		  pdftexdir/mapfile.c pdftexdir/utils.c pdftexdir/subfont.c pdftexdir/tounicode.c \
+		  pdftexdir/vfpacket.c pdftexdir/writezip.c pdftexdir/writet3.c \
+		  pdftexdir/writefont.c pdftexdir/writeimg.c pdftexdir/writejpg.c pdftexdir/writepng.c 
 
-objects = $(sources:.c=.o)
+cppsources = pdftexdir/pdftoepdf.cc
 
-cpdfetex: $(headers) $(objects)
-	$(CXX_LINK) $(objects) $(LIBPDFTEX) $(LIBXPDF) 
+ansicobjects = $(ansicsources:.c=.o)
 
-$(objects): %.o: %.c
+cppobjects = $(cppsources:.cc=.o)
+
+cpdfetex: $(headers) $(ansicobjects) $(cppobjects)
+	$(CXX_LINK) $(ansicobjects) $(cppobjects) $(LIBXPDF) 
+
+$(ansicobjects): %.o: %.c
 	$(CC) -c $(CFLAGS) -I.  $< -o $@
 
-
+$(cppobjects): %.o: %.cc
+	$(CXX) -c $(CFLAGS) -I.  $< -o $@
 
 clean:
-	rm -f depend *.o
+	rm -f depend *.o pdftexdir/*.o
