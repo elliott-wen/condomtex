@@ -32,7 +32,7 @@ char notdef[] = ".notdef";
 
 // #define INFILE ttf_file
 
-// #define ttf_open()      \
+// #define ttf_open()      
 //     open_input(&ttf_file, kpse_truetype_format, FOPEN_RBIN_MODE)
 // #define ttf_close()     xfclose(ttf_file, cur_file_name)
 // #define ttf_getchar()   xgetc(ttf_file)
@@ -311,12 +311,11 @@ char notdef[] = ".notdef";
 //     } else
 //         assert(0);
 // }
-
-// #define ttf_append_byte(B)\
-// do {\
-//     if (name_tab[i].platform_id == 3)\
-//         *q++ = 0;\
-//     *q++ = B;\
+// #define ttf_append_byte(B)
+// do {
+//     if (name_tab[i].platform_id == 3)
+//         *q++ = 0;
+//     *q++ = B;
 // } while (0)
 
 // static char *strip_spaces_and_delims(char *s, int l)
@@ -720,7 +719,7 @@ char notdef[] = ".notdef";
 //     ttf_set_chksm(tab);
 // }
 
-// #define BYTE_ENCODING_LENGTH  \
+// #define BYTE_ENCODING_LENGTH  
 //     ((256)*TTF_BYTE_SIZE + 3*TTF_USHORT_SIZE)
 
 // static void ttf_byte_encoding(void)

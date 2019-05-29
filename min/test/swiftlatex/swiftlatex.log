@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (pdfTeX Standalone 0.1 beta) (preloaded format=pdflatex 2019.5.28)  29 MAY 2019 18:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (pdfTeX Standalone 0.1 beta) (preloaded format=pdflatex 2019.5.28)  30 MAY 2019 09:49
 entering extended mode
 **swiftlatex.tex 
 (swiftlatex.tex
@@ -842,27 +842,27 @@ LaTeX Warning: Reference `fig:editingexample' on page 4 undefined on input line
 LaTeX Warning: Reference `fig:editingexample' on page 4 undefined on input line
  394.
 
-<figure/timechart.pdf, id=182, 588.90474pt x 142.13994pt>
+<figure/timechart.pdf, id=182, 588.1975pt x 141.52875pt>
 File: figure/timechart.pdf Graphic file (type pdf)
 <use figure/timechart.pdf>
 Package pdftex.def Info: figure/timechart.pdf  used on input line 414.
-(pdftex.def)             Requested size: 253.14749pt x 61.10162pt.
+(pdftex.def)             Requested size: 253.14749pt x 60.91016pt.
 
 Overfull \hbox (12.0pt too wide) in paragraph at lines 414--415
  [] 
  []
 
 [4.4 <figure/timechart.pdf>]
-<figure/flowchart.pdf, id=191, 476.78125pt x 297.37068pt>
+<figure/flowchart.pdf, id=191, 476.78125pt x 297.11pt>
 File: figure/flowchart.pdf Graphic file (type pdf)
 <use figure/flowchart.pdf>
 Package pdftex.def Info: figure/flowchart.pdf  used on input line 436.
-(pdftex.def)             Requested size: 202.51491pt x 126.31053pt.
-<figure/charmapping.pdf, id=194, 688.32156pt x 125.46875pt>
+(pdftex.def)             Requested size: 202.51491pt x 126.1998pt.
+<figure/charmapping.pdf, id=194, 687.56876pt x 125.46875pt>
 File: figure/charmapping.pdf Graphic file (type pdf)
 <use figure/charmapping.pdf>
 Package pdftex.def Info: figure/charmapping.pdf  used on input line 577.
-(pdftex.def)             Requested size: 212.64296pt x 38.76088pt.
+(pdftex.def)             Requested size: 212.64296pt x 38.80301pt.
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <9> not available
@@ -870,11 +870,11 @@ LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <9> not available
 
 
 [5.5 <figure/flowchart.pdf> <figure/charmapping.pdf>]
-<figure/patchengine.pdf, id=211, 534.49687pt x 177.85907pt>
+<figure/patchengine.pdf, id=211, 533.995pt x 177.66376pt>
 File: figure/patchengine.pdf Graphic file (type pdf)
 <use figure/patchengine.pdf>
 Package pdftex.def Info: figure/patchengine.pdf  used on input line 633.
-(pdftex.def)             Requested size: 212.64296pt x 70.75969pt.
+(pdftex.def)             Requested size: 212.64296pt x 70.74706pt.
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 659.
 
 
@@ -889,11 +889,11 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [6.6 <figure/patchengine.pdf>]
 Underfull \vbox (badness 2698) has occurred while \output is active []
 
-<figure/cloudarchitecture.pdf, id=226, 457.47885pt x 310.66063pt>
+<figure/cloudarchitecture.pdf, id=226, 456.70625pt x 310.15875pt>
 File: figure/cloudarchitecture.pdf Graphic file (type pdf)
 <use figure/cloudarchitecture.pdf>
 Package pdftex.def Info: figure/cloudarchitecture.pdf  used on input line 734.
-(pdftex.def)             Requested size: 202.51491pt x 137.52065pt.
+(pdftex.def)             Requested size: 202.51491pt x 137.53038pt.
  [7.7 <figure/cloudarchitecture.pdf>]
 <figure/screenshot.pdf, id=244, 1438.37375pt x 832.10875pt>
 File: figure/screenshot.pdf Graphic file (type pdf)
@@ -992,26 +992,10 @@ Here is how much of TeX's memory you used:
  21896 words of font info for 147 fonts, out of 8000000 for 9000
  220 hyphenation exceptions out of 8191
  60i,14n,94p,802b,466s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb></usr/share/texlive/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-r9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on swiftlatex.pdf (11 pages, 1914052 bytes).
+
+Output written on swiftlatex.pdf (11 pages, 1625363 bytes).
 PDF statistics:
- 419 PDF objects out of 1000 (max. 8388607)
+ 347 PDF objects out of 1000 (max. 8388607)
  95 named destinations out of 1000 (max. 500000)
  23811 words of extra memory for PDF output out of 24883 (max. 10000000)
 

@@ -22,7 +22,7 @@ with this program.  If not, see <http://www.gnu.org/licenses/>.
    <kpathsea/types.h> defining Pascal's boolean as 'int'.
 */
 
-
+#include "texmfmp.h"
 #include "image.h"
 #include <stdlib.h>
 #include <math.h>
@@ -55,6 +55,7 @@ with this program.  If not, see <http://www.gnu.org/licenses/>.
 // the functions of xpdf, which are written in C++.
 
 extern "C" {
+
 #include <pdftexdir/ptexmac.h>
 #include <pdftexdir/pdftex-common.h>
 
@@ -206,16 +207,16 @@ read_pdf_info(integer img, char *page_name, int page_num,
 
 void write_epdf(integer img)
 {
-    if(pdf_ptr(img)->doc != 0)
-        delete(pdf_ptr(img)->doc);
-    pdf_ptr(img)->doc = 0;
+    
 }
 
 
 
 void epdf_delete(integer img)
 {
-   
+   if(pdf_ptr(img)->doc != 0)
+        delete(pdf_ptr(img)->doc);
+    pdf_ptr(img)->doc = 0;
 }
 
 
