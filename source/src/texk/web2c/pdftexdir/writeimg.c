@@ -30,16 +30,7 @@ with this program.  If not, see <http://www.gnu.org/licenses/>.
 image_entry *image_ptr, *image_array = NULL;
 integer image_limit;
 
-float epdf_width;
-float epdf_height;
-float epdf_orig_x;
-float epdf_orig_y;
-float epdf_rotate;
-int epdf_selected_page;
-int epdf_num_pages;
-int epdf_page_box;
-void *epdf_doc;
-int epdf_has_page_group;
+
 
 static integer new_image_entry(void)
 {
@@ -316,21 +307,12 @@ integer readimage(strnumber s, integer page_num, strnumber page_name,
     case IMAGE_TYPE_PDF:
         pdf_ptr(img) = xtalloc(1, pdf_image_struct);
         pdf_ptr(img)->page_box = pagebox;
-        page_num = read_pdf_info(img_name(img), dest, page_num, pagebox,
+        read_pdf_info(img, dest, page_num, pagebox,
                                  pdfversion, pdfinclusionerrorlevel);
-        img_width(img) = bp2int(epdf_width);
-        img_height(img) = bp2int(epdf_height);
-        img_rotate(img) = epdf_rotate;
-        img_pages(img) = epdf_num_pages;
-        pdf_ptr(img)->orig_x = bp2int(epdf_orig_x);
-        pdf_ptr(img)->orig_y = bp2int(epdf_orig_y);
-        pdf_ptr(img)->selected_page = page_num;
-        pdf_ptr(img)->doc = epdf_doc;
-        if (epdf_has_page_group == 1)
-            img_group_ref(img) = -1;    // page group present, but new object
-                                        // number not set yet
-        else
-            img_group_ref(img) = 0;     // no page group present
+        pdf_ptr(img)->orig_x = bp2int(pdf_ptr(img)->orig_x); //Postfix
+        pdf_ptr(img)->orig_y = bp2int(pdf_ptr(img)->orig_y);
+        img_width(img) = bp2int(img_width(img));
+        img_height(img) = bp2int(img_height(img));
         break;
     case IMAGE_TYPE_PNG:
     	png_ptr(img) = xtalloc(1, png_image_struct);
@@ -378,10 +360,8 @@ void writeimage(integer img)
         //write_jbig2(img);
         break;
     case IMAGE_TYPE_PDF:
-        epdf_doc = pdf_ptr(img)->doc;
-        epdf_selected_page = pdf_ptr(img)->selected_page;
-        epdf_page_box = pdf_ptr(img)->page_box;
-        //write_epdf();
+        
+        write_epdf(img);
         break;
     default:
         pdftex_fail("unknown type of image");
@@ -397,8 +377,9 @@ void deleteimage(integer img)
         return;                 // The image may be \dump{}ed to a format
     switch (img_type(img)) {
     case IMAGE_TYPE_PDF:
-        epdf_doc = pdf_ptr(img)->doc;
-        epdf_delete();
+        epdf_delete(img);
+        if(pdf_ptr(img) != 0)
+            xfree(pdf_ptr(img));
         break;
     case IMAGE_TYPE_PNG:
         xfclose(png_ptr(img)->file, cur_file_name);
@@ -550,16 +531,14 @@ void undumpimagemeta(integer pdfversion, integer pdfinclusionerrorlevel)
             undumpinteger(pdf_ptr(img)->page_box);
             undumpinteger(pdf_ptr(img)->selected_page);
 
-            read_pdf_info(img_name(img), NULL, pdf_ptr(img)->selected_page,
+            read_pdf_info(img, NULL, pdf_ptr(img)->selected_page,
                           pdf_ptr(img)->page_box, pdfversion,
                           pdfinclusionerrorlevel);
 
-            img_width(img) = bp2int(epdf_width);
-            img_height(img) = bp2int(epdf_height);
-            img_pages(img) = epdf_num_pages;
-            pdf_ptr(img)->orig_x = bp2int(epdf_orig_x);
-            pdf_ptr(img)->orig_y = bp2int(epdf_orig_y);
-            pdf_ptr(img)->doc = epdf_doc;
+           pdf_ptr(img)->orig_x = bp2int(pdf_ptr(img)->orig_x); //Postfix
+            pdf_ptr(img)->orig_y = bp2int(pdf_ptr(img)->orig_y);
+            img_width(img) = bp2int(img_width(img));
+            img_height(img) = bp2int(img_height(img));
             break;
         case IMAGE_TYPE_PNG:
         	png_ptr(img) = xtalloc(1, png_image_struct);

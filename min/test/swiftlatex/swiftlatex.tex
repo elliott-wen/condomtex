@@ -409,13 +409,13 @@ However, it should be noted that this revised PDF is an output of the source cod
 It does not reflect the user's inputs within the timespan between $t_1$ and $t_2$, which are referred to as the \textit{uncommitted edit}.
 As a consequence, directly displaying the newly-obtained revised version would erase the user's uncommitted edit  from the screen, and that would  obviously be inappropriate because the user's editing process would be severely disrupted.
 
-% \begin{figure}[t]
-% \begin{center}
-% \includegraphics[width=0.5\textwidth]{figure/timechart}
-% \caption{Timing Charts in the WYSIWYG View.}
-% \label{fig:timingchart}
-% \end{center}
-% \end{figure}
+\begin{figure}[t]
+\begin{center}
+\includegraphics[width=0.5\textwidth]{figure/timechart}
+\caption{Timing Charts in the WYSIWYG View.}
+\label{fig:timingchart}
+\end{center}
+\end{figure}
 
 One naive way to bypass this issue would be to take advantage of the user's pauses in editing as shown in Fig~\ref{fig:timingchart} (b). 
 Specifically, it is not uncommon that a user occasionally takes a break from typing.
@@ -431,13 +431,13 @@ When the revised PDF is available at $t_2$, all the operations are dequeued  and
 This generates a new preview PDF, which derives from the just-received revised PDF by adding the uncommitted edit.
 Thus it is ready to be displayed in the viewer. The cursor is repositioned at the correct logical position in this new preview PDF and the user can continue editing without interruption.
 
-% \begin{figure}[t]
-% \begin{center}
-% \includegraphics[width=0.40\textwidth]{figure/flowchart}
-% \caption{Workflow for the WYSIWYG view.}
-% \label{fig:flowchart}
-% \end{center}
-% \end{figure}
+\begin{figure}[t]
+\begin{center}
+\includegraphics[width=0.40\textwidth]{figure/flowchart}
+\caption{Workflow for the WYSIWYG view.}
+\label{fig:flowchart}
+\end{center}
+\end{figure}
 
 
 We summarize the aforementioned design with a flowchart shown in Fig~\ref{fig:flowchart}, where the blocks with ongoing compilation process are colored in red. A new compilation process will be triggered whenever either a keystroke or a timeout event (i.e., periodically trigger) is detected. This ensures that the users can obtain the latest revised version as soon as possible.
@@ -572,14 +572,14 @@ This coarse-grained accuracy is unable to meet the requirement of SwiftLaTeX. To
 
 \subsubsection{Text-Matching Approach}
 
-% \begin{figure}[t]
-% \begin{center}
-% \includegraphics[width=0.42\textwidth]{figure/charmapping}
-% \caption{Two typical examples for source code position inference.}
-% \label{fig:char}
-% \end{center}
+\begin{figure}[t]
+\begin{center}
+\includegraphics[width=0.42\textwidth]{figure/charmapping}
+\caption{Two typical examples for source code position inference.}
+\label{fig:char}
+\end{center}
 
-% \end{figure}
+\end{figure}
 For a better understanding of the text matching approach, Figure~\ref{fig:char} depicts two typical cases, each of which contains one line of \LaTeX\ source code and its corresponding PDF output obtained by Sync\TeX. 
 
 Consider the first case in Fig~\ref{fig:char} (a) where we wish to infer the source code position of the word `better' in PDF. 
@@ -628,14 +628,14 @@ The unstable technique now forces us to develop a more sophisticated approach, w
 
 \subsubsection{Enhancing \TeX\ Engine}
 
-% \begin{figure}[t]
-% \begin{center}
-% \includegraphics[width=0.42\textwidth]{figure/patchengine}
-% \caption{Internal Mechanism of the Engine Patch.}
-% \label{fig:enginepatch}
-% \end{center}
+\begin{figure}[t]
+\begin{center}
+\includegraphics[width=0.42\textwidth]{figure/patchengine}
+\caption{Internal Mechanism of the Engine Patch.}
+\label{fig:enginepatch}
+\end{center}
 
-% \end{figure}
+\end{figure}
 
 %Original \LaTeX\ engines, when processing input files, possess no bookkeeping mechanism to handle the source code positions
 Existing open-source \LaTeX\ engines possess no mechanism for tracking down the source code positions for each PDF element. 
@@ -729,14 +729,14 @@ In this section, we present the implementation details of SwiftLaTeX and showcas
 \subsection{Achieving High Scalability and Reliability}
 As a cloud service designed for a large number of potential users, SwiftLaTeX aims to meet demanding requirements for scalability and reliability.
 
-% \begin{figure}[t]
-% \begin{center}
-% \includegraphics[width=0.40\textwidth]{figure/cloudarchitecture}
-% \caption{Backend Architectures.}
-% \label{fig:cloudarch}
-% \end{center}
+\begin{figure}[t]
+\begin{center}
+\includegraphics[width=0.40\textwidth]{figure/cloudarchitecture}
+\caption{Backend Architectures.}
+\label{fig:cloudarch}
+\end{center}
 
-% \end{figure}
+\end{figure}
 
 
 To understand the challenges, let's discuss a prototype running on a single server.
@@ -776,15 +776,15 @@ Nonetheless, these technologies are supported to a different extent by each brow
 The differences pose a main challenge to the frontend design, notably, rendering PDF correctly  in the WYSIWYG view across various browsers.
 
 
-% \begin{figure*}[t]
+\begin{figure*}[t]
 
-% \begin{center}
-% \includegraphics[width=0.90\textwidth]{figure/screenshot}
-% \caption{WYSIWYG Editor of SwiftLaTeX}
-% \label{fig:screenshot}
-% \end{center}
-% \vspace{-0.1in}
-% \end{figure*} 
+\begin{center}
+\includegraphics[width=0.90\textwidth]{figure/screenshot}
+\caption{WYSIWYG Editor of SwiftLaTeX}
+\label{fig:screenshot}
+\end{center}
+\vspace{-0.1in}
+\end{figure*} 
 
 Specifically, each browser has its own setting to control how PDFs open from a webpage. 
 Browsers such as Internet Explorer or Opera display the PDF by invoking an external PDF reader (e.g., Adobe Reader), which is not always available.

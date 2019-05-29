@@ -59,18 +59,18 @@ extern void zpdfosgetosbuf(integer);
 extern void zpdfbeginobj(integer, integer);
 #define pdfbeginobj(i, pdfoslevel) zpdfbeginobj((integer) (i), (integer) (pdfoslevel))
 
-/* epdf.c */
+// /* epdf.c */
 #ifdef __cplusplus
 # define fd_entry struct fd_entry
 # define fm_entry struct fm_entry
 #endif
-extern void embed_whole_font(fd_entry *);
-extern fd_entry *epdf_create_fontdescriptor(fm_entry *, int);
-extern void epdf_free(void);
-extern void epdf_mark_glyphs(fd_entry *, char *);
-extern int get_fd_objnum(fd_entry *);
-extern int get_fn_objnum(fd_entry *);
-extern int is_subsetable(fm_entry *);
+// extern void embed_whole_font(fd_entry *);
+// extern fd_entry *epdf_create_fontdescriptor(fm_entry *, int);
+// extern void epdf_free(void);
+// extern void epdf_mark_glyphs(fd_entry *, char *);
+// extern int get_fd_objnum(fd_entry *);
+// extern int get_fn_objnum(fd_entry *);
+// extern int is_subsetable(fm_entry *);
 
 /* macnames.c */
 extern char notdef[];
@@ -82,8 +82,9 @@ extern fm_entry *lookup_fontmap(char *);
 
 /* pdftoepdf.cc */
 extern void epdf_check_mem(void);
-extern void epdf_delete(void);
-extern int read_pdf_info(char *, char *, int, int, int, int);
+extern void epdf_delete(integer);
+extern void read_pdf_info(integer, char *, int, int, int, int);
+extern void write_epdf(integer);
 
 /* utils.c */
 extern char *convertStringToPDFString(const char *in, int len);
@@ -98,21 +99,12 @@ extern void pdftex_warn(const char *, ...);
 extern char *stripzeros(char *a);
 __attribute__ ((format(printf, 1, 2)))
 extern void tex_printf(const char *, ...);
-extern void write_epdf(void);
+
 
 /* writeenc.c */
 extern void epdf_write_enc(char **, int);
 
 /* writeimg.c */
-extern float epdf_width;
-extern float epdf_height;
-extern float epdf_orig_x;
-extern float epdf_orig_y;
-extern float epdf_rotate;
-extern int epdf_selected_page;
-extern int epdf_num_pages;
-extern int epdf_page_box;
-extern void *epdf_doc;
-extern int epdf_has_page_group;
+
 
 #endif /* PDFTEX_COMMON_H */

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (pdfTeX Standalone 0.1 beta) (preloaded format=pdflatex 2019.5.16)  27 MAY 2019 12:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (pdfTeX Standalone 0.1 beta) (preloaded format=pdflatex 2019.5.28)  29 MAY 2019 16:13
 entering extended mode
 **paper.tex 
 (paper.tex
@@ -467,7 +467,7 @@ een already used, duplicate ignored
 l.144 T
        hough these works shed light on SwiftPad, they are not directly appli...
 [2]
-<figures/keyboard1.jpg, id=161, 1491.5725pt x 1142.2675pt>
+<figures/keyboard1.jpg, id=160, 1491.5725pt x 1142.2675pt>
 File: figures/keyboard1.jpg Graphic file (type jpg)
 <use figures/keyboard1.jpg>
 Package pdftex.def Info: figures/keyboard1.jpg  used on input line 162.
@@ -477,7 +477,7 @@ Overfull \hbox (216.94913pt too wide) in paragraph at lines 162--163
  [] 
  []
 
-<figures/firefoxos.pdf, id=167, 463.7325pt x 175.65625pt>
+<figures/firefoxos.pdf, id=166, 463.7325pt x 175.65625pt>
 File: figures/firefoxos.pdf Graphic file (type pdf)
 <use figures/firefoxos.pdf>
 Package pdftex.def Info: figures/firefoxos.pdf  used on input line 198.
@@ -493,7 +493,7 @@ een already used, duplicate ignored
                    \relax 
 l.207 
        [3 <figures/keyboard1.jpg> <figures/firefoxos.pdf>]
-<figures/UIscreenshot.pdf, id=196, 1034.86626pt x 856.19875pt>
+<figures/UIscreenshot.pdf, id=178, 1034.86626pt x 856.19875pt>
 File: figures/UIscreenshot.pdf Graphic file (type pdf)
 <use figures/UIscreenshot.pdf>
 Package pdftex.def Info: figures/UIscreenshot.pdf  used on input line 221.
@@ -518,7 +518,7 @@ Underfull \hbox (badness 1259) in paragraph at lines 239--240
 \OT1/cmr/m/n/10 mouse/touchscreen, ar-row keys or a com-bi-na-tion
  []
 
-<figures/htmlconvert.pdf, id=199, 301.125pt x 202.7575pt>
+<figures/htmlconvert.pdf, id=181, 301.125pt x 202.7575pt>
 File: figures/htmlconvert.pdf Graphic file (type pdf)
 <use figures/htmlconvert.pdf>
 Package pdftex.def Info: figures/htmlconvert.pdf  used on input line 250.
@@ -553,7 +553,7 @@ een already used, duplicate ignored
 l.343 T
        o address this issue, we patch the built-in heap allocator in the run...
 [6]
-<figures/time.pdf, id=291, 890.36638pt x 272.4579pt>
+<figures/time.pdf, id=224, 890.36638pt x 272.4579pt>
 File: figures/time.pdf Graphic file (type pdf)
 <use figures/time.pdf>
 Package pdftex.def Info: figures/time.pdf  used on input line 359.
@@ -566,7 +566,7 @@ Overfull \hbox (191.3479pt too wide) in paragraph at lines 359--360
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-<figures/heruist.pdf, id=292, 725.71124pt x 193.72375pt>
+<figures/heruist.pdf, id=225, 725.71124pt x 193.72375pt>
 File: figures/heruist.pdf Graphic file (type pdf)
 <use figures/heruist.pdf>
 Package pdftex.def Info: figures/heruist.pdf  used on input line 521.
@@ -594,7 +594,7 @@ LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
 
 Underfull \vbox (badness 2057) has occurred while \output is active []
 
-<figures/helloworld.pdf, id=344, 487.8225pt x 79.29625pt>
+<figures/helloworld.pdf, id=238, 487.8225pt x 79.29625pt>
 File: figures/helloworld.pdf Graphic file (type pdf)
 <use figures/helloworld.pdf>
 Package pdftex.def Info: figures/helloworld.pdf  used on input line 552.
@@ -778,8 +778,8 @@ Package rerunfilecheck Info: File `paper.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 749.
  ) 
 Here is how much of TeX's memory you used:
- 7459 strings out of 494483
- 107710 string characters out of 6175818
+ 7459 strings out of 494499
+ 107710 string characters out of 6176132
  216666 words of memory out of 5000000
  10911 multiletter control sequences out of 15000+600000
  41488 words of font info for 64 fonts, out of 8000000 for 9000
@@ -796,10 +796,9 @@ m/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti
 10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
 </usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on paper.pdf (11 pages, 1980031 bytes).
+Output written on paper.pdf (11 pages, 1449587 bytes).
 PDF statistics:
- 515 PDF objects out of 1000 (max. 8388607)
- 419 compressed objects within 5 object streams
+ 357 PDF objects out of 1000 (max. 8388607)
  104 named destinations out of 1000 (max. 500000)
  236 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (pdfTeX Standalone 0.1 beta) (preloaded format=pdflatex 2019.5.28)  29 MAY 2019 11:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (pdfTeX Standalone 0.1 beta) (preloaded format=pdflatex 2019.5.28)  29 MAY 2019 16:12
 entering extended mode
 **swiftlatex.tex 
 (swiftlatex.tex
@@ -842,43 +842,41 @@ LaTeX Warning: Reference `fig:editingexample' on page 4 undefined on input line
 LaTeX Warning: Reference `fig:editingexample' on page 4 undefined on input line
  394.
 
+<figure/timechart.pdf, id=182, 588.90474pt x 142.13994pt>
+File: figure/timechart.pdf Graphic file (type pdf)
+<use figure/timechart.pdf>
+Package pdftex.def Info: figure/timechart.pdf  used on input line 414.
+(pdftex.def)             Requested size: 253.14749pt x 61.10162pt.
 
-LaTeX Warning: Reference `fig:timingchart' on page 4 undefined on input line 40
-1.
+Overfull \hbox (12.0pt too wide) in paragraph at lines 414--415
+ [] 
+ []
 
-
-LaTeX Warning: Reference `fig:timingchart' on page 4 undefined on input line 42
-0.
-
-
-LaTeX Warning: Reference `fig:timingchart' on page 4 undefined on input line 42
-7.
-
-[4.4]
-
-LaTeX Warning: Reference `fig:flowchart' on page 5 undefined on input line 443.
-
+[4.4 <figure/timechart.pdf>]
+<figure/flowchart.pdf, id=191, 476.78125pt x 297.37068pt>
+File: figure/flowchart.pdf Graphic file (type pdf)
+<use figure/flowchart.pdf>
+Package pdftex.def Info: figure/flowchart.pdf  used on input line 436.
+(pdftex.def)             Requested size: 202.51491pt x 126.31053pt.
+<figure/charmapping.pdf, id=194, 688.32156pt x 125.46875pt>
+File: figure/charmapping.pdf Graphic file (type pdf)
+<use figure/charmapping.pdf>
+Package pdftex.def Info: figure/charmapping.pdf  used on input line 577.
+(pdftex.def)             Requested size: 212.64296pt x 38.76088pt.
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <9> not available
 (Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 583.
 
 
-
-LaTeX Warning: Reference `fig:char' on page 5 undefined on input line 583.
-
-
-LaTeX Warning: Reference `fig:char' on page 5 undefined on input line 585.
-
-
-LaTeX Warning: Reference `fig:char' on page 5 undefined on input line 587.
-
-[5.5]
-
-LaTeX Warning: Reference `fig:enginepatch' on page 6 undefined on input line 64
-7.
-
+[5.5 <figure/flowchart.pdf> <figure/charmapping.pdf>]
+<figure/patchengine.pdf, id=211, 534.49687pt x 177.85907pt>
+File: figure/patchengine.pdf Graphic file (type pdf)
+<use figure/patchengine.pdf>
+Package pdftex.def Info: figure/patchengine.pdf  used on input line 633.
+(pdftex.def)             Requested size: 212.64296pt x 70.75969pt.
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 659.
+
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
@@ -888,17 +886,22 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <9> not available
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
+ [6.6 <figure/patchengine.pdf>]
 Underfull \vbox (badness 2698) has occurred while \output is active []
 
- [6.6]
+<figure/cloudarchitecture.pdf, id=226, 457.47885pt x 310.66063pt>
+File: figure/cloudarchitecture.pdf Graphic file (type pdf)
+<use figure/cloudarchitecture.pdf>
+Package pdftex.def Info: figure/cloudarchitecture.pdf  used on input line 734.
+(pdftex.def)             Requested size: 202.51491pt x 137.52065pt.
+ [7.7 <figure/cloudarchitecture.pdf>]
+<figure/screenshot.pdf, id=244, 1438.37375pt x 832.10875pt>
+File: figure/screenshot.pdf Graphic file (type pdf)
+<use figure/screenshot.pdf>
+Package pdftex.def Info: figure/screenshot.pdf  used on input line 782.
+(pdftex.def)             Requested size: 455.6624pt x 263.60118pt.
 
-LaTeX Warning: Reference `fig:cloudarch' on page 7 undefined on input line 743.
-
-
-
-LaTeX Warning: Reference `fig:cloudarch' on page 7 undefined on input line 752.
-
+Underfull \vbox (badness 1270) has occurred while \output is active []
 
 
 Overfull \hbox (5.82036pt too wide) in paragraph at lines 795--796
@@ -907,28 +910,28 @@ Overfull \hbox (5.82036pt too wide) in paragraph at lines 795--796
  []
 
 
-Underfull \vbox (badness 1270) has occurred while \output is active []
-
- [7.7]
 Overfull \hbox (17.9976pt too wide) in paragraph at lines 797--801
 []\OT1/cmr/m/n/9 (-20) The sec-ond ap-proach is in-spired by a li-brary named \
 OT1/cmr/m/it/9 (-20) Pdf2htmlEX
  []
 
+[8.8]
+Underfull \vbox (badness 6542) has occurred while \output is active []
 
-LaTeX Warning: Reference `fig:screenshot' on page 8 undefined on input line 805
-.
 
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 880.
 
-[8.8]<<ot1tt.cmap>>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [9.9 <figure/screenshot.pdf>]<<ot1tt.cmap>>
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [9.9] (swiftlatex.bbl
+ [10.10] (swiftlatex.bbl
 LaTeX Info: Redefining \tempurl on input line 60.
 LaTeX Info: Redefining \tempurl on input line 72.
 
@@ -968,24 +971,24 @@ Underfull \hbox (badness 1147) in paragraph at lines 408--412
 []\OT1/cmr/m/n/7 (+20) Lu WANG and Wan-min LIU. 2013.  On-line pub-lish via
  []
 
-) [10.10]
+) [11.11]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 980.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 980.
  (swiftlatex.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 980.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 980.
 Package rerunfilecheck Info: File `swiftlatex.out' has not changed.
-(rerunfilecheck)             Checksum: 04CBAA68CC0297A363B8E82B864146A4;5887.
+(rerunfilecheck)             Checksum: F6814C21ECD3918513170AA3018153D0;5888.
 
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 15862 strings out of 494499
- 229139 string characters out of 6176132
- 374650 words of memory out of 5000000
- 18860 multiletter control sequences out of 15000+600000
+ 15901 strings out of 494499
+ 230158 string characters out of 6176132
+ 375047 words of memory out of 5000000
+ 18885 multiletter control sequences out of 15000+600000
  21896 words of font info for 147 fonts, out of 8000000 for 9000
  220 hyphenation exceptions out of 8191
  60i,14n,94p,802b,466s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1006,9 +1009,9 @@ e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on swiftlatex.pdf (10 pages, 1897076 bytes).
+Output written on swiftlatex.pdf (11 pages, 1914052 bytes).
 PDF statistics:
- 391 PDF objects out of 1000 (max. 8388607)
- 88 named destinations out of 1000 (max. 500000)
- 23781 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 419 PDF objects out of 1000 (max. 8388607)
+ 95 named destinations out of 1000 (max. 500000)
+ 23811 words of extra memory for PDF output out of 24883 (max. 10000000)
 

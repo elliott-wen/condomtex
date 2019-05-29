@@ -24,7 +24,7 @@ with this program.  If not, see <http://www.gnu.org/licenses/>.
 //static int transparent_page_group = 0;
 
 const unsigned char IHDRCHUNK[4] = {'I', 'H', 'D', 'R'};
-struct  __attribute__ ((packed)) ChunkHeader{
+struct  ChunkHeader{
     unsigned char signature[8];
     unsigned int len;
     unsigned char type[4];
@@ -35,7 +35,7 @@ struct  __attribute__ ((packed)) ChunkHeader{
     char idontcare1;
     char idontcare2;
     char idontcare3;
-    char crc[4];
+    char crc[3];
 };
 
 void read_png_info(integer img)

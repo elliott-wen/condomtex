@@ -422,7 +422,6 @@ void libpdffinish(void)
     enc_free();
     img_free();
     vf_free();
-    epdf_check_mem();
     ttf_free();
     sfd_free();
     glyph_unicode_free();
@@ -982,12 +981,13 @@ char *stripzeros(char *a)
 
 void initversionstring(char **versions)
 {
-    const_string fmt = "UPdfTeX Proudly Uses Nothing.\n";
+    const_string fmt = "PdfTeX Strawberry Version\n";
     size_t len = strlen(fmt) + 1;
 
     /* len will be more than enough, because of the placeholder chars in fmt
        that get replaced by the arguments.  */
     *versions = xmalloc(len);
+    memset(*versions, 0, len);
     memcpy(*versions, fmt, len);
 }
 
