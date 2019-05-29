@@ -608,6 +608,7 @@ static void write_fontdictionaries(void)
 
 void writefontstuff(void)
 {
+    return;
     write_fontdescriptors();
     write_fontencodings();      /* see writeenc.c */
     write_fontdictionaries();
@@ -704,6 +705,7 @@ font_is_used(internalfontnumber f)
 void
 dopdffont(integer font_objnum, internalfontnumber f)
 {
+    return;
     fm_entry *fm;
     if (!font_is_used(f))
         return; /* avoid failed assertion in create_fontdictionary,

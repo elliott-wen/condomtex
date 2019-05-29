@@ -1,9 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (pdfTeX Standalone 0.1 beta) (preloaded format=pdflatex 2019.5.28)  29 MAY 2019 16:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/dev) (preloaded format=pdflatex 2019.5.29)  29 MAY 2019 16:28
 entering extended mode
-**paper.tex 
-(paper.tex
+ %&-line parsing enabled.
+**paper.tex
+(./paper.tex
 LaTeX2e <2018-12-01>
-(sigchi.cls (/usr/share/texlive/texmf-dist/tex/latex/graphics/epsfig.sty
+(./sigchi.cls (/usr/share/texlive/texmf-dist/tex/latex/graphics/epsfig.sty
 Package: epsfig 2017/06/25 v1.7b (e)psfig emulation (SPQR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
@@ -172,7 +173,7 @@ Using 'Abbrev' bibliography style
 (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
-) (acmcopyright.sty
+) (./acmcopyright.sty
 Package: acmcopyright 2014/06/29 v1.2 Copyright statemens for ACM classes
 
 (/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
@@ -376,7 +377,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip65
 )
-(paper.aux)
+(./paper.aux)
 \openout1 = `paper.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
@@ -393,7 +394,8 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
 LaTeX Font Info:    ... okay on input line 12.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 12.
 LaTeX Font Info:    ... okay on input line 12.
- (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count128
 \scratchdimen=\dimen146
@@ -426,7 +428,7 @@ LaTeX Info: Redefining \ref on input line 12.
 LaTeX Info: Redefining \pageref on input line 12.
 LaTeX Info: Redefining \nameref on input line 12.
 
-(paper.out) (paper.out)
+(./paper.out) (./paper.out)
 \@outlinefile=\write4
 \openout4 = `paper.out'.
 
@@ -492,8 +494,8 @@ een already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.207 
-       [3 <figures/keyboard1.jpg> <figures/firefoxos.pdf>]
-<figures/UIscreenshot.pdf, id=178, 1034.86626pt x 856.19875pt>
+       [3 <./figures/keyboard1.jpg> <./figures/firefoxos.pdf>]
+<figures/UIscreenshot.pdf, id=194, 1034.86626pt x 856.19875pt>
 File: figures/UIscreenshot.pdf Graphic file (type pdf)
 <use figures/UIscreenshot.pdf>
 Package pdftex.def Info: figures/UIscreenshot.pdf  used on input line 221.
@@ -518,7 +520,7 @@ Underfull \hbox (badness 1259) in paragraph at lines 239--240
 \OT1/cmr/m/n/10 mouse/touchscreen, ar-row keys or a com-bi-na-tion
  []
 
-<figures/htmlconvert.pdf, id=181, 301.125pt x 202.7575pt>
+<figures/htmlconvert.pdf, id=197, 301.125pt x 202.7575pt>
 File: figures/htmlconvert.pdf Graphic file (type pdf)
 <use figures/htmlconvert.pdf>
 Package pdftex.def Info: figures/htmlconvert.pdf  used on input line 250.
@@ -533,7 +535,7 @@ een already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.273 
-       [4 <figures/UIscreenshot.pdf>]
+       [4 <./figures/UIscreenshot.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
@@ -541,7 +543,7 @@ een already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.309 
-       [5 <figures/htmlconvert.pdf>]
+       [5 <./figures/htmlconvert.pdf>]
 Underfull \hbox (badness 1308) in paragraph at lines 331--336
 []\OT1/cmr/m/n/10 These is-sues mo-ti-vate us to pro-pose a lightweight
  []
@@ -553,7 +555,7 @@ een already used, duplicate ignored
 l.343 T
        o address this issue, we patch the built-in heap allocator in the run...
 [6]
-<figures/time.pdf, id=224, 890.36638pt x 272.4579pt>
+<figures/time.pdf, id=289, 890.36638pt x 272.4579pt>
 File: figures/time.pdf Graphic file (type pdf)
 <use figures/time.pdf>
 Package pdftex.def Info: figures/time.pdf  used on input line 359.
@@ -566,7 +568,7 @@ Overfull \hbox (191.3479pt too wide) in paragraph at lines 359--360
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-<figures/heruist.pdf, id=225, 725.71124pt x 193.72375pt>
+<figures/heruist.pdf, id=290, 725.71124pt x 193.72375pt>
 File: figures/heruist.pdf Graphic file (type pdf)
 <use figures/heruist.pdf>
 Package pdftex.def Info: figures/heruist.pdf  used on input line 521.
@@ -588,13 +590,13 @@ een already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.530 
-       [7 <figures/time.pdf>]
+       [7 <./figures/time.pdf>]
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 542.
 
 Underfull \vbox (badness 2057) has occurred while \output is active []
 
-<figures/helloworld.pdf, id=238, 487.8225pt x 79.29625pt>
+<figures/helloworld.pdf, id=341, 487.8225pt x 79.29625pt>
 File: figures/helloworld.pdf Graphic file (type pdf)
 <use figures/helloworld.pdf>
 Package pdftex.def Info: figures/helloworld.pdf  used on input line 552.
@@ -609,8 +611,8 @@ een already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.620 \item E
-             xperience in various typesetting programs. [8 <figures/heruist.pdf
-> <figures/helloworld.pdf>]
+             xperience in various typesetting programs. [8 <./figures/heruist.p
+df> <./figures/helloworld.pdf>]
 Underfull \vbox (badness 1152) has occurred while \output is active []
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
@@ -618,7 +620,7 @@ een already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.708 
-       [9] (paper.bbl
+       [9] (./paper.bbl
 ! Undefined control sequence.
 \UrlFont ->\color 
                   {black}\small \bf \ttfamily 
@@ -770,7 +772,7 @@ l.749 \end{document}
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 749.
- (paper.aux)
+ (./paper.aux)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 749.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 749.
 Package rerunfilecheck Info: File `paper.out' has not changed.
@@ -778,13 +780,13 @@ Package rerunfilecheck Info: File `paper.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 749.
  ) 
 Here is how much of TeX's memory you used:
- 7459 strings out of 494499
- 107710 string characters out of 6176132
+ 7459 strings out of 494482
+ 107732 string characters out of 6175804
  216666 words of memory out of 5000000
  10911 multiletter control sequences out of 15000+600000
  41488 words of font info for 64 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
- 39i,13n,34p,1230b,476s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,13n,34p,1229b,476s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist/
@@ -796,9 +798,9 @@ m/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti
 10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
 </usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on paper.pdf (11 pages, 1449587 bytes).
+Output written on paper.pdf (11 pages, 1985605 bytes).
 PDF statistics:
- 357 PDF objects out of 1000 (max. 8388607)
+ 509 PDF objects out of 1000 (max. 8388607)
  104 named destinations out of 1000 (max. 500000)
  236 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -19944,7 +19944,7 @@ k := head_tab[obj_type_font];
 while k <> 0 do begin
     f := obj_info(k);
     pdfassert(pdf_font_num[f] > 0);
-    do_pdf_font(k, f);
+    do_pdf_font(k, f); 
     k := obj_link(k);
 end;
 write_fontstuff
